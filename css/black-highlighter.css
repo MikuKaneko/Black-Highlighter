@@ -10,102 +10,88 @@
 /* Structural elements generally part of standard HTML spec as well as Wikidot's base structural elements */
 
 /* ===DIRECTORY===
-	1. =S-CSS-P INTEGRATION
-	2. =HEADER ELEMENTS
-	3. =TYPEFACES
-		3.1 =BASE FONT SIZE & LINE HEIGHT
-		3.2 =HEADER TITLE FONT SIZES
-	4. =VARIABLE FONT SETTINGS
-		4.1 =VARIABLE MONO FONT SETTINGS
-	5. =OPENTYPE FEATURE SETTINGS
-	6. =STANDARD THEME COLORS
-	7. =PRIMARY COLORS
-		8.1. =GENERAL COLORS
-		8.2. =GENERAL TEXT COLORS
-	8. =BACKGROUND & HEADER COLORS
-	9. =MENU COLORS
-		9.1 =MENU BACKGROUND COLORS
-		9.2 =MENU TEXT COLORS
-	10. =SECONDARY & TERTIARY COLORS
-	11. =PRIMARY GRADIENTS
-	12. =STRUCTURAL SPACING ELEMENTS
-		14.1 =HEADER MEASUREMENTS
-		14.2 =TOPBAR MEASUREMENTS
-		14.3 =FINAL HEADER + TOPBAR MEASUREMENTS
-		14.4 =SIDEBAR MEASUREMENTS
+	1. =HEADER ELEMENTS
+	2. =TYPEFACES
+		2.1 =BASE FONT SIZE & LINE HEIGHT
+		2.2 =HEADER TITLE FONT SIZES
+	3. =VARIABLE FONT SETTINGS
+		3.1 =VARIABLE MONO FONT SETTINGS
+	4. =OPENTYPE FEATURE SETTINGS
+	5. =STANDARD THEME COLORS
+	6. =PRIMARY COLORS
+		6.1. =GENERAL COLORS
+		6.2. =GENERAL TEXT COLORS
+	7. =BACKGROUND & HEADER COLORS
+	8. =MENU COLORS
+		8.1 =MENU BACKGROUND COLORS
+		8.2 =MENU TEXT COLORS
+	9. =SECONDARY & TERTIARY COLORS
+	10. =PRIMARY GRADIENTS
+	11. =STRUCTURAL SPACING ELEMENTS
+		11.1 =HEADER MEASUREMENTS
+		11.2 =TOPBAR MEASUREMENTS
+		11.3 =FINAL HEADER + TOPBAR MEASUREMENTS
+		11.4 =SIDEBAR MEASUREMENTS
 
 	===============================
 	======= SPECIFIC COLORS =======
 	===============================
-	13. =BACKGROUND GRADIENT
-		13.1 =GENERAL BACKGROUND
-		13.2 =HEADER GRADIENT
-		13.3 =TOPBAR GRADIENT
-	14. =LINK COLORS
-	15. =HEADER ELEMENTS
-		15.1 =HEADER TITLES
-		15.2 =SEARCH ELEMENT
-		15.3 =LOGIN BOX ELEMENT
-	16. =TOPBAR ELEMENTS
-		16.1 =TOPBAR CATEGORIES
-		16.2 =DROPDOWN MENU
-	17. =SIDE-BAR ELEMENTS
-		17.1 =SIDE-BAR GENERAL
-		17.2 =SOCIAL MEDIA ICONS
-		17.3 =SIDEBLOCK MENU
-		17.4 =MENU-ITEMS
-		17.5 =SIDEBAR COLLAPSIBLES
-		17.5 =INTERWIKI ELEMENTS
-	18. =FOOTER
-	19. =LICENSE AREA
+	12. =BACKGROUND GRADIENT
+		12.1 =GENERAL BACKGROUND
+		12.2 =HEADER GRADIENT
+		12.3 =TOPBAR GRADIENT
+	13. =LINK COLORS
+	14. =HEADER ELEMENTS
+		14.1 =HEADER TITLES
+		14.2 =SEARCH ELEMENT
+		14.3 =LOGIN BOX ELEMENT
+	15. =TOPBAR ELEMENTS
+		15.1 =TOPBAR CATEGORIES
+		15.2 =DROPDOWN MENU
+	16. =SIDE-BAR ELEMENTS
+		16.1 =SIDE-BAR GENERAL
+		16.2 =SOCIAL MEDIA ICONS
+		16.3 =SIDEBLOCK MENU
+		16.4 =MENU-ITEMS
+		16.5 =SIDEBAR COLLAPSIBLES
+		16.5 =INTERWIKI ELEMENTS
+	17. =FOOTER
+	18. =LICENSE AREA
 
-	20. =MAIN CONTENT UI ELEMENTS		
-		20.1 =UI ICONS
+	19. =MAIN CONTENT UI ELEMENTS		
+		19.1 =UI ICONS
 			20.1.1 =PAGE OPTIONS ICONS
 			20.1.2 =TEXT EDITOR ICONS
-		20.2 =TABS
-		20.3 =TABLES
-		20.4 =BLOCKQUOTES
-		20.5 =FOOTNOTES/BIBLIOGRAPHY FOOTER
-		20.6 =TOC
+		19.2 =TABS
+		19.3 =TABLES
+		19.4 =BLOCKQUOTES
+		19.5 =FOOTNOTES/BIBLIOGRAPHY FOOTER
+		19.6 =TOC
 	
-	21. =GLOBAL ELEMENTS
-		21.1 =UI BUTTONS
-		21.2 =RATING MODULE
-		21.3 =MODALS
-		21.4 =FOOTNOTES HOVER BLOCK
+	20. =GLOBAL ELEMENTS
+		20.1 =UI BUTTONS
+		20.2 =RATING MODULE
+		20.3 =MODALS
+		20.4 =FOOTNOTES HOVER BLOCK
 
 	===============================
 	========= DEPRECIATED =========
 	===============================
-	22. =LEGACY VARS
+	21. =LEGACY VARS
   =============== */
 
 :root {
-/* ===S-CSS-P INTEGRATION=== */
-	/* If you're making a new CSS theme, please include the following three variables at minimum. */
-	--theme-base: "black-highlighter";
-	/* must be either "black-highlighter" or "sigma9" */
-	--theme-id: "black-highlighter";
-	/* set this to the URL of your theme's page - eg for "component:ar-theme", set it to "ar-theme" */
-	--theme-name: "Black Highlighter Theme";
-	/* set this to your theme's full name */
-
 /* ===HEADER ELEMENTS=== */
-	--logo-image: url("https://nu-scptheme.github.io/Black-Highlighter/img/logo.svg");
-	--header-title: "SCP Foundation";
-	--header-subtitle: "SECURE, CONTAIN, PROTECT";
+	--logo-image: url("https://mikukaneko.github.io/Black-Highlighter/img/logo.svg");
+	--header-title: "SCP財団";
+	--header-subtitle: "確保、収容、保護";
 
 /* ===TYPEFACES=== */
-	--body-font: Inter, Verdana, Geneva, "Helvetica Neue", "Helvetica",
-		Arial, sans-serif;
-	--UI-font: PTRootUI, -apple-system, system-ui, BlinkMacSystemFont,
-		"Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantrell, "Helvetica Neue",
-		sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	--header-font: Inter, Franklin Gothic Medium, Franklin Gothic,
-		ITC Franklin Gothic, "Helvetica Neue", "Helvetica", Arial, sans-serif;
-	--title-font: var(--header-font);
-	--mono-font: Recursive, Consolas, monaco, monospace;
+	--body-font: Inter, "M Plus 1p", sans-serif;
+	--UI-font: PTRootUI, sans-serif;
+	--header-font: var(--body-font);
+	--title-font: var(--body-font);
+	--mono-font: Recursive, monospace;
 
 	/* ===BASE FONT SIZE & LINE HEIGHT=== */
 	--min-font-size: 0.8125rem; /* 13px */
@@ -478,7 +464,6 @@
 				rgb(254,44,85) calc(50% + 0.0625rem),
 				rgb(254,44,85) 100%
 			);
-		--twitch-icon-color: 100, 65, 165;
 		--twitter-icon-color: 29, 161, 242;
 		--youtube-icon-color: 255, 0, 0;
 		
@@ -708,248 +693,6 @@
 
 	--sidebar-transition-timing: 500ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
 }
-
-/* INT BRANCHES ROOT VARS
-   ============================= */
-
-/* Root Vars specific to various languages targeted to int-branches
-
-/* ===DIRECTORY===
-	1.  =CZECH BRANCH
-	2.  =FRENCH BRANCH
-	3.  =GERMAN BRANCH
-	4.  =GREEK BRANCH
-	5.  =ITALIAN BRANCH
-	6.  =JAPANESE BRANCH
-	7.  =KOREAN BRANCH
-	8.  =POLISH BRANCH
-	9.  =PORTUGESE BRANCH
-	10. =RUSSIAN BRANCH
-	11. =SIMPLIFIED CHINESE BRANCH
-	12. =SPANISH BRANCH
-	13. =THAI BRANCH
-	14. =TRADITIONAL CHINESE BRANCH
-	15. =UKRAINIAN BRANCH
-	16. =VIETNAMESE BRANCH
-*/
-
-/* ===CZECH BRANCH=== */
-
-:root:where(:lang(cs)) {
-	/* Header */
-	--header-title: "SCP Nadace";
-	--header-subtitle: "Česká Větev SCP Nadace";
-}
-
-/* ===FRENCH BRANCH=== */
-
-:root:where(:lang(fr)) {
-	/* header */
-	--header-title: "Fondation SCP";
-	--header-subtitle: "Sécuriser, Contenir, Protéger";
-}
-
-/* ===GERMAN BRANCH=== */
-
-:root:where(:lang(de)) {
-	/* Header */
-	--header-title: "SCP Foundation";
-	--header-subtitle: "auf Deutsch";
-}
-
-/* ===GREEK BRANCH=== */
-
-:root:where(:lang(el)) {
-	/* Header */
-	--header-title: "Το Ίδρυμα SCP";
-	--header-subtitle: "Ελληνόφωνος κλάδος";
-}
-
-/* ===ITALIAN BRANCH=== */
-
-:root:where(:lang(it)) {
-	/* Header */
-	--header-title: "Fondazione SCP";
-	--header-subtitle: "Branca Italiana - SCP Foundation";
-}
-
-/* ===JAPANESE BRANCH=== */
-
-:root:where(:lang(ja)) {
-	/* Header */
-	--header-title: "SCP財団";
-	--header-subtitle: "確保、収容、保護";
-
-	/* Fonts */
-	--body-font: Inter, "M PLUS 1p", "ヒラギノ角ゴ Pro W3",
-		"Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック",
-		"MS PGothic", "ＭＳ ゴシック", "MS Gothic", "Noto Sans CJK JP",
-		TakaoPGothic, sans-serif;
-	--UI-font: PTRootUI, "游ゴシック体", YuGothic, "ヒラギノ丸ゴ",
-		"Hiragino Sans", "Yu Gothic UI", "Meiryo UI", "MS Gothic", Roboto, Noto,
-		"Noto Sans CJK JP", sans-serif;
-	--header-font: var(--body-font);
-	--title-font: var(--body-font);
-	--mono-font: Recursive, "ヒラギノ角ゴ Pro W3",
-		"Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック",
-		"MS PGothic", "ＭＳ ゴシック", "MS Gothic", "Noto Sans CJK JP",
-		TakaoPGothic, monospace;
-}
-
-/* ===KOREAN BRANCH=== */
-
-:root:where(:lang(ko)) {
-	/* Header */
-	--header-title: "SCP 재단";
-	--header-subtitle: "확보, 격리, 보호";
-
-	/* Fonts */
-	--body-font: Inter, NanumBarunCatsi, "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", "굴림", "Gulim", "돋움", "Dotum", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-	--UI-font: PTRootUI, "Nanum Gothic", "Apple SD Gothic Neo", "Malgun Gothic",
-		Roboto, Noto, "Noto Sans CJK KR", sans-serif;
-	--header-font: var(--body-font);
-	--title-font: var(--body-font);
-	--mono-font: "Nanum Gothic Coding", Recursive, "Apple SD Gothic Neo",
-		"NanumBarunGothic", "맑은 고딕", "Malgun Gothic", "굴림", "Gulim",
-		"돋움", "Dotum", "Helvetica Neue", "Helvetica", Arial, monospace;
-}
-
-/* ===POLISH BRANCH=== */
-
-:root:where(:lang(pl)) {
-	/* Header */
-	--header-title: "Fundacja SCP";
-	--header-subtitle: "Polska Filia SCP";
-}
-
-/* ===PORTUGESE BRANCH=== */
-
-:root:where(:lang(pt-br)) {
-	/* Header */
-	--header-title: "Fundação SCP";
-	--header-subtitle: "Filial Lusófona";
-}
-
-/* ===RUSSIAN BRANCH=== */
-
-:root:where(:lang(ru)) {
-	/* Header */
-	--header-title: "SCP Foundation";
-	--header-subtitle: "Russian Branch";
-
-	/* Typefaces */
-	--body-font: Inter, Charcoal, Geneva, "Helvetica Neue", Helvetica,
-		Arial, sans-serif;
-	--UI-font: PTRootUI, -apple-system, system-ui, BlinkMacSystemFont,
-		"Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantrell, "Helvetica Neue",
-		sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	--header-font: Inter, Charcoal, "Franklin Gothic Medium", "Franklin Gothic",
-		"ITC Franklin Gothic", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-	--title-font: var(--header-font);
-	--mono-font: Recursive, Consolas, monaco, monospace;
-}
-
-/* ===SPANISH BRANCH=== */
-
-:root:where(:lang(es)) {
-	/* Header */
-	--header-title: "La Fundación SCP";
-	--header-subtitle: "Rama Hispanohablante";
-}
-
-/* ===SIMPLIFIED CHINESE BRANCH=== */
-
-:root:where(:lang(cn)) {
-	--theme-base: "黑色标记笔";
-	--theme-id: "黑色标记笔";
-	--theme-name: "黑色标记笔";
-
-	/* Header */
-	--header-title: "SCP基金会";
-	--header-subtitle: "控制，收容，保护";
-
-	/* Fonts */
-	--body-font: Inter, "Noto Sans SC", Verdana, "Microsoft YaHei", "微软雅黑",
-		Geneva, sans-serif, STXihei, "华文细黑";
-	--UI-font: PTRootUI, "方体", "PingFang SC", "黑体", "Heiti SC",
-		"Microsoft JhengHei UI", "Microsoft JhengHei", Roboto, Noto,
-		"Noto Sans CJK SC", sans-serif;
-	--header-font: var(--body-font);
-	--title-font: var(--body-font);
-	--mono-font: Recursive, "Noto Serif SC", "Microsoft YaHei", "微软雅黑",
-		"Courier New", Courier, monospace, STXihei, "华文细黑";
-}
-
-/* ===THAI BRANCH=== */
-
-:root:where(:lang(th)) {
-	/* Header */
-	--header-title: "สถาบัน SCP";
-	--header-subtitle: "ควบคุม, กักกัน, ป้องกัน";
-
-	/* Typefaces */
-	--body-font: Inter, "Kanit", -apple-system, system-ui,
-		BlinkMacSystemFont, "Segoe UI", Verdana, Geneva, sans-serif;
-	--UI-font: PTRootUI, "Kanit", "Thonburi", "Leelawadee UI", "Cordia New",
-		Roboto, Noto, "Noto Sans Thai", sans-serif;
-	--header-font: var(--body-font);
-	--title-font: var(--body-font);
-	--mono-font: Recursive, "Kanit", Consolas, monaco, monospace;
-}
-
-/* ===TRADITIONAL CHINESE BRANCH=== */
-
-:root:where(:lang(zh)) {
-	/* Header */
-	--header-title: "SCP基金會";
-	--header-subtitle: "控制，收容，保護";
-
-	/* Typefaces */
-	--body-font: Inter, "Noto Sans TC", "微軟正黑體", "Microsoft JhengHei",
-		"Microsoft JhengHei UI", “微軟雅黑”, "Microsoft YaHei",
-		"Microsoft YaHei UI", sans-serif;
-	--UI-font: PTRootUI, "方體", "PingFang HK", "方體", "PingFang TC", "黑體",
-		"Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", Roboto, Noto,
-		"Noto Sans CJK TC", sans-serif;
-	--header-font: var(--body-font);
-	--title-font: var(--body-font);
-	--body-font: InRecursiveer, "Noto Sans TC", "微軟正黑體",
-		"Microsoft JhengHei", "Microsoft JhengHei UI", “微軟雅黑”,
-		"Microsoft YaHei", "Microsoft YaHei UI", monospace;
-}
-
-/* ===UKRAINIAN BRANCH=== */
-
-:root:where(:lang(uk)) {
-	/* Header */
-	--header-title: "Фонд SCP.";
-	--header-subtitle: "Охороняти. Утримувати. Захищати.";
-
-	/* Typefaces */
-	--body-font: Inter, Charcoal, Geneva, "Helvetica Neue", Helvetica,
-		Arial, sans-serif;
-	--UI-font: PTRootUI, -apple-system, system-ui, BlinkMacSystemFont,
-		"Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantrell, "Helvetica Neue",
-		sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	--header-font: Inter, Charcoal, "Franklin Gothic Medium", "Franklin Gothic",
-		"ITC Franklin Gothic", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-	--title-font: var(--header-font);
-	--mono-font: Recursive, Consolas, monaco, monospace;
-}
-
-:root:where(:lang(uk)) {
-	--sidebar-width-on-desktop: calc(var(--base-font-size) * (266 / 15));
-	--body-width-on-desktop: 75rem;
-}
-
-/* ===VIETNAMESE BRANCH=== */
-
-/* Removing this for now by request of the Vietnamese Branch
-:root:where(:lang(vi)) {
-	--header-title: "Tổ Chức SCP";
-	--header-subtitle: "Quản thúc, Lưu trữ, Bảo vệ";
-}
-*/
 
 /* ENCODED SVGS
    ============================= */
@@ -3397,7 +3140,7 @@ div.page-watch-options a:focus-within {
 
 #main-content .page-tags::before {
 	--wght: var(--ui-hvr-wght);
-	content: "TAGS\0021b4";
+	content: "タグ\0021b4";
 	position: absolute;
 	top: -2em;
 	left: 0;
@@ -3573,7 +3316,7 @@ div[id*="page-options-bottom"] {
 
 div[id*="page-options-bottom"]:not(.page-rate-widget-box):not(#search-top-box-form)>a.btn {
 	--button-padding: calc(var(--icon-size) / 8);
-	flex-basis: 5rem;
+	flex-basis: 9srem;
 	height: 1.5em;
 	margin: 0 0.5ch 1ch 0.5ch;
 	padding: var(--button-padding);
@@ -5104,7 +4847,7 @@ form#edit-page-form .edit-page-bottomtable tr>td:nth-of-type(1)>div:nth-of-type(
 }
 
 form#edit-page-form .edit-page-bottomtable tr>td:nth-of-type(1)>div:nth-of-type(1)::before {
-	content: "Short Description of Changes:";
+	content: "変更の要約:";
 	position: absolute;
 	z-index: 2;
 	top: -1em;
@@ -5608,11 +5351,11 @@ table.page-history tr:nth-of-type(2) td:nth-of-type(2)::before {
 }
 
 table.page-history tr:nth-of-type(2) td:nth-of-type(3)::before {
-	content: "flags";
+	content: "フラグ";
 }
 
 table.page-history tr:nth-of-type(2) td:nth-of-type(4)::before {
-	content: "actions";
+	content: "アクション";
 }
 
 table.page-history tr:nth-of-type(2) td:nth-of-type(5)::before {
@@ -5620,7 +5363,7 @@ table.page-history tr:nth-of-type(2) td:nth-of-type(5)::before {
 }
 
 table.page-history tr:nth-of-type(2) td:nth-of-type(6)::before {
-	content: "date";
+	content: "日付";
 }
 
 div.inline-diff del {
@@ -6856,540 +6599,6 @@ div.wd-adunit {
 	grid-row: action-area-btm-end;
 }
 
-/* INT WIKIDOT STRUCTURE STYLING
-   ============================= */
-
-/* Styling specific to Int Branches' Wikidot Structure
-
-/* ===DIRECTORY===
-	1.  =CZECH BRANCH
-	2.  =FRENCH BRANCH
-	3.  =GERMAN BRANCH
-	4.  =GREEK BRANCH
-	5.  =ITALIAN BRANCH
-	6.  =JAPANESE BRANCH
-	7.  =KOREAN BRANCH
-	8.  =POLISH BRANCH
-	9.  =PORTUGESE BRANCH
-	10. =RUSSIAN BRANCH
-	11. =SIMPLIFIED CHINESE BRANCH
-	12. =SPANISH BRANCH
-	13. =THAI BRANCH
-	14. =TRADITIONAL CHINESE BRANCH
-	15. =UKRAINIAN BRANCH
-	16. =VIETNAMESE BRANCH
-*/
-
-/* ===CZECH BRANCH=== */
-
-div[id*="page-options-bottom"]:not(.page-rate-widget-box):not(#search-top-box-form) > a.btn:where(:lang(cs)) {
-	--button-padding: calc(var(--icon-size)/4) calc(var(--icon-size)/8);
-	height: auto;
-	line-height: 1;
-	white-space: normal;
-}
-
-div#page-options-bottom-2:not(.page-rate-widget-box):not(#search-top-box-form) > a.btn:where(:lang(cs)) {
-	flex-basis: 6rem;
-}
-
-form#edit-page-form:where(:lang(cs)) .edit-page-bottomtable tr>td:nth-of-type(1)>div:nth-of-type(1)::before {
-	content: "Krátký popis změn:";
-}
-
-table.page-history:where(:lang(cs)) tr:nth-of-type(2) td:nth-of-type(3)::before {
-	content: "změny";
-}
-
-table.page-history:where(:lang(cs)) tr:nth-of-type(2) td:nth-of-type(4)::before {
-	content: "akce";
-}
-
-table.page-history:where(:lang(cs)) tr:nth-of-type(2) td:nth-of-type(5)::before {
-	content: "od";
-}
-
-table.page-history:where(:lang(cs)) tr:nth-of-type(2) td:nth-of-type(6)::before {
-	content: "datum";
-}
-
-#site-tools-box:where(:lang(cs))::before {
-	content: "Nástroje stránky";
-}
-
-/* ===FRENCH BRANCH=== */
-
-#main-content:where(:lang(fr)) .page-tags::before {
-	content: "étiquettes\0021b4";
-	text-transform: uppercase;
-}
-
-form#edit-page-form:where(:lang(fr)) .edit-page-bottomtable tr>td:nth-of-type(1)>div:nth-of-type(1)::before {
-	content: "Courte Description des Modifications:";
-}
-
-table.page-history:where(:lang(fr)) tr:nth-of-type(2) td:nth-of-type(1)::before {
-	content: "rév.";
-}
-
-table.page-history:where(:lang(fr)) tr:nth-of-type(2) td:nth-of-type(3)::before {
-	content: "drapeaux";
-}
-
-table.page-history:where(:lang(fr)) tr:nth-of-type(2) td:nth-of-type(5)::before {
-	content: "par";
-}
-
-#site-tools-box:where(:lang(fr))::before {
-	content: "Outils du Site";
-}
-
-/* ===GERMAN BRANCH=== */
-
-div[id*="page-options-bottom"]:not(.page-rate-widget-box):not(#search-top-box-form) > a.btn:where(:lang(de)) {
-	--button-padding: calc(var(--icon-size)/4) calc(var(--icon-size)/8);
-	flex-basis: max-content;
-	height: auto;
-	line-height: 1;
-	white-space: normal;
-}
-
-div#page-options-bottom-2:not(.page-rate-widget-box):not(#search-top-box-form) > a.btn:where(:lang(de)) {
-	flex-basis: 6rem;
-}
-
-form#edit-page-form:where(:lang(de)) .edit-page-bottomtable tr>td:nth-of-type(1)>div:nth-of-type(1)::before {
-	content: "Kurze Beschreibung der Änderungen:";
-}
-
-table.page-history:where(:lang(de)) tr:nth-of-type(2) td:nth-of-type(3)::before {
-	content: "markierungen";
-}
-
-table.page-history:where(:lang(de)) tr:nth-of-type(2) td:nth-of-type(4)::before {
-	content: "aktionen";
-}
-
-table.page-history:where(:lang(de)) tr:nth-of-type(2) td:nth-of-type(5)::before {
-	content: "durch";
-}
-
-table.page-history:where(:lang(de)) tr:nth-of-type(2) td:nth-of-type(6)::before {
-	content: "datum";
-}
-
-#site-tools-box:where(:lang(de))::before {
-	content: "Site-Werkzeuge";
-}
-
-/* ===GREEK BRANCH=== */
-
-#main-content:where(:lang(el)) .page-tags::before {
-	content: "ΕΤΙΚΈΤΕΣ\0021b4";
-}
-
-form#edit-page-form:where(:lang(el)) .edit-page-bottomtable tr>td:nth-of-type(1)>div:nth-of-type(1)::before {
-	content: "Σύντομη περιγραφή των αλλαγών:";
-}
-
-table.page-history:where(:lang(el)) tr:nth-of-type(2) td:nth-of-type(1)::before {
-	content: "ανα.";
-}
-
-table.page-history:where(:lang(el)) tr:nth-of-type(2) td:nth-of-type(3)::before {
-	content: "σημαίες";
-}
-
-table.page-history:where(:lang(el)) tr:nth-of-type(2) td:nth-of-type(4)::before {
-	content: "δράσεις";
-}
-
-table.page-history:where(:lang(el)) tr:nth-of-type(2) td:nth-of-type(5)::before {
-	content: "του";
-}
-
-table.page-history:where(:lang(el)) tr:nth-of-type(2) td:nth-of-type(6)::before {
-	content: "ημερομηνία";
-}
-
-#site-tools-box:where(:lang(el))::before {
-	content: "Εργαλεία Ιστοσελίδας";
-}
-
-/* ===ITALIAN BRANCH=== */
-
-div[id*="page-options-bottom"]:not(.page-rate-widget-box):not(#search-top-box-form) > a.btn:where(:lang(it)) {
-	--button-padding: calc(var(--icon-size)/4) calc(var(--icon-size)/8);
-	height: auto;
-	line-height: 1;
-	white-space: normal;
-}
-
-div#page-options-bottom-2:not(.page-rate-widget-box):not(#search-top-box-form) > a.btn:where(:lang(it)) {
-	flex-basis: 6rem;
-}
-
-form#edit-page-form:where(:lang(it)) .edit-page-bottomtable tr>td:nth-of-type(1)>div:nth-of-type(1)::before {
-	content: "Breve descrizione delle modifiche:";
-}
-
-table.page-history:where(:lang(it)) tr:nth-of-type(2) td:nth-of-type(3)::before {
-	content: "segnalazioni";
-}
-
-table.page-history:where(:lang(it)) tr:nth-of-type(2) td:nth-of-type(4)::before {
-	content: "azioni";
-}
-
-table.page-history:where(:lang(it)) tr:nth-of-type(2) td:nth-of-type(5)::before {
-	content: "da";
-}
-
-table.page-history:where(:lang(it)) tr:nth-of-type(2) td:nth-of-type(6)::before {
-	content: "data";
-}
-
-#site-tools-box:where(:lang(it))::before {
-	content: "Strumenti del Sito";
-}
-
-#main-content:where(:lang(it)) .page-tags::before {
-	content: "TAG\0021b4";
-}
-
-/* ===JAPANESE BRANCH=== */
-
-form#edit-page-form:where(:lang(ja)) .edit-page-bottomtable tr>td:nth-of-type(1)>div:nth-of-type(1)::before {
-	content: "変更の要旨";
-}
-
-table.page-history:where(:lang(ja)) tr:nth-of-type(2) td:nth-of-type(3)::before {
-	content: "フラグ";
-}
-
-table.page-history:where(:lang(ja)) tr:nth-of-type(2) td:nth-of-type(4)::before {
-	content: "アクション";
-}
-
-table.page-history:where(:lang(ja)) tr:nth-of-type(2) td:nth-of-type(5)::before {
-	content: "編集者";
-}
-
-table.page-history:where(:lang(ja)) tr:nth-of-type(2) td:nth-of-type(6)::before {
-	content: "日付";
-}
-
-#site-tools-box:where(:lang(ja))::before {
-	content: "サイトツール";
-}
-
-#main-content:where(:lang(ja)) .page-tags::before {
-	content: "タグ\0021b4";
-}
-
-/* ===KOREAN BRANCH=== */
-
-#main-content:where(:lang(ko)) .page-tags::before {
-	content: "태그\0021b4";
-}
-
-form#edit-page-form:where(:lang(ko)) .edit-page-bottomtable tr>td:nth-of-type(1)>div:nth-of-type(1)::before {
-	content: "수정에 대한 짤막한 설명";
-}
-
-table.page-history:where(:lang(ko)) tr:nth-of-type(2) td:nth-of-type(1)::before {
-	content: "수정";
-}
-
-table.page-history:where(:lang(ko)) tr:nth-of-type(2) td:nth-of-type(3)::before {
-	content: "유형";
-}
-
-table.page-history:where(:lang(ko)) tr:nth-of-type(2) td:nth-of-type(4)::before {
-	content: "활동";
-}
-
-table.page-history:where(:lang(ko)) tr:nth-of-type(2) td:nth-of-type(5)::before {
-	content: "편집자";
-}
-
-table.page-history:where(:lang(ko)) tr:nth-of-type(2) td:nth-of-type(6)::before {
-	content: "날짜";
-}
-
-#site-tools-box:where(:lang(ko))::before {
-	content: "사이트 도구";
-}
-
-/* ===POLISH BRANCH=== */
-
-div[id*="page-options-bottom"]:not(.page-rate-widget-box):not(#search-top-box-form) > a.btn:where(:lang(pl)) {
-	--button-padding: calc(var(--icon-size)/4) calc(var(--icon-size)/8);
-	height: auto;
-	line-height: 1;
-	white-space: normal;
-}
-
-div#page-options-bottom-2:not(.page-rate-widget-box):not(#search-top-box-form) > a.btn:where(:lang(pl)) {
-	flex-basis: 6rem;
-}
-
-form#edit-page-form:where(:lang(pl)) .edit-page-bottomtable tr>td:nth-of-type(1)>div:nth-of-type(1)::before {
-	content: "Krótki Opis Zmian:";
-}
-
-table.page-history:where(:lang(pl)) tr:nth-of-type(2) td:nth-of-type(1)::before {
-	content: "wersja";
-}
-
-table.page-history:where(:lang(pl)) tr:nth-of-type(2) td:nth-of-type(3)::before {
-	content: "flagi";
-}
-
-table.page-history:where(:lang(pl)) tr:nth-of-type(2) td:nth-of-type(4)::before {
-	content: "opcje";
-}
-
-table.page-history:where(:lang(pl)) tr:nth-of-type(2) td:nth-of-type(5)::before {
-	content: "przez";
-}
-
-table.page-history:where(:lang(pl)) tr:nth-of-type(2) td:nth-of-type(6)::before {
-	content: "Data";
-}
-
-#site-tools-box:where(:lang(pl))::before {
-	content: "Narzędzia Witryny";
-}
-
-/* ===PORTUGESE BRANCH=== */
-
-div[id*="page-options-bottom"]:not(.page-rate-widget-box):not(#search-top-box-form) > a.btn:where(:lang(pt-br)) {
-	--button-padding: calc(var(--icon-size)/4) calc(var(--icon-size)/8);
-	height: auto;
-	line-height: 1;
-	white-space: normal;
-}
-
-div#page-options-bottom-2:not(.page-rate-widget-box):not(#search-top-box-form) > a.btn:where(:lang(pt-br)) {
-	flex-basis: 6rem;
-}
-
-form#edit-page-form:where(:lang(pt-br)) .edit-page-bottomtable tr>td:nth-of-type(1)>div:nth-of-type(1)::before {
-	content: "Resumo das Mudanças:";
-}
-
-table.page-history:where(:lang(pt-br)) tr:nth-of-type(2) td:nth-of-type(1)::before {
-	content: "Revisão";
-}
-
-table.page-history:where(:lang(pt-br)) tr:nth-of-type(2) td:nth-of-type(3)::before {
-	content: "Marcações";
-}
-
-table.page-history:where(:lang(pt-br)) tr:nth-of-type(2) td:nth-of-type(4)::before {
-	content: "Ações";
-}
-
-table.page-history:where(:lang(pt-br)) tr:nth-of-type(2) td:nth-of-type(5)::before {
-	content: "Por";
-}
-
-table.page-history:where(:lang(pt-br)) tr:nth-of-type(2) td:nth-of-type(6)::before {
-	content: "Data";
-}
-
-#site-tools-box:where(:lang(pt-br))::before {
-	content: "Ferramentas do Site";
-}
-
-/* ===RUSSIAN BRANCH=== */
-
-div[id*="page-options-bottom"]:not(.page-rate-widget-box):not(#search-top-box-form) > a.btn:where(:lang(ru)) {
-	--button-padding: calc(var(--icon-size)/4) calc(var(--icon-size)/8);
-	flex-basis: 6rem;
-	height: auto;
-	line-height: 1;
-	white-space: normal;
-}
-
-/* ===SIMPLIFIED CHINESE BRANCH=== */
-
-form#edit-page-form:where(:lang(cn)) .edit-page-bottomtable tr>td:nth-of-type(1)>div:nth-of-type(1)::before {
-	content: "简要修改说明";
-}
-
-table.page-history:where(:lang(cn)) tr:nth-of-type(2) td:nth-of-type(1)::before {
-	content: "版本";
-}
-
-table.page-history:where(:lang(cn)) tr:nth-of-type(2) td:nth-of-type(3)::before {
-	content: "标记";
-}
-
-table.page-history:where(:lang(cn)) tr:nth-of-type(2) td:nth-of-type(4)::before {
-	content: "操作";
-}
-
-table.page-history:where(:lang(cn)) tr:nth-of-type(2) td:nth-of-type(5)::before {
-	content: "更新者";
-}
-
-table.page-history:where(:lang(cn)) tr:nth-of-type(2) td:nth-of-type(6)::before {
-	content: "日期";
-}
-
-#site-tools-box:where(:lang(cn))::before {
-	content: "网站工具";
-}
-
-/* ===SPANISH BRANCH=== */
-
-div[id*="page-options-bottom"]:not(.page-rate-widget-box):not(#search-top-box-form) > a.btn:where(:lang(es)) {
-	--button-padding: calc(var(--icon-size)/4) calc(var(--icon-size)/8);
-	flex-basis: 6rem;
-	height: auto;
-	line-height: 1;
-	white-space: normal;
-}
-
-#main-content:where(:lang(es)) .page-tags::before {
-	content: "Etiquetas\0021b4";
-}
-
-form#edit-page-form:where(:lang(es)) .edit-page-bottomtable tr>td:nth-of-type(1)>div:nth-of-type(1)::before {
-	content: "Breve descripción de los cambios:";
-}
-
-table.page-history:where(:lang(es)) tr:nth-of-type(2) td:nth-of-type(3)::before {
-	content: "marcas";
-}
-
-table.page-history:where(:lang(es)) tr:nth-of-type(2) td:nth-of-type(4)::before {
-	content: "acciones";
-}
-
-table.page-history:where(:lang(es)) tr:nth-of-type(2) td:nth-of-type(5)::before {
-	content: "por";
-}
-
-table.page-history:where(:lang(es)) tr:nth-of-type(2) td:nth-of-type(6)::before {
-	content: "fecha";
-}
-
-#site-tools-box:where(:lang(es))::before {
-	content: "Herramientas del Sitio";
-}
-
-/* ===THAI BRANCH=== */
-
-/* Overwriting Thai Branch's !important on their Sigma-9 version */
-
-#page-content:where(:lang(th)) .page-rate-widget-box .rate-points {
-	background-color: transparent !important; 
-}
-
-/* ===TRADITIONAL CHINESE BRANCH=== */
-
-form#edit-page-form:where(:lang(zh-tr)) .edit-page-bottomtable tr>td:nth-of-type(1)>div:nth-of-type(1)::before {
-	content: "本次編輯的簡要說明";
-}
-
-table.page-history:where(:lang(zh-tr)) tr:nth-of-type(2) td:nth-of-type(1)::before {
-	content: "修訂版本";
-}
-
-table.page-history:where(:lang(zh-tr)) tr:nth-of-type(2) td:nth-of-type(3)::before {
-	content: "標記";
-}
-
-table.page-history:where(:lang(zh-tr)) tr:nth-of-type(2) td:nth-of-type(4)::before {
-	content: "動作";
-}
-
-table.page-history:where(:lang(zh-tr)) tr:nth-of-type(2) td:nth-of-type(5)::before {
-	content: "由";
-}
-
-table.page-history:where(:lang(zh-tr)) tr:nth-of-type(2) td:nth-of-type(6)::before {
-	content: "日期";
-}
-
-#site-tools-box:where(:lang(zh-tr))::before {
-	content: "網站工具";
-}
-
-#main-content:where(:lang(zh-tr)) .page-tags::before {
-	content: "標籤\0021b4";
-}
-
-/* ===UKRAINIAN BRANCH=== */
-
-@media only screen and (min-width: 56.25rem) {
-	#container:where(:lang(uk)) {
-		width: calc((99vw - (99vw - 99%)));
-	}
-
-	#content-wrap:where(:lang(uk)) {
-		grid-template-areas: "side-bar content";
-		grid-template-columns:
-			/* Sidebar Width */
-			var(--sidebar-width-on-desktop)
-			1fr;
-	}
-
-	#content-wrap:where(:lang(uk)) {
-		margin: 0 !important; /* Overwriting branch's !important */
-		padding: 0 !important; /* Overwriting branch's !important */
-	}
-}
-
-#main-content:where(:lang(uk)) .page-tags::before {
-	content: "Теґи\0021b4";
-}
-
-div[id*="page-options-bottom"]:not(.page-rate-widget-box):not(#search-top-box-form) > a.btn:where(:lang(uk)) {
-	--button-padding: calc(var(--icon-size)/4) calc(var(--icon-size)/8);
-	flex-basis: 6rem;
-	height: auto;
-	line-height: 1;
-	white-space: normal;
-}
-
-/* ===VIETNAMESE BRANCH=== */
-
-#main-content:where(:lang(vi)) .page-tags::before {
-	content: "TAG\0021b4";
-}
-
-form#edit-page-form:where(:lang(vi)) .edit-page-bottomtable tr>td:nth-of-type(1)>div:nth-of-type(1)::before {
-	content: "Tóm tắt thay đổi:";
-}
-
-table.page-history:where(:lang(vi)) tr:nth-of-type(2) td:nth-of-type(1)::before {
-	content: "stt.";
-}
-
-table.page-history:where(:lang(vi)) tr:nth-of-type(2) td:nth-of-type(3)::before {
-	content: "nhãn";
-}
-
-table.page-history:where(:lang(vi)) tr:nth-of-type(2) td:nth-of-type(4)::before {
-	content: "t.chọn";
-}
-
-table.page-history:where(:lang(vi)) tr:nth-of-type(2) td:nth-of-type(5)::before {
-	content: "bởi";
-}
-
-table.page-history:where(:lang(vi)) tr:nth-of-type(2) td:nth-of-type(6)::before {
-	content: "ngày";
-}
-
-#site-tools-box:where(:lang(vi))::before {
-	content: "Công Cụ Trang";
-}
-
 /* SIDEBAR
    ============================= */
 
@@ -7407,6 +6616,7 @@ table.page-history:where(:lang(vi)) tr:nth-of-type(2) td:nth-of-type(6)::before 
 		4.4 =SIGMA-9 OVERWRITES
 	5. =COMMON THEME COMPATABILITY
 	6. =MOBILE SIDEBAR
+	7. =LOCALIZATION FOR JP
   =============== */
 
 /* ===MAIN BLOCK=== */
@@ -8039,23 +7249,23 @@ table.page-history:where(:lang(vi)) tr:nth-of-type(2) td:nth-of-type(6)::before 
 
 /* Interwiki styling for Interwikis that cannot style themselves. Also targets the SCP-CN Interwiki, which is stylable but does not currently have the interwiki-stylable class */
 
-#side-bar div.scpnet-interwiki-wrapper:not(:lang(cn)):not(.interwiki-stylable),
-#side-bar div.scpnet-interwiki-wrapper:not(:lang(cn)):not(.interwiki-stylable) * {
+#side-bar div.scpnet-interwiki-wrapper:not(.interwiki-stylable),
+#side-bar div.scpnet-interwiki-wrapper:not(.interwiki-stylable) * {
 	max-width: var(--sidebar-width-on-desktop);
 }
 
-#side-bar div.scpnet-interwiki-wrapper:not(:lang(cn)):not(.interwiki-stylable) {
+#side-bar div.scpnet-interwiki-wrapper:not(.interwiki-stylable) {
 	position: relative;	
 }
 
-#side-bar div.scpnet-interwiki-wrapper:not(:lang(cn)):not(.interwiki-stylable) div.list-pages-item {
+#side-bar div.scpnet-interwiki-wrapper:not(.interwiki-stylable) div.list-pages-item {
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-end;
 	width: 100%;
 }
 
-#side-bar div.scpnet-interwiki-wrapper:not(:lang(cn)):not(.interwiki-stylable) p {
+#side-bar div.scpnet-interwiki-wrapper:not(.interwiki-stylable) p {
 	display: flex;
 	position: relative;
 	align-items: center;
@@ -8064,7 +7274,7 @@ table.page-history:where(:lang(vi)) tr:nth-of-type(2) td:nth-of-type(6)::before 
 	overflow: hidden;
 }
 
-#side-bar .scpnet-interwiki-wrapper:not(:lang(cn)):not(.interwiki-stylable) iframe.scpnet-interwiki-frame {
+#side-bar .scpnet-interwiki-wrapper:not(.interwiki-stylable) iframe.scpnet-interwiki-frame {
 	position: relative;
 	width: 90%;
 	margin: 0 auto;
@@ -8074,9 +7284,9 @@ table.page-history:where(:lang(vi)) tr:nth-of-type(2) td:nth-of-type(6)::before 
 /* Coloring to (mostly) match sidebar */
 
 @supports(mix-blend-mode:hue) {
-	#side-bar .scpnet-interwiki-wrapper:not(:lang(cn)):not(.interwiki-stylable)::before,
-	#side-bar .scpnet-interwiki-wrapper:not(:lang(cn)):not(.interwiki-stylable) p::before,
-	#side-bar .scpnet-interwiki-wrapper:not(:lang(cn)):not(.interwiki-stylable) p::after {
+	#side-bar .scpnet-interwiki-wrapper:not(.interwiki-stylable)::before,
+	#side-bar .scpnet-interwiki-wrapper:not(.interwiki-stylable) p::before,
+	#side-bar .scpnet-interwiki-wrapper:not(.interwiki-stylable) p::after {
 		content: "";
 		position: absolute;
 		top: 0;
@@ -8086,19 +7296,19 @@ table.page-history:where(:lang(vi)) tr:nth-of-type(2) td:nth-of-type(6)::before 
 		pointer-events: none;
 	}
 
-	#side-bar .scpnet-interwiki-wrapper:not(:lang(cn)):not(.interwiki-stylable)::before {
+	#side-bar .scpnet-interwiki-wrapper:not(.interwiki-stylable)::before {
 		z-index: 3;
 		background-color: rgb(var(--swatch-menubg-color));
 		mix-blend-mode: darken;
 	}
 
-	#side-bar .scpnet-interwiki-wrapper:not(:lang(cn)):not(.interwiki-stylable) p::before {
+	#side-bar .scpnet-interwiki-wrapper:not(.interwiki-stylable) p::before {
 		z-index: 2;
 		background-color: rgb(var(--swatch-primary));
 		mix-blend-mode: color;
 	}
 
-	#side-bar .scpnet-interwiki-wrapper:not(:lang(cn)):not(.interwiki-stylable) p::after {
+	#side-bar .scpnet-interwiki-wrapper:not(.interwiki-stylable) p::after {
 		z-index: 1;
 		transition: background-color 500ms cubic-bezier(.4,0,.2,1);
 		background-color: rgb(var(--swatch-menubg-color));
@@ -8464,667 +7674,31 @@ table.page-history:where(:lang(vi)) tr:nth-of-type(2) td:nth-of-type(6)::before 
 		pointer-events: auto;
 	}
 
-	#side-bar div.scpnet-interwiki-wrapper:not(:lang(cn)),
-	#side-bar div.scpnet-interwiki-wrapper:not(:lang(cn)) * {
+	#side-bar div.scpnet-interwiki-wrapper,
+	#side-bar div.scpnet-interwiki-wrapper * {
 		max-width: var(--sidebar-width-on-mobile);
 		margin-left: 0;
 	}
 }
 
-/* INT SIDEBAR STYLING
-   ============================= */
+/* LOCALIZATION FOR JP */
 
-/* Styling specific to Int Branches' Sidebars
-
-/* ===DIRECTORY===
-	1.  =CZECH BRANCH
-	2.  =FRENCH BRANCH
-	3.  =GERMAN BRANCH
-	4.  =GREEK BRANCH
-	5.  =ITALIAN BRANCH
-	6.  =JAPANESE BRANCH
-	7.  =KOREAN BRANCH
-	8.  =POLISH BRANCH
-	9.  =PORTUGESE BRANCH
-	10. =RUSSIAN BRANCH
-	11. =SIMPLIFIED CHINESE BRANCH
-	12. =SPANISH BRANCH
-	13. =THAI BRANCH
-	14. =TRADITIONAL CHINESE BRANCH
-	15. =UKRAINIAN BRANCH
-	16. =VIETNAMESE BRANCH
-*/
-
-/* ===CZECH BRANCH=== */
-
-#side-bar div.menu-item:first-of-type a[href="http://www.scp-wiki.net/"] {
-	justify-content: center;
-	padding: 0;
-}
-
-#side-bar:where(:lang(cs)) div.menu-item {
-	height: auto;
-}
-
-#side-bar:where(:lang(cs)) .side-block.blue {
-	margin: 0.5rem 0.5rem 0 0;
-	padding: 0.5rem !important;
-	background-color: rgba(var(--sidebar-media-bg-color)) !important;
-}
-
-#side-bar:where(:lang(cs)) .side-block.blue a {
-	position: relative;
-	transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-color));
-	-webkit-mask: var(--social-logo-mask) center center / contain no-repeat;
-	        mask: var(--social-logo-mask) center center / contain no-repeat;
-}
-
-#side-bar:where(:lang(cs)) .side-block.blue a::before {
-	--clip-path: 
-		polygon(
-			0 0, 
-			0 0, 
-			0 100%, 
-			0 100%
-		);
-	content: " ";
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	transition: -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-icon-hover-color));
-	pointer-events: none;
-	-webkit-clip-path: var(--clip-path);
-	        clip-path: var(--clip-path);
-}
-
-#side-bar:where(:lang(cs)) .side-block.blue a:hover::before,
-#side-bar:where(:lang(cs)) .side-block.blue a:active::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(cs)) .side-block.blue a:focus-within::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(cs)) .side-block.blue a img {
-	width: 1.6875rem;
-	height: 1.6875rem;
-	opacity: 0;
-}
-
-#side-bar:where(:lang(cs)) .side-block.blue a[href*="facebook"] {
-	--social-logo-mask: var(--facebook-mask);
-	--social-color: var(--facebook-icon-color);
-}
-
-#side-bar:where(:lang(cs)) .side-block.blue a[href*="instagram"] {
-	--social-logo-mask: var(--instagram-mask);
-	--social-color: var(--instagram-icon-color);
-	background-image: var(--instagram-icon-gradient);
-	background-size: contain;
-}
-
-#side-bar:where(:lang(cs)) .side-block.blue a[href*="discord"] {
-	--social-logo-mask: var(--discord-mask);
-	--social-color: var(--discord-icon-color);
-}
-
-#side-bar:where(:lang(cs)) .side-block.blue a[href*="github"] {
-	--social-logo-mask: var(--github-mask);
-	--social-color: var(--github-icon-color);
-}
-
-/* ===FRENCH BRANCH=== */
-
-#side-bar:where(:lang(fr)) .side-block.media {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;	
-	margin: 0.5rem 0.5rem 0 0;
-	padding: 0.5rem !important;	
-	-moz-column-gap: 0.5rem;	
-	     column-gap: 0.5rem;
-	background-color: rgba(var(--sidebar-media-bg-color)) !important;
-}
-
-#side-bar:where(:lang(fr)) .side-block.media div.heading {
-	flex-basis: 100%;
-	flex-grow: 2;	
-	align-content: flex-start;
-	padding-left: 0;
-}
-
-#side-bar:where(:lang(fr)) .side-block.media div.menu-item {
-	flex-basis: 1.6875rem;
-	flex-grow: 0;
-	flex-shrink: 1;	
-	width: 1.6875rem;
-	margin-top: 0.5rem;
-	box-shadow: unset;	
-}
-
-#side-bar:where(:lang(fr)) .side-block.media div.menu-item p {
-	display: contents;
-}
-
-#side-bar:where(:lang(fr)) .side-block.media div.menu-item a {	
-	position: relative;
-	margin: 0;
-	padding: 0;
-	transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-color));
-	-webkit-mask: var(--social-logo-mask) center center / contain no-repeat;
-	        mask: var(--social-logo-mask) center center / contain no-repeat;	
-	color: transparent;
-	font-size: 0;
-}
-
-#side-bar:where(:lang(fr)) .side-block.media div.menu-item a::before {
-	--clip-path: 
-		polygon(
-			0 0, 
-			0 0, 
-			0 100%, 
-			0 100%
-		);
-	content: " ";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	transition: -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-icon-hover-color));
-	pointer-events: none;
-	-webkit-clip-path: var(--clip-path);
-	        clip-path: var(--clip-path);
-}
-
-#side-bar:where(:lang(fr)) .side-block.media div.menu-item a:hover::before,
-#side-bar:where(:lang(fr)) .side-block.media div.menu-item a:active::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(fr)) .side-block.media div.menu-item a:focus-within::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-/* ===GERMAN BRANCH=== */
-
-#side-bar:where(:lang(de)) *:not(.scpnet-interwiki-wrapper) {
-	height: auto;
-}
-
-#side-bar:where(:lang(de)) div.side-block {
-	display: grid;
-	grid-auto-rows: minmax(0, auto);
-	grid-template-rows: unset;
-	flex-basis: 100%;
-}
-
-#side-bar:where(:lang(de)) div.side-block:not(.svg-icons) div.menu-item {
-	display: grid;
-	grid-template-columns: 50% 50%;
-}
-
-#side-bar:where(:lang(de)) .side-links.svg-icons a {
-	width: 1.25rem;
-	height: 1.25rem;
-}
-
-#side-bar:where(:lang(de)) div.side-bar-container {
-	display: contents;
-}
-
-#side-bar:where(:lang(de)) div.menu-item p {
-	display: contents;
-}
-
-#side-bar:where(:lang(de)) div.menu-item a:only-of-type {
-	grid-column: 1/ span 2;
-	grid-row: 1;
-	justify-content: flex-start;
-}
-
-#side-bar:where(:lang(de)) div.menu-item a {
-	grid-row: 1;
-}
-
-#side-bar:where(:lang(de)) div.menu-item span {
-	z-index: 2;
-	grid-column: 2;
-	grid-row: 1;
-	justify-content: flex-end;
-	padding-right: 1em;
-	transition:
-		padding-right 150ms cubic-bezier(.4,0,.2,1),
-		border-color 150ms cubic-bezier(.4,0,.2,1),
-		background-color 150ms cubic-bezier(.4,0,.2,1),
-		color 150ms cubic-bezier(.4,0,.2,1),
-		font-weight 200ms cubic-bezier(.4,0,.2,1),
-		font-variation-settings 200ms cubic-bezier(.4,0,.2,1)
-}
-
-#side-bar:where(:lang(de)) div.menu-item a:only-of-type:hover ~ span,
-#side-bar:where(:lang(de)) div.menu-item a:only-of-type:active ~ span {
-	--wght: var(--ui-hvr-wght);
-	border-color: rgb(var(--sidebar-links-hover-text-color),0.15);
-	color: rgb(var(--sidebar-links-hover-text-color));
-}
-
-#side-bar:where(:lang(de)) div.menu-item a:only-of-type:focus-within ~ span {
-	--wght: var(--ui-hvr-wght);
-	border-color: rgb(var(--sidebar-links-hover-text-color),0.15);
-	color: rgb(var(--sidebar-links-hover-text-color));
-}
-
-#side-bar:where(:lang(de)) .collapsible-block + .collapsible-block {
-	margin-top: -1.5rem;
-	margin-bottom: 0.5rem;
-}
-
-#side-bar:where(:lang(de)) .collapsible-block + .collapsible-block a.collapsible-block-link {
-	width: calc(100% - (var(--base-font-size) * (7.5 / 15)));
-	padding: 0 0 0 calc(var(--base-font-size) * (7.5 / 15));
-}
-
-#side-bar:where(:lang(de)) .collapsible-block + .collapsible-block a.collapsible-block-link::before {
-	display: none;
-}
-
-#side-bar:where(:lang(de)) .menu-item.expandable + .collapsible-block {
-	display: grid;
-	min-height: 1.5rem;
-}
-
-#side-bar:where(:lang(de)) .menu-item.expandable + .collapsible-block + .menu-item.expandable {
-	margin-top: -1.5rem;
-}
-
-#side-bar:where(:lang(de)) .menu-item.expandable + .collapsible-block > div.collapsible-block-folded {
-	margin-top: -1.5rem;
-	box-shadow: unset;
-}
-
-#side-bar:where(:lang(de)) .menu-item.expandable + .collapsible-block > div.collapsible-block-unfolded {
-	margin-bottom: 1.5rem;
-}
-
-#side-bar:where(:lang(de)) .menu-item.expandable + .collapsible-block > div,
-#side-bar:where(:lang(de)) .menu-item.expandable + .collapsible-block > div a {
-	min-height: 1.5rem;
-	background-color: transparent;
-}
-
-#side-bar:where(:lang(de)) .menu-item.expandable + .collapsible-block > div a {
-	width: 100%;
-	max-height: 1.5rem;
-}
-
-#side-bar:where(:lang(de)) .menu-item.expandable + .collapsible-block > div a::before {
-	-webkit-filter: unset;
-	        filter: unset;
-}
-
-#side-bar:where(:lang(de)) .menu-item.expandable + .collapsible-block .collapsible-block-link {
-	top: unset;
-}
-
-#side-bar:where(:lang(de)) .collapsible-block-folded .collapsible-block-link::before, 
-#side-bar:where(:lang(de)) .colmod-link-top a:first-child::before {
-	--text-shadow-color: var(--swatch-primary-darkest);
-	content: "+";
-	display: grid;
-	align-items: center;
-	justify-content: center;
-	background-image: unset;
-	color: rgba(var(--sidebar-bg-color),1);
-	-webkit-text-fill-color: rgba(var(--sidebar-bg-color),1);
-	-webkit-text-stroke: 0.0625rem rgb(var(--text-shadow-color));
-}
-
-@supports not (-webkit-text-stroke:initial) {
-	#side-bar:where(:lang(de)) .collapsible-block-folded .collapsible-block-link::before, 
-	#side-bar:where(:lang(de)) .colmod-link-top a:first-child::before {
-		text-shadow: 
-			rgb(var(--text-outline-color)) 0.0625rem 0rem 0rem, 
-			rgb(var(--text-outline-color)) 0.0338rem 0.0526rem 0rem, 
-			rgb(var(--text-outline-color)) -0.026rem 0.0568rem 0rem, 
-			rgb(var(--text-outline-color)) -0.0619rem 0.0088rem 0rem, 
-			rgb(var(--text-outline-color)) -0.0409rem -0.0473rem 0rem, 
-			rgb(var(--text-outline-color)) 0.0177rem -0.0599rem 0rem, 
-			rgb(var(--text-outline-color)) 0.06rem -0.0175rem 0rem;
-	}
-}
-
-#side-bar:where(:lang(de)) div.menu-item.expandable:hover + div.collapsible-block a.collapsible-block-link::before {
-	--text-outline-color: rgba(var(--sidebar-bg-color),1);
-}
-
-#side-bar:where(:lang(de)) div.side-block > div.menu-item.expandable > p > a:only-of-type {
-	-webkit-clip-path: polygon(-15% 0,100% 0,calc(100% - 1em) 100%,0 100%);
-	        clip-path: polygon(-15% 0,100% 0,calc(100% - 1em) 100%,0 100%);
-}
-
-#side-bar:where(:lang(de)) div.side-block > div.menu-item.expandable > p > span {
-	padding-right: 0;
-}
-
-#side-bar:where(:lang(de)) div.side-block > div.menu-item.expandable:hover > p > span,
-#side-bar:where(:lang(de)) div.side-block > div.menu-item.expandable:active > p > span {
-	padding-right: 1.25em;
-}
-
-#side-bar:where(:lang(de)) .menu-item.expandable + .collapsible-block .menu-item {
-	margin: 0;
-	padding: 0;
-	border-left: none;
-}
-
-#side-bar:where(:lang(de)) .collapsible-block-content {
-	border-right: var(--base-font-size) solid rgba(var(--sidebar-border-color));
-}
-
-#side-bar:where(:lang(de)) .collapsible-block-content div.menu-item {
-	max-width: 100%;
-}
-
-#side-bar:where(:lang(de)) div.menu-item.expandable + .collapsible-block .collapsible-block-content .menu-item a {
-	align-items: center;
-	width: calc(100% - var(--base-font-size));
-	margin: 0 0 0 calc(var(--base-font-size) * (1 / 3));
-	padding: 0 0 0 calc(var(--base-font-size) * (2 / 3));
-	border-left: 0.0625rem dashed rgb(var(--swatch-primary-darkest));
-}
-
-#side-bar:where(:lang(de)) .side-block.svg-icons {
-	margin: 0.5rem 0.5rem 0.5rem 0;
-	padding: 0.5rem !important;
-	background-color: rgba(var(--sidebar-media-bg-color)) !important;
-}
-
-#side-bar:where(:lang(de)) .side-block.svg-icons > p {
-	display: grid;
-	grid-auto-flow: column;
-	grid-template-rows: repeat(auto-fit,minmax(1.3125rem,1fr));
-	justify-content: space-evenly;
-	width: 100%;
-}
-
-#side-bar:where(:lang(de)) .side-block.svg-icons a {
-	position: relative;
-	transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-color));
-	background-image: unset;
-	-webkit-mask: var(--social-logo-mask) center center / contain no-repeat;
-	        mask: var(--social-logo-mask) center center / contain no-repeat;
-}
-
-#side-bar:where(:lang(de)) .side-block.svg-icons a::before {
-	--clip-path: 
-		polygon(
-			0 0, 
-			0 0, 
-			0 100%, 
-			0 100%
-		);
-	content: " ";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	transition: -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-icon-hover-color));
-	pointer-events: none;
-	-webkit-clip-path: var(--clip-path);
-	        clip-path: var(--clip-path);
-}
-
-#side-bar:where(:lang(de)) .side-block.svg-icons a:hover::before,
-#side-bar:where(:lang(de)) .side-block.svg-icons a:active::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(de)) .side-block.svg-icons a:focus-within::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(de)) .side-block.svg-icons a img {
-	width: 1.6875rem;
-	height: 1.6875rem;
-	opacity: 0;
-}
-
-#side-bar:where(:lang(de)) .side-block.svg-icons a[href*="chat"] {
-	--social-logo-mask: var(--discord-mask);
-	--social-color: var(--discord-icon-color);
-}
-
-#side-bar:where(:lang(de)) .side-block.svg-icons a[href*="youtube"] {
-	--social-logo-mask: var(--youtube-mask);
-	--social-color: var(--youtube-icon-color);
-}
-
-#side-bar:where(:lang(de)) .side-block.svg-icons a[href*="facebook"] {
-	--social-logo-mask: var(--facebook-mask);
-	--social-color: var(--facebook-icon-color);
-}
-
-#side-bar:where(:lang(de)) .side-block.svg-icons a[href*="twitter"] {
-	--social-logo-mask: var(--twitter-mask);
-	--social-color: var(--twitter-icon-color);
-}
-
-#side-bar:where(:lang(de)) .side-block.svg-icons a[href*="deviantart"] {
-	--social-logo-mask: var(--deviantart-mask);
-	--social-color: var(--deviantart-icon-color);
-}
-
-#side-bar:where(:lang(de)) .side-block.svg-icons a[href*="instagram"] {
-	--social-logo-mask: var(--instagram-mask);
-	--social-color: var(--instagram-icon-color);
-	background-image: var(--instagram-icon-gradient);
-	background-size: contain;
-}
-
-#side-bar:where(:lang(de)) .side-block.svg-icons a[href*="reddit"] {
-	--social-logo-mask: var(--reddit-mask);
-	--social-color: var(--reddit-icon-color);
-}
-
-#side-bar:where(:lang(de)) .side-block.svg-icons a[href*="sandbox"] {
-	--social-logo-mask: var(--sandbox-mask);
-	--social-color: var(--sandbox-icon-color);
-}
-
-/* ===GREEK BRANCH=== */
-
-/* ===ITALIAN BRANCH=== */
-
-#side-bar:where(:lang(it)) {
-	--telegram-icon-color: 0, 136, 204;
-}
-
-#side-bar:where(:lang(it)) div.side-bar-container {
-    display: contents;
-}
-
-#side-bar:where(:lang(it)) div.menu-item {
-	height: auto;
-}
-
-#side-bar:where(:lang(it)) .side-block.green + div {
-	display: contents;
-}
-
-#side-bar:where(:lang(it)) .side-block.media {
-	grid-auto-flow: column;
-	align-self: center;
-	justify-content: space-evenly;
-	width: var(--sidebar-width-on-mobile);
-	padding: .5em !important;
-	background-color: rgba(var(--sidebar-media-bg-color)) !important;
-	direction: ltr;
-}
-
-#side-bar:where(:lang(it)) .side-block.media br {
-	display: none;
-}
-
-#side-bar:where(:lang(it)) .side-block.media a {
-	position: relative;
-	transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-color));
-	-webkit-mask: var(--social-logo-mask) center center / contain no-repeat;
-	        mask: var(--social-logo-mask) center center / contain no-repeat;
-}
-
-#side-bar:where(:lang(it)) .side-block.media a::before {
-	--clip-path: 
-		polygon(
-			0 0, 
-			0 0, 
-			0 100%, 
-			0 100%
-		);
-	content: " ";
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	transition: -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-icon-hover-color));
-	pointer-events: none;
-	-webkit-clip-path: var(--clip-path);
-	        clip-path: var(--clip-path);
-}
-
-#side-bar:where(:lang(it)) .side-block.media a:hover::before,
-#side-bar:where(:lang(it)) .side-block.media a:active::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(it)) .side-block.media a:focus-within::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(it)) .side-block.media a img {
-	width: 1.6875rem;
-	height: 1.6875rem;
-	opacity: 0;
-}
-
-#side-bar:where(:lang(it)) .side-block.media a[href*="facebook"] {
-	--social-logo-mask: var(--facebook-mask);
-	--social-color: var(--facebook-icon-color);
-}
-
-#side-bar:where(:lang(it)) .side-block.media a[href*="twitter"] {
-	--social-logo-mask: var(--twitter-mask);
-	--social-color: var(--twitter-icon-color);
-}
-
-#side-bar:where(:lang(it)) .side-block.media a[href*="instagram"] {
-	--social-logo-mask: var(--instagram-mask);
-	--social-color: var(--instagram-icon-color);
-	background-image: var(--instagram-icon-gradient);
-	background-size: contain;
-}
-
-#side-bar:where(:lang(it)) .side-block.media a[href*="chat"] {
-	--social-logo-mask: var(--discord-mask);
-	--social-color: var(--discord-icon-color);
-}
-
-#side-bar:where(:lang(it)) .side-block.media a[href*="reddit"] {
-	--social-logo-mask: var(--reddit-mask);
-	--social-color: var(--reddit-icon-color);
-}
-
-#side-bar:where(:lang(it)) .side-block.media a[href*="t.me"] {
-	--social-logo-mask: var(--telegram-mask);
-	--social-color: var(--telegram-icon-color);
-}
-
-/* ===JAPANESE BRANCH=== */
-
-#side-bar:where(:lang(ja)) hr {
+#side-bar hr {
 	margin-bottom: 0;
 }
 
-#side-bar:where(:lang(ja)) div.side-block:not(.sns) div.menu-item {
+#side-bar div.side-block:not(.sns) div.menu-item {
 	display: grid;
 	grid-template-columns: 50% 50%;
 }
 
-#side-bar:where(:lang(ja)) div.menu-item a:only-of-type {
+#side-bar div.menu-item a:only-of-type {
 	grid-column: 1/ span 2;
 	grid-row: 1;
 	justify-content: flex-start;
 }
 
-#side-bar:where(:lang(ja)) div.menu-item span {
+#side-bar div.menu-item span {
 	z-index: 2;
 	grid-column: 2;
 	grid-row: 1;
@@ -9136,26 +7710,31 @@ table.page-history:where(:lang(vi)) tr:nth-of-type(2) td:nth-of-type(6)::before 
 		font-variation-settings 200ms cubic-bezier(.4,0,.2,1)
 }
 
-#side-bar:where(:lang(ja)) div.menu-item a:only-of-type:hover ~ span,
-#side-bar:where(:lang(ja)) div.menu-item a:only-of-type:active ~ span {
+#side-bar div.menu-item a:only-of-type:hover ~ span,
+#side-bar div.menu-item a:only-of-type:active ~ span {
 	--wght: var(--ui-hvr-wght);
 	border-color: rgb(var(--sidebar-links-hover-text-color),0.15);
 	color: rgb(var(--sidebar-links-hover-text-color));
 }
 
-#side-bar:where(:lang(ja)) div.menu-item a:only-of-type:focus-within ~ span {
+#side-bar div.menu-item a:only-of-type:focus-within ~ span {
 	--wght: var(--ui-hvr-wght);
 	border-color: rgb(var(--sidebar-links-hover-text-color),0.15);
 	color: rgb(var(--sidebar-links-hover-text-color));
 }
 
-#side-bar:where(:lang(ja)) div.menu-item a[href*="sandbox2"],
-#side-bar:where(:lang(ja)) div.menu-item span[style*="line-through"] a {
+#side-bar div.menu-item .sub-text {
+	line-height: calc(var(--base-line-height)/1.5);
+	pointer-events: none;
+}
+
+#side-bar div.menu-item a[href*="sandbox2"],
+#side-bar div.menu-item span[style*="line-through"] a {
 	text-indent: 1em;
 }
 
-#side-bar:where(:lang(ja)) div.menu-item a[href*="sandbox2"]::after,
-#side-bar:where(:lang(ja)) div.menu-item span[style*="line-through"] a::after {
+#side-bar div.menu-item a[href*="sandbox2"]::after,
+#side-bar div.menu-item span[style*="line-through"] a::after {
 	content: "|";
 	position: absolute;
 	left: 0;
@@ -9166,37 +7745,37 @@ table.page-history:where(:lang(vi)) tr:nth-of-type(2) td:nth-of-type(6)::before 
 	color: rgba(var(--sidebar-links-text),0.25)
 }
 
-#side-bar:where(:lang(ja)) div.menu-item a[href*="sandbox2"]:hover::after,
-#side-bar:where(:lang(ja)) div.menu-item a[href*="sandbox2"]:active::after,
-#side-bar:where(:lang(ja)) div.menu-item span[style*="line-through"] a:hover::after,
-#side-bar:where(:lang(ja)) div.menu-item span[style*="line-through"] a:active::after {
+#side-bar div.menu-item a[href*="sandbox2"]:hover::after,
+#side-bar div.menu-item a[href*="sandbox2"]:active::after,
+#side-bar div.menu-item span[style*="line-through"] a:hover::after,
+#side-bar div.menu-item span[style*="line-through"] a:active::after {
 	color: rgba(var(--sidebar-links-hover-text),0.25);
 }
 
-#side-bar:where(:lang(ja)) div.menu-item span[style*="line-through"] {
+#side-bar div.menu-item span[style*="line-through"] {
 	display: contents;
 }
 
-#side-bar:where(:lang(ja)) div.menu-item span[style*="line-through"] a {
+#side-bar div.menu-item span[style*="line-through"] a {
 	text-decoration: line-through;
 }
 
-#side-bar:where(:lang(ja)) .side-block.sns {
+#side-bar .side-block.sns {
 	grid-auto-flow: column;
 	justify-content: space-evenly;
-	width: var(--sidebar-width-on-mobile);
+	width: auto;
 	margin: .5rem 0.5rem 0 0;
 	padding: .5em !important;
 	background-color: rgba(var(--sidebar-media-bg-color)) !important;
 	direction: ltr;
 }
 
-#side-bar:where(:lang(ja)) .side-block.sns > div,
-#side-bar:where(:lang(ja)) .side-block.sns > div > div {
+#side-bar .side-block.sns > div,
+#side-bar .side-block.sns > div > div {
 	display: contents !important;
 }
 
-#side-bar:where(:lang(ja)) .side-block.sns a {
+#side-bar .side-block.sns a {
 	position: relative;
 	width: 1.6875rem;
 	height: 1.6875rem;
@@ -9209,7 +7788,7 @@ table.page-history:where(:lang(vi)) tr:nth-of-type(2) td:nth-of-type(6)::before 
 	        mask: var(--social-logo-mask) center center / contain no-repeat;
 }
 
-#side-bar:where(:lang(ja)) .side-block.sns a::before {
+#side-bar .side-block.sns a::before {
 	--clip-path: 
 		polygon(
 			0 0, 
@@ -9232,8 +7811,8 @@ table.page-history:where(:lang(vi)) tr:nth-of-type(2) td:nth-of-type(6)::before 
 	        clip-path: var(--clip-path);
 }
 
-#side-bar:where(:lang(ja)) .side-block.sns a:hover::before,
-#side-bar:where(:lang(ja)) .side-block.sns a:active::before {
+#side-bar .side-block.sns a:hover::before,
+#side-bar .side-block.sns a:active::before {
 	--clip-path: 
 		polygon(
 			-15% 0, 
@@ -9243,7 +7822,7 @@ table.page-history:where(:lang(vi)) tr:nth-of-type(2) td:nth-of-type(6)::before 
 		);
 }
 
-#side-bar:where(:lang(ja)) .side-block.sns a:focus-within::before {
+#side-bar .side-block.sns a:focus-within::before {
 	--clip-path: 
 		polygon(
 			-15% 0, 
@@ -9253,1188 +7832,34 @@ table.page-history:where(:lang(vi)) tr:nth-of-type(2) td:nth-of-type(6)::before 
 		);
 }
 
-#side-bar:where(:lang(ja)) .side-block.sns a img {
+#side-bar .side-block.sns a img {
 	width: 1.6875rem;
 	height: 1.6875rem;
 	opacity: 0;
 }
 
-#side-bar:where(:lang(ja)) .side-block.sns a[href*="discord"] {
+#side-bar .side-block.sns a[href*="discord"] {
 	--social-logo-mask: var(--discord-mask);
 	--social-color: var(--discord-icon-color);
 }
 
-#side-bar:where(:lang(ja)) .side-block.sns a[href*="twitter"] {
+#side-bar .side-block.sns a[href*="twitter"] {
 	--social-logo-mask: var(--twitter-mask);
 	--social-color: var(--twitter-icon-color);
 }
 
-#side-bar:where(:lang(ja)) .side-block[style*="fff0f0"] div.menu-item:last-of-type {
+#side-bar .side-block[style*="fff0f0"] div.menu-item:last-of-type {
 	grid-template-columns: repeat(3, calc(100% / 3));
 }
 
-#side-bar:where(:lang(ja)) .side-block[style*="fff0f0"] div.menu-item:last-of-type a {
+#side-bar .side-block[style*="fff0f0"] div.menu-item:last-of-type a {
 	grid-row: 1;
 }
 
-#side-bar:where(:lang(ja)) div.scpnet-interwiki-wrapper {
-	margin-top: 1em;
-}
-
-/* ===KOREAN BRANCH=== */
-
-#side-bar:where(:lang(ko)) {
-	--youtube-icon-color: 255, 0, 0;
-	--naver-icon-color: 25, 206, 96;
-}
-
-#side-bar:where(:lang(ko)) .side-block[style*="E5E5FF"] + div + div  {
-	grid-auto-flow: row;
-	margin-top: 1rem;
-}
-
-#side-bar:where(:lang(ko)) .side-block[style*="E5E5FF"] {
-	grid-auto-flow: column;
-	justify-content: space-evenly;
-	width: var(--sidebar-width-on-mobile);
-	margin: .5rem 0.5rem 0 0;
-	padding: .5em !important;
-	background-color: rgba(var(--sidebar-media-bg-color)) !important;
-}
-
-#side-bar:where(:lang(ko)) .side-block[style*="E5E5FF"] > div {
-	display: contents;
-}
-
-#side-bar:where(:lang(ko)) .side-block[style*="E5E5FF"] a {
-	position: relative;
-	transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-color));
-	-webkit-mask: var(--social-logo-mask) center center / contain no-repeat;
-	        mask: var(--social-logo-mask) center center / contain no-repeat;
-}
-
-#side-bar:where(:lang(ko)) .side-block[style*="E5E5FF"] a::before {
-	--clip-path: 
-		polygon(
-			0 0, 
-			0 0, 
-			0 100%, 
-			0 100%
-		);
-	content: " ";
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	transition: -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-icon-hover-color));
-	pointer-events: none;
-	-webkit-clip-path: var(--clip-path);
-	        clip-path: var(--clip-path);
-}
-
-#side-bar:where(:lang(ko)) .side-block[style*="E5E5FF"] a:hover::before,
-#side-bar:where(:lang(ko)) .side-block[style*="E5E5FF"] a:active::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(ko)) .side-block[style*="E5E5FF"] a:focus-within::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(ko)) .side-block[style*="E5E5FF"] a img {
-	width: 1.6875rem;
-	height: 1.6875rem;
-	opacity: 0;
-}
-
-#side-bar:where(:lang(ko)) .side-block[style*="E5E5FF"] a[href*="wikidot"] {
-	--social-logo-mask:var(--discord-mask);
-	--social-color:var(--discord-icon-color)
-}
-
-#side-bar:where(:lang(ko)) .side-block[style*="E5E5FF"] a[href*="twitter"] {
-	--social-logo-mask: var(--twitter-mask);
-	--social-color: var(--twitter-icon-color);
-}
-
-#side-bar:where(:lang(ko)) .side-block[style*="E5E5FF"] a[href*="youtube"] {
-	--social-logo-mask: var(--youtube-mask);
-	--social-color: var(--youtube-icon-color);
-}
-
-#side-bar:where(:lang(ko)) .side-block[style*="E5E5FF"] a[href*="naver"] {
-	--social-logo-mask: var(--naver-mask);
-	--social-color: var(--naver-icon-color);
-}
-
-/* ===POLISH BRANCH=== */
-
-#side-bar:where(:lang(pl)) div.menu-item a[href*="scp-series"]:only-of-type {
-	justify-content: flex-start;
-	padding: 0 0 0 calc(var(--base-font-size) * (14 / 15));
-}
-
-#side-bar:where(:lang(pl)) .side-block.media a[href*="chat"] {
-	--social-logo-mask: var(--discord-mask);
-	--social-color: var(--discord-icon-color);
-}
-
-/* ===PORTUGESE BRANCH=== */
-
-#side-bar:where(:lang(pt-br)) div.menu-item a[href*="series"] {
-	justify-content: center;
-}
-
-#side-bar:where(:lang(pt-br)) div.side-block[style*="#e7e5e8"] + div[style*="center"] {
-	display: contents;
-}
-
-#side-bar:where(:lang(pt-br)) div.side-block[style*="#e7e5e8"] + div[style*="center"] {
-	display: contents;
-}
-
-#side-bar:where(:lang(pt-br)) .side-block.side-links {
-	grid-auto-flow: column;
-	justify-content: space-evenly;
-	width: var(--sidebar-width-on-mobile);
-	margin: .5rem 0.5rem 0 0;
-	padding: .5em !important;
-	background-color: rgba(var(--sidebar-media-bg-color)) !important;
-}
-
-#side-bar:where(:lang(pt-br)) .side-block.side-links a {
-	position: relative;
-	transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-color));
-	-webkit-mask: var(--social-logo-mask) center center / contain no-repeat;
-	        mask: var(--social-logo-mask) center center / contain no-repeat;
-}
-
-#side-bar:where(:lang(pt-br)) .side-block.side-links a::before {
-	--clip-path: 
-		polygon(
-			0 0, 
-			0 0, 
-			0 100%, 
-			0 100%
-		);
-	content: " ";
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	transition: -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-icon-hover-color));
-	pointer-events: none;
-	-webkit-clip-path: var(--clip-path);
-	        clip-path: var(--clip-path);
-}
-
-#side-bar:where(:lang(pt-br)) .side-block.side-links a:hover::before,
-#side-bar:where(:lang(pt-br)) .side-block.side-links a:active::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(pt-br)) .side-block.side-links a:focus-within::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(pt-br)) .side-block.side-links a img {
-	width: 1.6875rem;
-	height: 1.6875rem;
-	opacity: 0;
-}
-
-#side-bar:where(:lang(pt-br)) .side-block.media a[href*="twitter"] {
-	--social-logo-mask: var(--twitter-mask);
-	--social-color: var(--twitter-icon-color);
-}
-
-#side-bar:where(:lang(pt-br)) .side-block.media a[href*="chat"] {
-	--social-logo-mask: var(--discord-mask);
-	--social-color: var(--discord-icon-color);
-}
-
-#side-bar:where(:lang(pt-br)) .side-block.media a[href*="youtube"] {
-	--social-logo-mask: var(--youtube-mask);
-	--social-color: var(--youtube-icon-color);
-}
-
-#side-bar:where(:lang(pt-br)) .side-block.media a[href*="scpsandboxbr"] {
-	--social-logo-mask: var(--sandbox-mask);
-	--social-color: var(--sandbox-icon-color);
-}
-
-#side-bar:where(:lang(pt-br)) .side-block span[style*="font-size"] {
-	display: contents;
-}
-
-#side-bar:where(:lang(pt-br)) .side-block span[style*="font-size"] a {
-	font-size: calc(var(--base-font-size) * 0.8);
-}
-
-/* ===RUSSIAN BRANCH=== */
-
-/*Normalizing Unique Sideblock Class*/
-
-#side-bar:where(:lang(ru)) #u-become-member {
-	margin-bottom: inherit;
-	padding: inherit;
-	border: inherit;
-	border-radius: inherit;
-	background-color: inherit;
-	box-shadow: inherit;
-}
-
-#side-bar:where(:lang(ru)) #u-become-member {
-	display: grid;
-	grid-template-rows: repeat(auto-fit,minmax(1.3125rem,1fr));
-	justify-content: stretch;
-	margin: .5rem .5rem 0 0;
-	border: 0;
-	background: rgb(var(--sideblock-bg-color));
-	box-shadow: 0 0.25rem rgb(var(--swatch-primary-darkest));
-	direction: ltr
-}
-
-#side-bar:where(:lang(ru)) #u-become-member div.menu-item a {
-	flex-grow: 2;
-	justify-content: center;
-	min-width: 100%;
-	padding: 0;
-}
-
-#side-bar:where(:lang(ru)) hr {
-	margin-bottom: 0;
-}
-
-#side-bar:where(:lang(ru)) div.side-block:not(.sns) div.menu-item {
-	display: grid;
-	grid-template-columns: 50% 50%;
-}
-
-#side-bar:where(:lang(ru)) div.menu-item a:only-of-type {
-	grid-column: 1/ span 2;
-	grid-row: 1;
-	justify-content: flex-start;
-}
-
-#side-bar:where(:lang(ru)) div.menu-item a[href="/news"] {
-	justify-content: center;
-	padding: 0;
-}
-
-#side-bar:where(:lang(ru)) div.menu-item a[href*="scp-series"] {
-	padding: 0 0 0 calc(var(--base-font-size)*(14 / 15));
-}
-
-#side-bar:where(:lang(ru)) div.menu-item a[href*="scp-series"] + span,
-#side-bar:where(:lang(ru)) div.menu-item a[href*="scp-list"] + span{
-	padding: 0 0 0 calc(var(--base-font-size) / 2);
-	pointer-events: none;
-}
-
-#side-bar:where(:lang(ru)) div.menu-item span {
-	z-index: 2;
-	grid-column: 2;
-	grid-row: 1;
-	transition:
-		border-color 150ms cubic-bezier(.4,0,.2,1),
-		background-color 150ms cubic-bezier(.4,0,.2,1),
-		color 150ms cubic-bezier(.4,0,.2,1),
-		font-weight 200ms cubic-bezier(.4,0,.2,1),
-		font-variation-settings 200ms cubic-bezier(.4,0,.2,1)
-}
-
-#side-bar:where(:lang(ru)) div.menu-item a:only-of-type:hover ~ span,
-#side-bar:where(:lang(ru)) div.menu-item a:only-of-type:active ~ span {
-	--wght: var(--ui-hvr-wght);
-	border-color: rgb(var(--sidebar-links-hover-text-color),0.15);
-	color: rgb(var(--sidebar-links-hover-text-color));
-}
-
-#side-bar:where(:lang(ru)) div.menu-item a:only-of-type:focus-within ~ span {
-	--wght: var(--ui-hvr-wght);
-	border-color: rgb(var(--sidebar-links-hover-text-color),0.15);
-	color: rgb(var(--sidebar-links-hover-text-color));
-}
-
-#side-bar:where(:lang(ru)) > hr + .side-block {
-	grid-template-rows: unset;
-}
-
-#side-bar:where(:lang(ru)) > hr + .side-block h5 {
-	display: flex;
-	justify-content: center;
-}
-
-#side-bar:where(:lang(ru)) > hr + .side-block .collapsible-block-content {
-	border-right: 0 solid transparent;
-	text-align: center;
-}
-
-#side-bar:where(:lang(ru)) > hr + .side-block > div:last-of-type {
-	padding: 0 0 0 calc(var(--base-font-size) * (14 / 15));
-}
-
-/* ===SIMPLIFIED CHINESE BRANCH=== */
-
-#side-bar:where(:lang(cn)) {
-	--bilibili-icon-color: 0,161,214;
-	display: grid;
-	grid-template-columns: 5rem 1fr;
-}
-
-#side-bar:where(:lang(cn)) .heading:not(:first-child) {
+#side-bar div.scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
 	margin: 0;
-}
-
-#side-bar:where(:lang(cn)) div.side-block {
-	grid-column: span 2;
-}
-
-#side-bar:where(:lang(cn)) div.side-block.media {
-	grid-column: 1/ span 1;
-	flex-basis: 3.6875rem;
-}
-
-#side-bar:where(:lang(cn)) div.side-block.media + div[style*="#f0f0f0"] {
-	grid-column: 2/ span 1;
-	flex-basis: calc(var(--sidebar-width-on-desktop) - 3.6875rem);
-}
-
-#side-bar:where(:lang(cn)) div.side-block.media + div[style*="#f0f0f0"] > div {
-	grid-auto-flow: row;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto auto;
-}
-
-#side-bar:where(:lang(cn)) div.side-block.media + div[style*="#f0f0f0"] > div a {
-	padding: 0.5em;
-}
-
-#side-bar:where(:lang(cn)) div.side-block.media div.menu-item {
-	display: contents;
-}
-
-#side-bar:where(:lang(cn)) div.side-block.media .heading {
-	align-items: center;
-	justify-content: center;
-	padding-left: 0;
-}
-
-#side-bar:where(:lang(cn)) div.side-block.media .menu-item div {
-	align-items: center;
-	border: none;
-}
-
-#side-bar:where(:lang(cn)) div.side-block.media a,
-#side-bar:where(:lang(cn)) div.side-block.media a:visited {
-	position: relative;
-	justify-content: center;
-	width: 1.6875rem;
-	height: 1.6875rem;
-	margin: 0;
-	padding: 0;
-	transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-color));
-	font-size: var(--base-font-size);
-	line-height: 1;
-	-webkit-mask: var(--social-logo-mask) center center / contain no-repeat;
-	        mask: var(--social-logo-mask) center center / contain no-repeat;
-}
-
-#side-bar:where(:lang(cn)) div.side-block.media a::before {
-	--clip-path: 
-		polygon(
-			0 0, 
-			0 0, 
-			0 100%, 
-			0 100%
-		);
-	content: " ";
-	position: absolute;
-	top: 0;
-	left: 0;
+	max-width: inherit;
 	width: 100%;
-	height: 100%;
-	transition: -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-icon-hover-color));
-	pointer-events: none;
-	-webkit-clip-path: var(--clip-path);
-	        clip-path: var(--clip-path);
-}
-
-#side-bar:where(:lang(cn)) div.side-block.media a:hover::before,
-#side-bar:where(:lang(cn)) div.side-block.media a:active::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(cn)) div.side-block.media a:focus-within::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(cn)) div.side-block.media a img {
-	width: 1.6875rem;
-	height: 1.6875rem;
-	opacity: 0;
-}
-
-#side-bar:where(:lang(cn)) div.side-block.media a[href*="bilibili"] {
-	--social-logo-mask: var(--bilibili-mask);
-	--social-color: var(--bilibili-icon-color);
-}
-
-/* ===SPANISH BRANCH=== */
-
-#side-bar:where(:lang(es)) .side-block.media {
-	margin: .5rem .5rem 0 0;
-	padding: .5rem !important;
-	background-color: rgba(var(--sidebar-media-bg-color)) !important;
-}
-
-#side-bar:where(:lang(es)) .side-block.media > div {
-	display: grid !important;
-	grid-auto-flow: column;
-	justify-content: space-evenly !important;
-	width: 100%;
-	box-shadow: unset;
-}
-
-#side-bar:where(:lang(es)) .side-block.media > div > div {
-	display: contents;
-}
-
-#side-bar:where(:lang(es)) .side-block.media a {
-	position: relative;
-	justify-content: center;
-	width: 1.6875rem;
-	height: 1.6875rem;
-	margin: 0;
-	padding: 0;
-	transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-color));
-	font-size: var(--base-font-size);
-	line-height: 1;
-	-webkit-mask: var(--social-logo-mask) center center / contain no-repeat;
-	        mask: var(--social-logo-mask) center center / contain no-repeat;
-}
-
-#side-bar:where(:lang(es)) .side-block.media a::before {
-	--clip-path: 
-		polygon(
-			0 0, 
-			0 0, 
-			0 100%, 
-			0 100%
-		);
-	content: " ";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	transition: -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-icon-hover-color));
-	pointer-events: none;
-	-webkit-clip-path: var(--clip-path);
-	        clip-path: var(--clip-path);
-}
-
-#side-bar:where(:lang(es)) .side-block.media a:hover::before,
-#side-bar:where(:lang(es)) .side-block.media a:active::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(es)) .side-block.media a:focus-within::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(es)) .side-block.media a img {
-	width: 1.6875rem;
-	height: 1.6875rem;
-	opacity: 0;
-}
-
-#side-bar:where(:lang(es)) .side-block.media a[href*="facebook"] {
-	--social-logo-mask: var(--facebook-mask);
-	--social-color: var(--facebook-icon-color);
-}
-
-#side-bar:where(:lang(es)) .side-block.media a[href*="twitter"] {
-	--social-logo-mask: var(--twitter-mask);
-	--social-color: var(--twitter-icon-color);
-}
-
-#side-bar:where(:lang(es)) .side-block.media a[href*="chat"] {
-	--social-logo-mask: var(--discord-mask);
-	--social-color: var(--discord-icon-color);
-}
-
-#side-bar:where(:lang(es)) .side-block.media a[href*="instagram"] {
-	--social-logo-mask: var(--instagram-mask);
-	--social-color: var(--instagram-icon-color);
-	background-image: var(--instagram-icon-gradient);
-	background-size: contain;
-}
-
-#side-bar:where(:lang(es)) .side-block[style*="fff0f0"] + .side-block > div:nth-child(1) a,
-#side-bar:where(:lang(es)) .side-block[style*="fff0f0"] + .side-block > div:nth-child(3) a {
-	justify-content: center;
-	padding: 0;
-}
-
-/* ===THAI BRANCH=== */
-
-#side-bar:where(:lang(th)) br {
-	display: none;
-}
-
-#side-bar:where(:lang(th)) div.menu-item a {
-	font-weight: normal;
-}
-
-#side-bar:where(:lang(th)) div.menu-item {
-	height: auto;
-}
-
-#side-bar:where(:lang(th)) .side-block div.new-page-box form {
-	display: grid;
-	padding: 0;
-}
-
-#side-bar:where(:lang(th)) .side-block div.new-page-box input.button,
-#side-bar:where(:lang(th)) .side-block div.new-page-box input.text {
-	width: 100%;
-	margin: 0 !important;
-	padding: 0 0.25rem;
-	font-family: var(--header-font);
-	font-size: calc(var(--base-font-size) * 1.1);
-	justify-self: center;
-}
-
-#side-bar:where(:lang(th)) div.menu-item input.text {
-	height: 2rem !important;
-	background-color: rgba(var(--swatch-tertiary-color), 0.25) !important;
-	font-family: var(--body-font);
-	cursor: text;
-}
-
-#side-bar:where(:lang(th)) .side-block div.new-page-box input.button {
-	justify-content: center;
-	margin-top: 0.5rem !important;
-	padding: 0 0.25rem;
-	box-shadow: 0 0 0 0.125rem rgba(var(--swatch-primary), 1);
-	cursor: pointer;
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(3) > div {
-	display: contents;
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(3) {
-	grid-template-columns: repeat(6, 1fr);
-	padding: 0 0.5rem;
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(3) > div > *:not(script):not(br) {
-	display: inline-flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	padding: 0.25rem 0;
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(3) :nth-child(1),
-#side-bar:where(:lang(th)) .side-block:nth-child(3) :nth-child(3),
-#side-bar:where(:lang(th)) .side-block:nth-child(3) :nth-child(5) {
-	grid-column: span 6;
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(3) :nth-child(7) {
-	grid-column: span 4;
-	justify-self: flex-end;
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(3) :nth-child(8) {
-	grid-column: span 2;
-	justify-self: flex-start;
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(3) a:nth-child(n+10) {
-	position: relative;
-	justify-content: center;
-	width: 1.6875rem;
-	height: 1.6875rem;
-	margin: 0;
-	padding: 0;
-	transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-color));
-	font-size: var(--base-font-size);
-	line-height: 1;
-	-webkit-mask: var(--social-logo-mask) center center / contain no-repeat;
-	        mask: var(--social-logo-mask) center center / contain no-repeat;
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(3) a:nth-child(n+10)::before {
-	--clip-path: 
-		polygon(
-			0 0, 
-			0 0, 
-			0 100%, 
-			0 100%
-		);
-	content: " ";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	transition: -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-icon-hover-color));
-	pointer-events: none;
-	-webkit-clip-path: var(--clip-path);
-	        clip-path: var(--clip-path);
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(3) a:nth-child(n+10):hover::before,
-#side-bar:where(:lang(th)) .side-block:nth-child(3) a:nth-child(n+10):active::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(3) a:nth-child(n+10):focus-within::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(3) a:nth-child(n+10) img {
-	width: 1.6875rem;
-	height: 1.6875rem;
-	opacity: 0;
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(3) a[href*="facebook"] {
-	--social-logo-mask: var(--facebook-mask);
-	--social-color: var(--facebook-icon-color);
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(3) a[href*="twitter"] {
-	--social-logo-mask: var(--twitter-mask);
-	--social-color: var(--twitter-icon-color);
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(3) a[href*="chat"] {
-	--social-logo-mask: var(--discord-mask);
-	--social-color: var(--discord-icon-color);
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(3) a[href*="deviantart"] {
-	--social-logo-mask: var(--deviantart-mask);
-	--social-color: var(--deviantart-icon-color);
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(3) a[href*="steam"] {
-	--social-logo-mask: var(--steam-mask);
-	--social-color: var(--steam-icon-color);
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(3) a[href*="sandbox"] {
-	--social-logo-mask: var(--sandbox-mask);
-	--social-color: var(--sandbox-icon-color);
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(4) {
-	grid-gap: 0.25em;
-	grid-template-rows: 1.5rem 1.5rem 1fr;
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(4) a:first-of-type,
-#side-bar:where(:lang(th)) .side-block:nth-child(4) a:first-of-type:visited {
-	--wght: var(--ui-wght);
-	display: flex;
-	position: relative;
-	flex-grow: 2;
-	justify-content: flex-start;
-	height: 1.5rem;
-	margin: 0;
-	padding: 0 0 0 calc(var(--base-font-size) * (14 / 15));
-	transition: 
-		background-color 150ms cubic-bezier(0.4, 0, 0.2, 1),
-		color 150ms cubic-bezier(0.4, 0, 0.2, 1),
-		font-weight 200ms cubic-bezier(0.4, 0, 0.2, 1),
-		font-variation-settings 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-clip: padding-box;
-	background-color: rgba(var(--sidebar-links-bg-color));
-	color: rgb(var(--sidebar-links-text));
-	font-size: calc(var(--base-font-size) * (14 / 15));
-	font-weight: var(--wght);
-	letter-spacing: 0.04em;
-	line-height: 1.5;
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(4) a:first-of-type:hover,
-#side-bar:where(:lang(th)) .side-block:nth-child(4) a:first-of-type:active {
-	--wght: var(--ui-hvr-wght);
-	background-color: rgba(var(--sidebar-links-hover-bg-color), 0.15);
-	color: rgb(var(--sidebar-links-hover-text-color));
-	font-weight: var(--wght);
-	text-decoration: none;
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(4) a:first-of-type:focus-within {
-	--wght: var(--ui-hvr-wght);
-	background-color: rgba(var(--sidebar-links-hover-bg-color), 0.15);
-	color: rgb(var(--sidebar-links-hover-text-color));
-	font-weight: var(--wght);
-	text-decoration: none;
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(4) a:first-of-type::before {
-	--clip-path: 
-		polygon(
-			0 0, 
-			0 0, 
-			0 100%, 
-			0 100%
-		);
-	content: " ";
-	position: absolute;
-	z-index: -1;
-	top: 0;
-	left: calc(var(--base-font-size) * (14 / 15) * -1);
-	width: calc(100% + (var(--base-font-size) * (14 / 15)));
-	height: 100%;
-	transition: -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	opacity: 1;
-	background-color: rgb(var(--sidebar-links-hover-bg-color));
-	pointer-events: none;
-	-webkit-clip-path: var(--clip-path);
-	        clip-path: var(--clip-path);
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(4) a:first-of-type:hover::before,
-#side-bar:where(:lang(th)) .side-block:nth-child(4) a:first-of-type:active::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(4) a:first-of-type:focus-within::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(4) p {
-	display: grid;
-	margin-right: 0;
-}
-
-#side-bar:where(:lang(th)) .side-block:nth-child(4) p iframe {
-	width: 100%;
-	justify-self: center;
-}
-
-/* ===TRADITIONAL CHINESE BRANCH=== */
-
-#side-bar:where(:lang(zh)) {
-	--plurk-icon-color: 255, 87, 77;
-}
-
-#side-bar:where(:lang(zh)) .menu-item {
-	height: auto;
-}
-
-#side-bar:where(:lang(zh)) .side-block.social-media-list {
-	display: grid !important;
-	grid-auto-flow: column;
-	justify-content: space-evenly !important;
-	margin: .5rem .5rem 0 0;
-	padding: .5rem !important;
-	background-color: rgba(var(--sidebar-media-bg-color)) !important;
-}
-
-#side-bar:where(:lang(zh)) .side-block.social-media-list > div {
-	display: contents !important;	
-}
-
-#side-bar:where(:lang(zh)) .side-block.social-media-list a {
-	position: relative;
-	width: 1.6875rem;
-	height: 1.6875rem;
-	transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-color));
-	-webkit-mask: var(--social-logo-mask) center center / contain no-repeat;
-	        mask: var(--social-logo-mask) center center / contain no-repeat;
-}
-
-#side-bar:where(:lang(zh)) .side-block.social-media-list a::before {
-	--clip-path: 
-		polygon(
-			0 0, 
-			0 0, 
-			0 100%, 
-			0 100%
-		);
-	content: " ";
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	transition: -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-icon-hover-color));
-	pointer-events: none;
-	-webkit-clip-path: var(--clip-path);
-	        clip-path: var(--clip-path);
-}
-
-#side-bar:where(:lang(zh)) .side-block.social-media-list a:hover::before,
-#side-bar:where(:lang(zh)) .side-block.social-media-list a:active::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(zh)) .side-block.social-media-list a:focus-within::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(zh)) .side-block.social-media-list a img {
-	width: 1.6875rem;
-	height: 1.6875rem;
-	opacity: 0;
-}
-
-#side-bar:where(:lang(zh)) .side-block.social-media-list a[href*="chat"] {
-	--social-logo-mask: var(--discord-mask);
-	--social-color: var(--discord-icon-color);
-}
-
-#side-bar:where(:lang(zh)) .side-block.social-media-list a[href*="plurk"] {
-	--social-logo-mask: var(--plurk-mask);
-	--social-color: var(--plurk-icon-color);
-}
-
-#side-bar:where(:lang(zh)) .side-block.social-media-list a[href*="twitter"] {
-	--social-logo-mask: var(--twitter-mask);
-	--social-color: var(--twitter-icon-color);
-}
-
-#side-bar:where(:lang(zh)) .side-block.social-media-list a[href*="instagram"] {
-	--social-logo-mask: var(--instagram-mask);
-	--social-color: var(--instagram-icon-color);
-	background-image: var(--instagram-icon-gradient);
-	background-size: contain;
-}
-
-/* ===UKRAINIAN BRANCH=== */
-
-/*Normalizing Unique Sideblock Class*/
-
-#side-bar:where(:lang(uk)) {
-	--telegram-icon-color: 0, 136, 204;
-}
-
-#side-bar:where(:lang(uk)) > * {
-	direction: ltr;
-}
-
-#side-bar:where(:lang(uk)) hr {
-	margin-bottom: 0;
-}
-
-#side-bar:where(:lang(uk)) .side-block.side-links {
-	grid-auto-flow: column;
-	justify-content: space-evenly;
-	width: var(--sidebar-width-on-mobile);
-	margin: .5rem 0.5rem 0 0;
-	padding: .5em !important;
-	background-color: rgba(var(--sidebar-media-bg-color)) !important;
-}
-
-#side-bar:where(:lang(uk)) .side-block.side-links > div {
-	display: contents;
-}
-
-#side-bar:where(:lang(uk)) .side-block.side-links a {
-	position: relative;
-	transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-color));
-	-webkit-mask: var(--social-logo-mask) center center / contain no-repeat;
-	        mask: var(--social-logo-mask) center center / contain no-repeat;
-}
-
-#side-bar:where(:lang(uk)) .side-block.side-links a::before {
-	--clip-path: 
-		polygon(
-			0 0, 
-			0 0, 
-			0 100%, 
-			0 100%
-		);
-	content: " ";
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	transition: -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
-	background-color: rgb(var(--social-icon-hover-color));
-	pointer-events: none;
-	-webkit-clip-path: var(--clip-path);
-	        clip-path: var(--clip-path);
-}
-
-#side-bar:where(:lang(uk)) .side-block.side-links a:hover::before,
-#side-bar:where(:lang(uk)) .side-block.side-links a:active::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(uk)) .side-block.side-links a:focus-within::before {
-	--clip-path: 
-		polygon(
-			-15% 0, 
-			115% 0, 
-			100% 100%, 
-			0 100%
-		);
-}
-
-#side-bar:where(:lang(uk)) .side-block.side-links a img {
-	width: 1.6875rem;
-	height: 1.6875rem;
-	opacity: 0;
-}
-
-#side-bar:where(:lang(uk)) .side-block.side-links a[href*="twitter"] {
-	--social-logo-mask: var(--twitter-mask);
-	--social-color: var(--twitter-icon-color);
-}
-
-#side-bar:where(:lang(uk)) .side-block.side-links a[href*="discord"] {
-	--social-logo-mask: var(--discord-mask);
-	--social-color: var(--discord-icon-color);
-}
-
-#side-bar:where(:lang(uk)) .side-block.side-links a[href*="t.me"] {
-	--social-logo-mask: var(--telegram-mask);
-	--social-color: var(--telegram-icon-color);
-}
-
-#side-bar:where(:lang(uk)) div.side-block:not(.side-links) div.menu-item {
-	display: grid;
-	grid-template-columns: 50% 50%;
-}
-
-#side-bar:where(:lang(uk)) div.menu-item a:only-of-type {
-	grid-column: 1/ span 2;
-	grid-row: 1;
-	justify-content: flex-start;
-}
-
-#side-bar:where(:lang(uk)) div.menu-item a[href="/news"],
-#side-bar:where(:lang(uk)) div.menu-item a[href="/faq"]{
-	justify-content: center;
-	padding: 0;
-}
-
-#side-bar:where(:lang(uk)) div.menu-item a[href*="scp-series"] {
-	padding: 0 0 0 calc(var(--base-font-size)*(14 / 15));
-}
-
-#side-bar:where(:lang(uk)) div.menu-item a[href*="scp-series"] + span,
-#side-bar:where(:lang(uk)) div.menu-item a[href*="scp-list"] + span {
-	display: flex;
-	padding: 0 0 0 calc(var(--base-font-size) / 2);
-	pointer-events: none;
-}
-
-#side-bar:where(:lang(uk)) div.menu-item span {
-	z-index: 2;
-	grid-column: 2;
-	grid-row: 1;
-	transition:
-		border-color 150ms cubic-bezier(.4,0,.2,1),
-		background-color 150ms cubic-bezier(.4,0,.2,1),
-		color 150ms cubic-bezier(.4,0,.2,1),
-		font-weight 200ms cubic-bezier(.4,0,.2,1),
-		font-variation-settings 200ms cubic-bezier(.4,0,.2,1)
-}
-
-#side-bar:where(:lang(uk)) div.menu-item a:only-of-type:hover ~ span,
-#side-bar:where(:lang(uk)) div.menu-item a:only-of-type:active ~ span {
-	--wght: var(--ui-hvr-wght);
-	border-color: rgb(var(--sidebar-links-hover-text-color),0.15);
-	color: rgb(var(--sidebar-links-hover-text-color));
-}
-
-#side-bar:where(:lang(uk)) div.menu-item a:only-of-type:focus-within ~ span {
-	--wght: var(--ui-hvr-wght);
-	border-color: rgb(var(--sidebar-links-hover-text-color),0.15);
-	color: rgb(var(--sidebar-links-hover-text-color));
-}
-
-#side-bar:where(:lang(uk)) > hr + .side-block {
-	grid-template-rows: unset;
-}
-
-#side-bar:where(:lang(uk)) div.menu-item a[href*="system:recent-changes"] {
-	grid-column: 2;
-	grid-row: 1;
-}
-
-#side-bar:where(:lang(uk)) > h3 {
-	display: flex;
-	justify-content: center;
-	margin-top: 0.5rem;
-}
-
-#side-bar:where(:lang(uk)) > h2 {
-	display: flex;
-	justify-content: center;
-	margin-top: 0.5rem;
-	font-size: 1.25em;
-	text-align: center;
-}
-
-#side-bar:where(:lang(uk)) div.pages-tag-cloud-box {
-	overflow: visible;
-	text-align: center;
-}
-
-#side-bar:where(:lang(uk)) > div[style*="80%"] > * {
-	padding: 0 0 0 calc(var(--base-font-size)*(14 / 15));
-}
-
-#side-bar:where(:lang(uk)) > div[style*="15px"] {
-	display: grid;
-	justify-content: center;
-	text-align: center;
-	gap: 0.5rem;
-}
-
-#side-bar:where(:lang(uk)) > div[style*="15px"] br {
-	display: none;
-}
-
-/* ===VIETNAMESE BRANCH=== */
-
-#side-bar:where(:lang(vi)) img[src*="LK22yZY.png"] {
-	color: transparent;
-	pointer-events: none;
-}
-
-#side-bar:where(:lang(vi)) .side-block.media a {
-	width: 1.6875rem;
-}
-
-#side-bar:where(:lang(vi)) .side-block.media a[href*="youtube"] {
-	--social-logo-mask: var(--youtube-mask);
-	--social-color: var(--youtube-icon-color);
-}
-
-#side-bar:where(:lang(vi)) div.collapsible-block a.collapsible-block-link::after {
-	display: none;
 }
 
 /* HEADER
@@ -10544,7 +7969,7 @@ div#container-wrap {
 
 #header h1 a::before {
 	--text-shadow: rgb(var(--swatch-text-dark, 12, 12, 12));
-	content: var(--header-title, "SCP Foundation");
+	content: var(--header-title, "SCP財団");
 	color: rgb(var(--swatch-headerh1-color));
 	text-shadow: none;
 }
@@ -10578,7 +8003,7 @@ div#container-wrap {
 }
 
 #header h2 span::before {
-	content: var(--header-subtitle, "SECURE, CONTAIN, PROTECT");
+	content: var(--header-subtitle, "確保、収容、保護");
 	color: rgb(var(--swatch-headerh2-color));
 	text-shadow: none;
 }
@@ -10998,7 +8423,7 @@ div#container-wrap {
 	z-index: 12;
 	top: 1.5rem;
 	right: 0;
-	width: 10em;
+	width: 15em;
 	margin: 0.25em 0 0 0;
 	padding: 0;
 	overflow: hidden;
@@ -11111,7 +8536,7 @@ div#container-wrap {
 }
 
 #login-status #account-options li > a[href*="/messages"]::after {
-	content: "Messages";
+	content: "メッセージ";
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -11185,7 +8610,7 @@ div.mobile-top-bar {
 	flex-wrap: nowrap;
 	width: 100%;
 	height: var(--topbar-height-on-desktop);
-	margin: var(--header-height-on-desktop) 0 1.75rem 0;
+	margin: var(--header-height-on-desktop) 0 0 0;
 	padding: 0;
 	font-family: var(--UI-font, var(--header-font));
 	font-size: calc(var(--base-font-size) * (13 / 15));
@@ -12100,7 +9525,7 @@ div.mobile-top-bar {
 
 	#header div#top-bar {
 		height: var(--topbar-height-on-mobile);
-		margin: calc(var(--header-height-on-mobile)) 0 1.75rem 0;
+		margin: calc(var(--header-height-on-mobile)) 0 0 0;
 	}
 
 	#header div.top-bar {
@@ -12269,127 +9694,6 @@ div.mobile-top-bar {
 	}
 }
 
-/* INT SIDEBAR STYLING
-   ============================= */
-
-/* Styling specific to Int Branches' Headers
-
-/* ===DIRECTORY===
-	1.  =CZECH BRANCH
-	2.  =FRENCH BRANCH
-	3.  =GERMAN BRANCH
-	4.  =GREEK BRANCH
-	5.  =ITALIAN BRANCH
-	6.  =JAPANESE BRANCH
-	7.  =KOREAN BRANCH
-	8.  =POLISH BRANCH
-	9.  =PORTUGESE BRANCH
-	10. =RUSSIAN BRANCH
-	11. =SIMPLIFIED CHINESE BRANCH
-	12. =SPANISH BRANCH
-	13. =THAI BRANCH
-	14. =TRADITIONAL CHINESE BRANCH
-	15. =UKRAINIAN BRANCH
-	16. =VIETNAMESE BRANCH
-*/
-
-/* ===CZECH BRANCH=== */
-
-#login-status:where(:lang(cs)) #account-options li > a[href*="/messages"]::after {
-	content: "Zprávy";
-}
-
-/* ===FRENCH BRANCH=== */
-
-/* ===GERMAN BRANCH=== */
-
-@media only screen and (max-width:56.25rem) {
-	#header:where(:lang(de)) div.open-menu {
-		background-image: var(--gradient-topmenu-mobile);
-	}
-}
-
-/* ===GREEK BRANCH=== */
-
-#login-status:where(:lang(el)) #account-options li > a[href*="/messages"]::after {
-	content: "Μηνύματα";
-}
-
-/* ===ITALIAN BRANCH=== */
-
-#login-status:where(:lang(it)) #account-options li > a[href*="/messages"]::after {
-	content: "Messaggi";
-}
-
-/* ===JAPANESE BRANCH=== */
-
-#login-status:where(:lang(ja)) #account-options li > a[href*="/messages"]::after {
-	content: "メッセージ";
-}
-
-/* ===KOREAN BRANCH=== */
-
-#login-status:where(:lang(ko)) #account-options li > a[href*="/messages"]::after {
-	content: "메시지";
-}
-
-/* ===POLISH BRANCH=== */
-
-#login-status:where(:lang(po)) #account-options li > a[href*="/messages"]::after {
-	content: "Wiadomości";
-}
-
-/* ===PORTUGESE BRANCH=== */
-
-#login-status:where(:lang(pt-br)) #account-options li > a[href*="/messages"]::after {
-	content: "Mensagens";
-}
-
-/* ===RUSSIAN BRANCH=== */
-
-#top-bar:where(:lang(ru)) .list-pages-item,
-#top-bar:where(:lang(ru)) .list-pages-item .top-bar {
-	height: 100%;
-}
-
-@media only screen and (max-width: 56.25rem) {
-	#header:where(:lang(ru)) div[class*="top-bar"] > ul {
-		height: var(--topbar-height-on-mobile);
-	}
-
-	#header:where(:lang(ru)) div[class*="top-bar"] > ul > li > a {
-		font-size: 1.5em;
-	}
-}
-
-/* ===SIMPLIFIED CHINESE BRANCH=== */
-
-#login-status:where(:lang(cn)) #account-options li > a[href*="/messages"]::after {
-	content: "消息";
-}
-
-/* ===SPANISH BRANCH=== */
-
-#login-status:where(:lang(es)) #account-options li > a[href*="/messages"]::after {
-	content: "Mensajes";
-}
-
-/* ===THAI BRANCH=== */
-
-/* ===TRADITIONAL CHINESE BRANCH=== */
-
-#login-status:where(:lang(zh-tr)) #account-options li > a[href*="/messages"]::after {
-	content: "訊息";
-}
-
-/* ===UKRAINIAN BRANCH=== */
-
-/* ===VIETNAMESE BRANCH=== */
-
-#login-status:where(:lang(vi)) #account-options li > a[href*="/messages"]::after {
-	content: "Tin nhắn";
-}
-
 /* ELEMENTS
    ============================= */
 
@@ -12402,6 +9706,7 @@ div.mobile-top-bar {
 	4.  =HOVER BLOCKS
 	5.  =IMAGE BLOCK
 	6.  =RATING MODULE
+		6.1 =CREDIT MODULE FOR JP
 	7.  =TABLES
 	8.  =TOC
 	9.  =WARNING BOX
@@ -13178,7 +10483,7 @@ div.page-rate-widget-box .rate-points {
 }
 
 .page-rate-widget-box .rate-points .number {
-	font-size: calc(var(--base-font-size) * (17 / 15));
+	font-size: 1.15em;
 }
 
 .page-rate-widget-box .rateup a,
@@ -13609,7 +10914,7 @@ div.page-rate-widget-box .rate-points {
 }
 
 [id*="u-credit"] div.credit-back::before {
-	content: "Back";
+	content: "戻る";
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -13646,6 +10951,283 @@ div.page-rate-widget-box .rate-points {
 
 [id*="u-credit"] .page-rate-widget-box {
 	margin: 0;
+}
+
+/* ===CREDIT MODULE FOR JP=== */
+
+#page-content .creditRate.creditModule .rate-box-with-credit-button {
+	align-items: inherit;
+	border: none;
+	flex-direction: inherit;
+	justify-content: inherit;
+	box-shadow: none;
+	height: inherit;
+	min-width: inherit;
+	overflow: inherit;
+}
+
+#page-content .creditRate.creditModule .rate-box-with-credit-button>.page-rate-widget-box {
+	background-color: rgb(var(--rating-module-bg-color));
+	border: 0.0625rem solid rgba(var(--swatch-border-color),.15);
+	border-bottom-width: 0;
+	box-shadow: 0 0.125rem 0 0 rgb(var(--rating-module-bottom-border-color));
+}
+
+#page-content div.page-rate-widget-box .rate-points,
+#action-area div.page-rate-widget-box .rate-points {
+	display: inline;
+	font-family: var(--UI-font);
+	font-size: 0.85em;
+	font-weight: var(--wght);
+}
+
+#page-content .page-rate-widget-box span,
+#action-area .page-rate-widget-box span {
+	box-sizing: inherit;
+	display: inline;
+	height: inherit;
+}
+
+#page-content .page-rate-widget-box .cancel,
+#action-area .page-rate-widget-box .cancel {
+	padding: 0;
+}
+
+#page-content .page-rate-widget-box .rateup a,
+#page-content .page-rate-widget-box .ratedown a,
+#action-area .page-rate-widget-box .rateup a,
+#action-area .page-rate-widget-box .ratedown a {
+	box-sizing: inherit;
+	display: block;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: var(--wght);
+	height: 100%;
+	padding: 0;
+}
+
+#page-content .page-rate-widget-box .cancel a,
+#action-area .page-rate-widget-box .cancel a {
+	color: transparent;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: var(--wght);
+	height: 100%;
+	padding: 0;
+}
+
+#page-content .page-rate-widget-box .rateup a::before,
+#page-content .page-rate-widget-box .ratedown a::before,
+#page-content .page-rate-widget-box .cancel a::before,
+#action-area .page-rate-widget-box .rateup a::before,
+#action-area .page-rate-widget-box .ratedown a::before,
+#action-area .page-rate-widget-box .cancel a::before {
+	content: " ";
+	font-size: inherit;
+}
+
+#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton,
+.creditRate.creditModule .heritage-rating-module ~ .creditButton {
+	background-color: rgb(var(--rating-module-bg-color));
+	border: 0.0625rem solid rgba(var(--swatch-border-color),.15);
+	border-bottom-width: 0;
+	border-radius: 0;
+	box-shadow: 0 0.125rem 0 0 rgb(var(--rating-module-bottom-border-color));
+	display: block;
+	font-size: inherit;
+	height: var(--rating-module-height);
+	line-height: inherit;
+	margin-left: 0.5em;
+	width: calc(var(--base-font-size) * (21 / 15));
+}
+
+#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a,
+.creditRate.creditModule .heritage-rating-module ~ .creditButton a {
+	display: flex;
+	background-color: transparent;
+	color: rgb(var(--rating-module-text-color));
+	font-size: inherit;
+	width: 100%;
+	height: 100%;
+}
+
+#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a::after,
+.creditRate.creditModule .heritage-rating-module ~ .creditButton a::after {
+	--clip-path:
+		polygon(
+			0 100%,
+			100% 115%,
+			100% 100%,
+			0 115%
+		);
+	content: " ";
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transition: -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
+	pointer-events: none;
+	-webkit-clip-path: var(--clip-path);
+	        clip-path: var(--clip-path);
+}
+
+#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a::after,
+.creditRate.creditModule .heritage-rating-module ~ .creditButton a::after {
+	background-color: rgba(var(--rating-module-text-color), 1);
+}
+
+#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a:hover::after,
+#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a:active::after,
+.creditRate.creditModule .heritage-rating-module ~ .creditButton a:hover::after,
+.creditRate.creditModule .heritage-rating-module ~ .creditButton a:active::after {
+	--clip-path:
+		polygon(
+			0 100%,
+			100% 115%,
+			100% 0,
+			0 -15%
+		);
+}
+
+#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a:focus-within::after,
+.creditRate.creditModule .heritage-rating-module ~ .creditButton a:focus-within::after {
+	--clip-path:
+		polygon(
+			0 100%,
+			100% 115%,
+			100% 0,
+			0 -15%
+		);
+}
+
+#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a::before,
+.creditRate.creditModule .heritage-rating-module ~ .creditButton a::before {
+	--mask-image: var(--credit-button-mask);
+	content: " ";
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: calc(var(--base-font-size) * (21 / 15));
+	height: 100%;
+	transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+	background-color: rgb(var(--rating-module-text-color));
+	pointer-events: none;
+	-webkit-mask: var(--mask-image) center center / calc(var(--rating-module-height) - 0.375em) no-repeat;
+	        mask: var(--mask-image) center center / calc(var(--rating-module-height) - 0.375em) no-repeat;
+}
+
+#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a:hover::before,
+#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a:active::before,
+.creditRate.creditModule .heritage-rating-module ~ .creditButton a:hover::before,
+.creditRate.creditModule .heritage-rating-module ~ .creditButton a:active::before {
+	background-color: rgb(var(--rating-module-text-hover-color));
+}
+
+#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a:focus-within::before,
+.creditRate.creditModule .heritage-rating-module ~ .creditButton a:focus-within::before {
+	background-color: rgb(var(--rating-module-text-hover-color));
+}
+
+[id*=u-credit] .creditBottomRate,
+[id*=u-credit] .modalbox > .Dendo,
+[id*=u-credit] .modalbox-ratemodule {
+	position: static;
+}
+
+.creditRate.creditModule ~ [id*="u-credit"] .modalcontainer {
+	display: block;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: fit-content;
+	margin: auto;
+	min-width: inherit;
+	top: 0;
+	transform: unset;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+.creditRate.creditModule ~ [id*=u-credit] div.modalbox {
+	aspect-ratio: 16 / 9;
+	max-width: 25rem !important;
+	min-height: inherit;
+}
+
+.creditRate.creditModule ~ [id*=u-credit] .modalbox .modalbox-title  {
+	border-radius: 0;
+}
+
+.creditRate.creditModule ~ [id*=u-credit] .modalbox .credit {
+	margin: 0 1rem;
+}
+
+.creditRate.creditModule ~ [id*=u-credit] .modalbox .credit.otherwise {
+	height: -webkit-max-content;
+	height: -moz-max-content;
+	height: max-content;
+	overflow-y: auto;
+}
+
+.creditRate.creditModule ~ [id*="u-credit"] div.credit-back::before {
+	content: "クレジット";
+}
+
+.creditRate.creditModule ~ [id*=u-credit] div.creditBottomRate {
+	box-shadow: unset;
+}
+
+.creditRate.creditModule ~ [id*=u-credit] .credit-license a.cc {
+	color: rgb(var(--swatch-text-general));
+	font-size: 2em;
+	margin-right: 1rem;
+}
+
+/* Heritage Rating Module For JP */
+
+.creditRate.creditModule .heritage-rating-module,
+[id*="u-credit"] .Dendo .heritage-rating-module {
+	border-radius: 0;
+	box-shadow: 0 0.125rem 0 0 rgb(var(--rating-module-bottom-border-color));
+	display: inline-block;
+	float: none;
+	padding: 0 0.2rem;
+	vertical-align: inherit;
+}
+
+.creditRate.creditModule .heritage-rating-module .heritage-emblem,
+[id*="u-credit"] .Dendo .heritage-rating-module .heritage-emblem {
+	height: 1rem;
+	margin-right: 0.25rem;
+	position: static;
+	width: 1rem;
+}
+
+.creditRate.creditModule .heritage-rating-module .page-rate-widget-box,
+[id*="u-credit"] .Dendo .heritage-rating-module .page-rate-widget-box {
+	border: unset;
+}
+
+.creditRate.creditModule .heritage-rating-module ~ .creditButton {
+	padding: inherit;
+}
+
+.creditRate.creditModule ~ [id*="u-credit"] .modalbox.heritage {
+	border: rgb(var(--swatch-primary-darker)) solid 0.5rem;
+	border-radius: 0.5rem;
+}
+
+.creditRate.creditModule ~ [id*="u-credit"] .modalbox.heritage .modalbox-title {
+	background: linear-gradient(to bottom, rgba(var(--swatch-primary-darker), 1), rgba(var(--swatch-primary-darker), 0.7));
+	justify-content: center;
+}
+
+.creditRate.creditModule ~ [id*="u-credit"] .modalbox .modalbox-title.heritage h2::before {
+	display: none;
 }
 
 /* ===TABLES=== */
@@ -13861,7 +11443,7 @@ table[style*="margin:0"] * {
 }
 
 #toc #toc-action-bar a::after {
-	content: "Table of Contents";
+	content: "目次";
 	position: absolute;
 	left: 100%;
 	transition:
@@ -14678,6 +12260,14 @@ div.block-left {
 		width: 100% !important;
 	}
 
+	.image-block.scp-clear-true,
+	.scp-image-block.scp-clear-true {
+		float: none;
+		clear: both;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
 	blockquote,
 	.blockquote,
 	div.blockquote,
@@ -14706,7 +12296,7 @@ div.block-left {
 	}
 }
 
-/* See https://scp-wiki.wikidot.com/component:preview */
+/* See http://scp-jp.wikidot.com/component:preview */
 
 #page-content>div.preview {
 	display: none;
@@ -14982,163 +12572,6 @@ body.print-body #main-content .page-tags span {
 		transition-timing-function: linear;
 		transition-delay: 0ms;
 	}
-}
-
-/* INT ELEMENTS STYLING
-   ============================= */
-
-/* Styling specific to Int Branches' Elements
-
-/* ===DIRECTORY===
-	1.  =CZECH BRANCH
-	2.  =FRENCH BRANCH
-	3.  =GERMAN BRANCH
-	4.  =GREEK BRANCH
-	5.  =ITALIAN BRANCH
-	6.  =JAPANESE BRANCH
-	7.  =KOREAN BRANCH
-	8.  =POLISH BRANCH
-	9.  =PORTUGESE BRANCH
-	10. =RUSSIAN BRANCH
-	11. =SIMPLIFIED CHINESE BRANCH
-	12. =SPANISH BRANCH
-	13. =THAI BRANCH
-	14. =TRADITIONAL CHINESE BRANCH
-	15. =UKRAINIAN BRANCH
-	16. =VIETNAMESE BRANCH
-*/
-
-/* ===CZECH BRANCH=== */
-
-[id*="u-credit"]:where(:lang(cs)) div.credit-back::before {
-	content: "Zpět";
-}
-
-#toc:where(:lang(cs)) #toc-action-bar a::after {
-	content: "Obsah";
-}
-
-/* ===FRENCH BRANCH=== */
-
-[id*="u-credit"]:where(:lang(fr)) div.credit-back::before {
-	content: "Retour";
-}
-
-#toc:where(:lang(fr)) #toc-action-bar a::after {
-	content: "Sommaire";
-}
-
-/* ===GERMAN BRANCH=== */
-
-[id*="u-credit"]:where(:lang(de)) div.credit-back::before {
-	content: "Zurück";
-}
-
-#toc:where(:lang(de)) #toc-action-bar a::after {
-	content: "Inhalt";
-}
-
-:where(:lang(de)) .page-rate-widget-box,
-#page-content:where(:lang(de)) .rate-box-with-credit-button {
-	background-color: rgb(var(--rating-module-bg-color)) !important;
-}
-
-/* ===GREEK BRANCH=== */
-
-[id*="u-credit"]:where(:lang(el)) div.credit-back::before {
-	content: "Πίσω";
-}
-
-#toc:where(:lang(el)) #toc-action-bar a::after {
-	content: "Πίνακας περιεχομένων";
-}
-
-/* ===ITALIAN BRANCH=== */
-
-[id*="u-credit"]:where(:lang(it)) div.credit-back::before {
-	content: "Indietro";
-}
-
-#toc:where(:lang(it)) #toc-action-bar a::after {
-	content: "Indice dei contenuti";
-}
-
-/* ===JAPANESE BRANCH=== */
-
-[id*="u-credit"]:where(:lang(ja)) div.credit-back::before {
-	content: "閉じる";
-}
-
-#toc:where(:lang(ja)) #toc-action-bar a::after {
-	content: "目次";
-}
-
-/* ===KOREAN BRANCH=== */
-
-[id*="u-credit"]:where(:lang(ko)) div.credit-back::before {
-	content: "뒤로";
-}
-
-#toc:where(:lang(ko)) #toc-action-bar a::after {
-	content: "목차";
-}
-
-/* ===POLISH BRANCH=== */
-
-[id*="u-credit"]:where(:lang(po)) div.credit-back::before {
-	content: "Powrót";
-}
-
-#toc:where(:lang(po)) #toc-action-bar a::after {
-	content: "Spis Treści";
-}
-
-/* ===PORTUGESE BRANCH=== */
-
-[id*="u-credit"]:where(:lang(pt-br)) div.credit-back::before {
-	content: "Voltar";
-}
-
-#toc:where(:lang(pt-br)) #toc-action-bar a::after {
-	content: "Índice";
-}
-
-/* ===RUSSIAN BRANCH=== */
-
-/* ===SIMPLIFIED CHINESE BRANCH=== */
-
-[id*="u-credit"]:where(:lang(cn)) div.credit-back::before {
-	content: "返回";
-}
-
-#toc:where(:lang(cn)) #toc-action-bar a::after {
-	content: "目录";
-}
-
-/* ===SPANISH BRANCH=== */
-
-[id*="u-credit"]:where(:lang(es)) div.credit-back::before {
-	content: "Volver";
-}
-
-#toc:where(:lang(es)) #toc-action-bar a::after {
-	content: "Tabla de Contenidos";
-}
-
-/* ===THAI BRANCH=== */
-
-/* ===TRADITIONAL CHINESE BRANCH=== */
-
-[id*="u-credit"]:where(:lang(zh-tr)) div.credit-back::before {
-	content: "返回";
-}
-
-/* ===UKRAINIAN BRANCH=== */
-
-/* ===VIETNAMESE BRANCH=== */
-
-#toc:where(:lang(vi)) #toc-action-bar a::after {
-	content: "Mục Lục";
 }
 
 }
