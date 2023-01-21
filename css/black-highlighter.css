@@ -10332,6 +10332,7 @@ div.mobile-top-bar {
 		15.1 =CONTENT PANEL
 	16. =MOBILE ELEMENTS
 	17. =PRINT FORMATTING
+	18. =LOCALIZATION FOR JP
   =============== */
 /* ===TABVIEW=== */
 .yui-navset {
@@ -10339,12 +10340,10 @@ div.mobile-top-bar {
 }
 .yui-navset .yui-nav {
 	--clip-path:
-		polygon(
-			-0.0625rem -0.5rem,
+		polygon(-0.0625rem -0.5rem,
 			calc(100% + 0.0625rem) -0.5rem,
 			calc(100% + 0.0625rem) 100%,
-			-0.0625rem 100%
-		);
+			-0.0625rem 100%);
 	display: flex;
 	flex-wrap: wrap;
 	width: calc(100% - 0.125rem);
@@ -10427,12 +10426,10 @@ div.mobile-top-bar {
 }
 .yui-navset .yui-nav a::before {
 	--clip-path:
-		polygon(
-			0 calc(100% - 0.25rem),
+		polygon(0 calc(100% - 0.25rem),
 			calc(100% + 1rem) calc(100% - 0.25rem),
 			calc(100% + 1rem) calc(100% + 1rem),
-			0 calc(100% + 1rem)
-		);
+			0 calc(100% + 1rem));
 	content: " ";
 	position: absolute;
 	z-index: 0;
@@ -10459,32 +10456,26 @@ div.mobile-top-bar {
 .yui-navset .yui-nav li:active a::before,
 .yui-navset .yui-nav li:focus a::before {
 	--clip-path:
-		polygon(
-			0 0,
+		polygon(0 0,
 			calc(100% + 1rem) -1rem,
 			calc(100% + 1rem) calc(100% + 1rem),
-			0 calc(100% + 1rem)
-		);
+			0 calc(100% + 1rem));
 	background-color: rgb(var(--tabs-hover-bg));
 }
 .yui-navset .yui-nav li[focus-within] a::before {
 	--clip-path:
-		polygon(
-			0 0,
+		polygon(0 0,
 			calc(100% + 1rem) -1rem,
 			calc(100% + 1rem) calc(100% + 1rem),
-			0 calc(100% + 1rem)
-		);
+			0 calc(100% + 1rem));
 	background-color: rgb(var(--tabs-hover-bg));
 }
 .yui-navset .yui-nav li:focus-within a::before {
 	--clip-path:
-		polygon(
-			0 0,
+		polygon(0 0,
 			calc(100% + 1rem) -1rem,
 			calc(100% + 1rem) calc(100% + 1rem),
-			0 calc(100% + 1rem)
-		);
+			0 calc(100% + 1rem));
 	background-color: rgb(var(--tabs-hover-bg));
 }
 .yui-navset .yui-nav a em,
@@ -10531,32 +10522,26 @@ div.mobile-top-bar {
 .yui-navset .yui-nav .selected:focus a::before,
 .yui-navset .yui-nav .selected:active a::before {
 	--clip-path:
-		polygon(
-			0 0,
+		polygon(0 0,
 			calc(100% + 1rem) -1rem,
 			calc(100% + 1rem) calc(100% + 1rem),
-			0 calc(100% + 1rem)
-		);
+			0 calc(100% + 1rem));
 	background-color: rgb(var(--tabs-selected-bg));
 }
 .yui-navset .yui-nav .selected[focus-within] a::before {
 	--clip-path:
-		polygon(
-			0 0,
+		polygon(0 0,
 			calc(100% + 1rem) -1rem,
 			calc(100% + 1rem) calc(100% + 1rem),
-			0 calc(100% + 1rem)
-		);
+			0 calc(100% + 1rem));
 	background-color: rgb(var(--tabs-selected-bg));
 }
 .yui-navset .yui-nav .selected:focus-within a::before {
 	--clip-path:
-		polygon(
-			0 0,
+		polygon(0 0,
 			calc(100% + 1rem) -1rem,
 			calc(100% + 1rem) calc(100% + 1rem),
-			0 calc(100% + 1rem)
-		);
+			0 calc(100% + 1rem));
 	background-color: rgb(var(--tabs-selected-bg));
 }
 .yui-navset .yui-nav .selected a:hover,
@@ -11045,12 +11030,10 @@ div.blockquote> :last-child,
 .page-rate-widget-box .ratedown a::after,
 .page-rate-widget-box .cancel a::after {
 	--clip-path:
-		polygon(
-			0 100%,
+		polygon(0 100%,
 			100% 115%,
 			100% 100%,
-			0 115%
-		);
+			0 115%);
 	content: " ";
 	position: absolute;
 	z-index: -1;
@@ -11084,34 +11067,28 @@ div.blockquote> :last-child,
 .page-rate-widget-box .cancel a:hover::after,
 .page-rate-widget-box .cancel a:active::after {
 	--clip-path:
-		polygon(
-			0 100%,
+		polygon(0 100%,
 			100% 115%,
 			100% 0,
-			0 -15%
-		);
+			0 -15%);
 }
 .page-rate-widget-box .rateup a[focus-within]::after,
 .page-rate-widget-box .ratedown a[focus-within]::after,
 .page-rate-widget-box .cancel a[focus-within]::after {
 	--clip-path:
-		polygon(
-			0 100%,
+		polygon(0 100%,
 			100% 115%,
 			100% 0,
-			0 -15%
-		);
+			0 -15%);
 }
 .page-rate-widget-box .rateup a:focus-within::after,
 .page-rate-widget-box .ratedown a:focus-within::after,
 .page-rate-widget-box .cancel a:focus-within::after {
 	--clip-path:
-		polygon(
-			0 100%,
+		polygon(0 100%,
 			100% 115%,
 			100% 0,
-			0 -15%
-		);
+			0 -15%);
 }
 div.page-rate-widget-box .rate-points {
 	display: flex;
@@ -11292,12 +11269,10 @@ div.page-rate-widget-box .rate-points {
 }
 #page-content .rate-box-with-credit-button>.creditButton>p>a::after {
 	--clip-path:
-		polygon(
-			0 100%,
+		polygon(0 100%,
 			100% 115%,
 			100% 100%,
-			0 115%
-		);
+			0 115%);
 	content: " ";
 	position: absolute;
 	z-index: 0;
@@ -11318,30 +11293,24 @@ div.page-rate-widget-box .rate-points {
 #page-content .rate-box-with-credit-button>.creditButton>p>a:hover::after,
 #page-content .rate-box-with-credit-button>.creditButton>p>a:active::after {
 	--clip-path:
-		polygon(
-			0 100%,
+		polygon(0 100%,
 			100% 115%,
 			100% 0,
-			0 -15%
-		);
+			0 -15%);
 }
 #page-content .rate-box-with-credit-button>.creditButton>p>a[focus-within]::after {
 	--clip-path:
-		polygon(
-			0 100%,
+		polygon(0 100%,
 			100% 115%,
 			100% 0,
-			0 -15%
-		);
+			0 -15%);
 }
 #page-content .rate-box-with-credit-button>.creditButton>p>a:focus-within::after {
 	--clip-path:
-		polygon(
-			0 100%,
+		polygon(0 100%,
 			100% 115%,
 			100% 0,
-			0 -15%
-		);
+			0 -15%);
 }
 #page-content .rate-box-with-credit-button>.creditButton>p>a::before {
 	--mask-image: var(--credit-button-mask);
@@ -11695,8 +11664,8 @@ div.page-rate-widget-box .rate-points {
 #page-content .creditRate.creditModule .rate-box-with-credit-button>.page-rate-widget-box {
 	background-color: rgb(252, 252, 252);
 	background-color: rgb(var(--rating-module-bg-color));
-	border: 0.0625rem solid rgba(12, 12, 12,.15);
-	border: 0.0625rem solid rgba(var(--swatch-border-color),.15);
+	border: 0.0625rem solid rgba(12, 12, 12, .15);
+	border: 0.0625rem solid rgba(var(--swatch-border-color), .15);
 	border-bottom-width: 0;
 	box-shadow: 0 0.125rem 0 0 rgb(133, 0, 5);
 	box-shadow: 0 0.125rem 0 0 rgb(var(--rating-module-bottom-border-color));
@@ -11753,11 +11722,11 @@ div.page-rate-widget-box .rate-points {
 	font-size: inherit;
 }
 #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton,
-.creditRate.creditModule .heritage-rating-module ~ .creditButton {
+.creditRate.creditModule .heritage-rating-module~.creditButton {
 	background-color: rgb(252, 252, 252);
 	background-color: rgb(var(--rating-module-bg-color));
-	border: 0.0625rem solid rgba(12, 12, 12,.15);
-	border: 0.0625rem solid rgba(var(--swatch-border-color),.15);
+	border: 0.0625rem solid rgba(12, 12, 12, .15);
+	border: 0.0625rem solid rgba(var(--swatch-border-color), .15);
 	border-bottom-width: 0;
 	border-radius: 0;
 	box-shadow: 0 0.125rem 0 0 rgb(133, 0, 5);
@@ -11772,7 +11741,7 @@ div.page-rate-widget-box .rate-points {
 	width: calc(var(--base-font-size) * (21 / 15));
 }
 #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a,
-.creditRate.creditModule .heritage-rating-module ~ .creditButton a {
+.creditRate.creditModule .heritage-rating-module~.creditButton a {
 	display: flex;
 	background-color: transparent;
 	color: rgb(12, 12, 12);
@@ -11782,14 +11751,12 @@ div.page-rate-widget-box .rate-points {
 	height: 100%;
 }
 #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a::after,
-.creditRate.creditModule .heritage-rating-module ~ .creditButton a::after {
+.creditRate.creditModule .heritage-rating-module~.creditButton a::after {
 	--clip-path:
-		polygon(
-			0 100%,
+		polygon(0 100%,
 			100% 115%,
 			100% 100%,
-			0 115%
-		);
+			0 115%);
 	content: " ";
 	position: absolute;
 	z-index: 0;
@@ -11804,44 +11771,38 @@ div.page-rate-widget-box .rate-points {
 	        clip-path: var(--clip-path);
 }
 #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a::after,
-.creditRate.creditModule .heritage-rating-module ~ .creditButton a::after {
+.creditRate.creditModule .heritage-rating-module~.creditButton a::after {
 	background-color: rgba(12, 12, 12, 1);
 	background-color: rgba(var(--rating-module-text-color), 1);
 }
 #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a:hover::after,
 #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a:active::after,
-.creditRate.creditModule .heritage-rating-module ~ .creditButton a:hover::after,
-.creditRate.creditModule .heritage-rating-module ~ .creditButton a:active::after {
+.creditRate.creditModule .heritage-rating-module~.creditButton a:hover::after,
+.creditRate.creditModule .heritage-rating-module~.creditButton a:active::after {
 	--clip-path:
-		polygon(
-			0 100%,
+		polygon(0 100%,
 			100% 115%,
 			100% 0,
-			0 -15%
-		);
+			0 -15%);
 }
 #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a[focus-within]::after,
-.creditRate.creditModule .heritage-rating-module ~ .creditButton a[focus-within]::after {
+.creditRate.creditModule .heritage-rating-module~.creditButton a[focus-within]::after {
 	--clip-path:
-		polygon(
-			0 100%,
+		polygon(0 100%,
 			100% 115%,
 			100% 0,
-			0 -15%
-		);
+			0 -15%);
 }
 #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a:focus-within::after,
-.creditRate.creditModule .heritage-rating-module ~ .creditButton a:focus-within::after {
+.creditRate.creditModule .heritage-rating-module~.creditButton a:focus-within::after {
 	--clip-path:
-		polygon(
-			0 100%,
+		polygon(0 100%,
 			100% 115%,
 			100% 0,
-			0 -15%
-		);
+			0 -15%);
 }
 #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a::before,
-.creditRate.creditModule .heritage-rating-module ~ .creditButton a::before {
+.creditRate.creditModule .heritage-rating-module~.creditButton a::before {
 	--mask-image: var(--credit-button-mask);
 	content: " ";
 	position: absolute;
@@ -11862,32 +11823,32 @@ div.page-rate-widget-box .rate-points {
 }
 #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a:hover::before,
 #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a:active::before,
-.creditRate.creditModule .heritage-rating-module ~ .creditButton a:hover::before,
-.creditRate.creditModule .heritage-rating-module ~ .creditButton a:active::before {
+.creditRate.creditModule .heritage-rating-module~.creditButton a:hover::before,
+.creditRate.creditModule .heritage-rating-module~.creditButton a:active::before {
 	background-color: rgb(252, 252, 252);
 	background-color: rgb(var(--rating-module-text-hover-color));
 }
 #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a[focus-within]::before,
-.creditRate.creditModule .heritage-rating-module ~ .creditButton a[focus-within]::before {
+.creditRate.creditModule .heritage-rating-module~.creditButton a[focus-within]::before {
 	background-color: rgb(252, 252, 252);
 	background-color: rgb(var(--rating-module-text-hover-color));
 }
 #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a[focus-within]::before,
-.creditRate.creditModule .heritage-rating-module ~ .creditButton a[focus-within]::before {
+.creditRate.creditModule .heritage-rating-module~.creditButton a[focus-within]::before {
 	background-color: rgb(252, 252, 252);
 	background-color: rgb(var(--rating-module-text-hover-color));
 }
 #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a:focus-within::before,
-.creditRate.creditModule .heritage-rating-module ~ .creditButton a:focus-within::before {
+.creditRate.creditModule .heritage-rating-module~.creditButton a:focus-within::before {
 	background-color: rgb(252, 252, 252);
 	background-color: rgb(var(--rating-module-text-hover-color));
 }
 [id*=u-credit] .creditBottomRate,
-[id*=u-credit] .modalbox > .Dendo,
+[id*=u-credit] .modalbox>.Dendo,
 [id*=u-credit] .modalbox-ratemodule {
 	position: static;
 }
-.creditRate.creditModule ~ [id*="u-credit"] .modalcontainer {
+.creditRate.creditModule~[id*="u-credit"] .modalcontainer {
 	display: block;
 	height: -webkit-fit-content;
 	height: -moz-fit-content;
@@ -11901,33 +11862,33 @@ div.page-rate-widget-box .rate-points {
 	width: -moz-fit-content;
 	width: fit-content;
 }
-.creditRate.creditModule ~ [id*=u-credit] div.modalbox {
+.creditRate.creditModule~[id*=u-credit] div.modalbox {
 	max-width: 25rem !important;
 }
-.creditRate.creditModule ~ [id*=u-credit] div.modalbox {
+.creditRate.creditModule~[id*=u-credit] div.modalbox {
 	aspect-ratio: 16 / 9;
 	min-height: inherit;
 }
-.creditRate.creditModule ~ [id*=u-credit] .modalbox .modalbox-title  {
+.creditRate.creditModule~[id*=u-credit] .modalbox .modalbox-title {
 	border-radius: 0;
 }
-.creditRate.creditModule ~ [id*=u-credit] .modalbox .credit {
+.creditRate.creditModule~[id*=u-credit] .modalbox .credit {
 	margin: 0 1rem;
 }
-.creditRate.creditModule ~ [id*=u-credit] .modalbox .credit.otherwise {
+.creditRate.creditModule~[id*=u-credit] .modalbox .credit.otherwise {
 	height: -webkit-max-content;
 	height: -moz-max-content;
 	height: max-content;
 	overflow-y: auto;
 }
-.creditRate.creditModule ~ [id*="u-credit"] div.credit-back::before {
+.creditRate.creditModule~[id*="u-credit"] div.credit-back::before {
 	content: "クレジット";
 }
-.creditRate.creditModule ~ [id*=u-credit] div.creditBottomRate {
+.creditRate.creditModule~[id*=u-credit] div.creditBottomRate {
 	box-shadow: none;
 	box-shadow: initial;
 }
-.creditRate.creditModule ~ [id*=u-credit] .credit-license a.cc {
+.creditRate.creditModule~[id*=u-credit] .credit-license a.cc {
 	color: rgb(12, 12, 12);
 	color: rgb(var(--swatch-text-general));
 	font-size: 2em;
@@ -11956,20 +11917,20 @@ div.page-rate-widget-box .rate-points {
 	border: medium none currentColor;
 	border: initial;
 }
-.creditRate.creditModule .heritage-rating-module ~ .creditButton {
+.creditRate.creditModule .heritage-rating-module~.creditButton {
 	padding: inherit;
 }
-.creditRate.creditModule ~ [id*="u-credit"] .modalbox.heritage {
+.creditRate.creditModule~[id*="u-credit"] .modalbox.heritage {
 	border: rgb(100, 46, 44) solid 0.5rem;
 	border: rgb(var(--swatch-primary-darker)) solid 0.5rem;
 	border-radius: 0.5rem;
 }
-.creditRate.creditModule ~ [id*="u-credit"] .modalbox.heritage .modalbox-title {
+.creditRate.creditModule~[id*="u-credit"] .modalbox.heritage .modalbox-title {
 	background: linear-gradient(to bottom, rgba(100, 46, 44, 1), rgba(100, 46, 44, 0.7));
 	background: linear-gradient(to bottom, rgba(var(--swatch-primary-darker), 1), rgba(var(--swatch-primary-darker), 0.7));
 	justify-content: center;
 }
-.creditRate.creditModule ~ [id*="u-credit"] .modalbox .modalbox-title.heritage h2::before {
+.creditRate.creditModule~[id*="u-credit"] .modalbox .modalbox-title.heritage h2::before {
 	display: none;
 }
 /* ===TABLES=== */
@@ -12349,10 +12310,10 @@ table[style*="margin:0"] * {
 	opacity: 0;
 	background-color: rgb(var(--toc-body-hover-arrow-color));
 	pointer-events: none;
-	-webkit-mask: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-16'%3F%3E%3Csvg version='1.2' baseProfile='tiny' id='Right_Arrow' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 6 10' overflow='visible' xml:space='preserve'%3E%3Cpath d='M0,10l6-5L0,0V10z'/%3E%3C/svg%3E%0A") center 0.25rem /  0.3625em 1em no-repeat;
-	        mask: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-16'%3F%3E%3Csvg version='1.2' baseProfile='tiny' id='Right_Arrow' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 6 10' overflow='visible' xml:space='preserve'%3E%3Cpath d='M0,10l6-5L0,0V10z'/%3E%3C/svg%3E%0A") center 0.25rem /  0.3625em 1em no-repeat;
-	-webkit-mask: var(--right-arrow-mask) center 0.25rem /  0.3625em 1em no-repeat;
-	        mask: var(--right-arrow-mask) center 0.25rem /  0.3625em 1em no-repeat;
+	-webkit-mask: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-16'%3F%3E%3Csvg version='1.2' baseProfile='tiny' id='Right_Arrow' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 6 10' overflow='visible' xml:space='preserve'%3E%3Cpath d='M0,10l6-5L0,0V10z'/%3E%3C/svg%3E%0A") center 0.25rem / 0.3625em 1em no-repeat;
+	        mask: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-16'%3F%3E%3Csvg version='1.2' baseProfile='tiny' id='Right_Arrow' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 6 10' overflow='visible' xml:space='preserve'%3E%3Cpath d='M0,10l6-5L0,0V10z'/%3E%3C/svg%3E%0A") center 0.25rem / 0.3625em 1em no-repeat;
+	-webkit-mask: var(--right-arrow-mask) center 0.25rem / 0.3625em 1em no-repeat;
+	        mask: var(--right-arrow-mask) center 0.25rem / 0.3625em 1em no-repeat;
 }
 #toc #toc-list a,
 #toc #toc-list a:visited {
@@ -12530,11 +12491,9 @@ table[style*="margin:0"] * {
 }
 .pager .current:not(:last-of-type)::before {
 	--clip-path:
-		polygon(
-			100% 0,
+		polygon(100% 0,
 			0 100%,
-			100% 100%
-		);
+			100% 100%);
 	left: -1.5em;
 	-webkit-clip-path: var(--clip-path);
 	        clip-path: var(--clip-path);
@@ -12544,11 +12503,9 @@ table[style*="margin:0"] * {
 }
 .pager .current:last-of-type::before {
 	--clip-path:
-		polygon(
-			0 0,
+		polygon(0 0,
 			0 100%,
-			100% 100%
-		);
+			100% 100%);
 	right: -1.5em;
 	-webkit-clip-path: var(--clip-path);
 	        clip-path: var(--clip-path);
@@ -12602,12 +12559,10 @@ table[style*="margin:0"] * {
 }
 .pager a::after {
 	--clip-path:
-		polygon(
-			0 100%,
+		polygon(0 100%,
 			100% 115%,
 			100% 100%,
-			0 115%
-		);
+			0 115%);
 	content: " ";
 	position: absolute;
 	z-index: -1;
@@ -12626,30 +12581,24 @@ table[style*="margin:0"] * {
 .pager a:hover::after,
 .pager a:active::after {
 	--clip-path:
-		polygon(
-			0 100%,
+		polygon(0 100%,
 			100% 115%,
 			100% 0,
-			0 -15%
-		);
+			0 -15%);
 }
 .pager a[focus-within]::after {
 	--clip-path:
-		polygon(
-			0 100%,
+		polygon(0 100%,
 			100% 115%,
 			100% 0,
-			0 -15%
-		);
+			0 -15%);
 }
 .pager a:focus-within::after {
 	--clip-path:
-		polygon(
-			0 100%,
+		polygon(0 100%,
 			100% 115%,
 			100% 0,
-			0 -15%
-		);
+			0 -15%);
 }
 /* ===WIKIDOT USER ICONS=== */
 span.printuser {
@@ -12840,13 +12789,11 @@ div.keycap {
 /* Reworked from Sigma-9 */
 .tags {
 	--clip-path:
-		polygon(
-			0.5rem 0,
+		polygon(0.5rem 0,
 			100% 0,
 			100% 100%,
 			0.5rem 100%,
-			0 50%
-		);
+			0 50%);
 	--wght: 500;
 	display: inline;
 	position: relative;
@@ -13206,6 +13153,55 @@ body.print-body #main-content .page-tags span {
 	justify-content: flex-start;
 }
 /* Reduced Motion Media Query */
+/* ===LOCALIZATION FOR JP=== */
+.colmod-block>ul>li>ul,
+li.folded>.colmod-link-top a+a,
+li.folded>.colmod-content,
+li.folded>.colmod-link-end a,
+li.unfolded>.colmod-link-top a:first-child {
+	display: none;
+}
+.colmod-content {
+	animation: fade-in .2s ease-in-out;
+	animation-timing-function: cubic-bezier(.3649610494, 0, .6350389506, 1);
+}
+li.folded > .colmod-content {
+	animation-name: none;
+}
+[class |="colmod-link"] div.foldable-list-container {
+	display: inline;
+}
+#page-content .wikisys--template-dialog {
+	color: rgb(100, 46, 44) !important;
+	color: rgb(var(--swatch-primary-darker)) !important;
+}
+#page-content .wikisys--template-dialog {
+	margin: 1em 2rem;
+	padding: 2em;
+	border: .0625rem solid rgb(160, 160, 160);
+	border: .0625rem solid rgb(var(--swatch-menubg-medium-color));
+	border-radius: 2em;
+	background-color: rgb(244, 244, 244);
+	background-color: rgb(var(--swatch-secondary-color));
+	clear: both;
+}
+#page-content .wikisys--template-dialog > .wikisys--template-dialog-header {
+	--wght: 800;
+	padding: .3125rem 0 .3152rem .375rem;
+	margin: 0 0 0 .375rem;
+	font-weight: 400;
+	font-weight: var(--wght, revert);
+	font-size: 1.5em;
+	box-shadow: -.375rem 0 rgba(160, 160, 160, .2);
+	box-shadow: -.375rem 0 rgba(var(--swatch-menubg-medium-color), .2);
+}
+#page-content .wikisys--template-dialog > .wikisys--template-dialog-content {
+	margin: 1em 0;
+}
+#page-content .wikisys--template-dialog > .wikisys--template-dialog-footer {
+	font-size: .9em;
+	margin: 1em 0 0 0;
+}
 @media only screen and (max-width: 56.25rem) {
 	:root {
 		--base-font-size: var(--min-font-size);
