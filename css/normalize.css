@@ -1,7 +1,5 @@
 @charset "utf-8";
 
-@supports(display: grid) {
-
 /*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 
 /* Document */
@@ -2152,5 +2150,4 @@ li.folded > .colmod-content {
 .inline-diff ins + del::before,
 .inline-diff del + ins::before {
 	color: inherit;
-}
 }
