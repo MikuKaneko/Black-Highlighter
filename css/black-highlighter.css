@@ -9287,6 +9287,10 @@ div.wd-adunit {
 					color: rgba(var(--sidebar-links-hover-text), 0.25);
 				}
 
+#side-bar div.menu-item .sub-text {
+			pointer-events: none;
+		}
+
 #side-bar div.scpnet-interwiki-wrapper {
 		margin: 0;
 		max-width: inherit;
