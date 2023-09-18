@@ -10606,6 +10606,7 @@ div.wd-adunit {
 /* LOCALIZATION FOR JP */
 
 #side-bar hr {
+		height: auto;
 		margin-bottom: 0;
 	}
 
@@ -10615,23 +10616,15 @@ div.wd-adunit {
 		}
 
 #side-bar div.side-block.sns {
-			padding: 0.5em !important;
 			background-color: rgb(var(--sidebar-media-bg-color)) !important;
 		}
 
-#side-bar div.side-block.sns {
-			grid-auto-flow: column;
-			-webkit-box-pack: space-evenly;
-			-webkit-justify-content: space-evenly;
-			        justify-content: space-evenly;
-			width: var(--sidebar-width-on-mobile);
-			margin: 0.5rem 0.5rem 0 0;
-			direction: ltr;
-		}
-
-#side-bar div.side-block.sns > div,
-				#side-bar div.side-block.sns > div > div {
+#side-bar div.side-block.sns > div {
 					display: contents !important;
+			}
+
+#side-bar div.side-block.sns > div > div {
+					border-left: none;
 				}
 
 #side-bar div.side-block.sns a {
@@ -10679,12 +10672,12 @@ div.wd-adunit {
 					opacity: 0;
 				}
 
-#side-bar div.side-block.sns a *[href*="discord"] {
+#side-bar div.side-block.sns *a[href*="discord"] {
 					--social-logo-mask: var(--discord-mask);
 					--social-color: var(--discord-icon-color);
 				}
 
-#side-bar div.side-block.sns a *[href*="twitter"] {
+#side-bar div.side-block.sns *a[href*="twitter"] {
 					--social-logo-mask: var(--twitter-mask);
 					--social-color: var(--twitter-icon-color);
 				}
@@ -10708,7 +10701,6 @@ div.wd-adunit {
 
 #side-bar div.menu-item a:only-of-type:is(:hover, :active, :focus, :focus-within) ~ span {
 						--wght: var(--ui-hvr-wght);
-
 						border-color: rgba(var(--sidebar-links-hover-text-color), 0.15);
 						color: rgb(var(--sidebar-links-hover-text-color));
 					}
@@ -10753,14 +10745,16 @@ div.wd-adunit {
 				}
 
 #side-bar div.menu-item .sub-text {
+			line-height: -webkit-calc(var(--base-line-height)/1.5);
+			line-height: calc(var(--base-line-height)/1.5);
 			pointer-events: none;
 		}
 
-#side-bar div.scpnet-interwiki-wrapper {
+#side-bar div.scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
 		margin: 0;
 		max-width: inherit;
 		width: 100%;
-	}
+		}
 
 @media only screen and (max-width: 56.25rem) {
 :root {
@@ -11566,7 +11560,7 @@ div#container-wrap {
 	        flex-wrap: nowrap;
 	width: 100%;
 	height: var(--topbar-height-on-desktop);
-	margin: var(--header-height-on-desktop) 0 1.75rem 0;
+	margin: var(--header-height-on-desktop) 0 0 0;
 	padding: 0;
 	font-family: var(--UI-font, var(--header-font));
 	font-size: -webkit-calc(var(--base-font-size) * (13 / 15));
@@ -13334,7 +13328,7 @@ div.rate-box-with-credit-button div.page-rate-widget-box .rate-points, div.page-
 	}
 
 div.rate-box-with-credit-button div.page-rate-widget-box .rate-points .number, div.page-rate-widget-box .rate-points .number {
-			font-size: 1.15em);
+			font-size: 1.15em;
 		}
 
 /* Credit Button Rating Module Specific */
