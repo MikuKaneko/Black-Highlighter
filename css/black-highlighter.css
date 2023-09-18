@@ -10623,7 +10623,7 @@ div.wd-adunit {
 					display: contents !important;
 			}
 
-#side-bar div.side-block.sns > div > div {
+#side-bar div.side-block.sns > div.menu-item > div {
 					border-left: none;
 				}
 
@@ -10672,12 +10672,12 @@ div.wd-adunit {
 					opacity: 0;
 				}
 
-#side-bar div.side-block.sns *a[href*="discord"] {
+#side-bar div.side-block.sns a[href*="discord"] {
 					--social-logo-mask: var(--discord-mask);
 					--social-color: var(--discord-icon-color);
 				}
 
-#side-bar div.side-block.sns *a[href*="twitter"] {
+#side-bar div.side-block.sns a[href*="twitter"] {
 					--social-logo-mask: var(--twitter-mask);
 					--social-color: var(--twitter-icon-color);
 				}
