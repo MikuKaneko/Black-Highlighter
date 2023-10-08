@@ -2144,8 +2144,6 @@ input[type="radio"]:checked::before {
 							rgba(var(--background-gradient-color), 0) 0,
 							rgba(var(--background-gradient-color), 0) var(--background-gradient-distance)
 						);
-						-webkit-clip-path: initial;
-						        clip-path: initial;
 					}
 
 /* ===DATA-FORM GENERAL INPUT STYLING=== */
@@ -2559,7 +2557,6 @@ input[type="radio"]:checked::before {
 			display: grid;
 			position: relative;
 			top: auto;
-			top: initial;
 			grid-template-columns: 1fr;
 			grid-template-rows: 1fr;
 			-webkit-box-align: center;
@@ -2621,30 +2618,22 @@ input[type="radio"]:checked::before {
 #ui-datepicker-div.ui-datepicker .ui-datepicker-prev span, #ui-datepicker-div.ui-datepicker .ui-datepicker-next span {
 				display: none;
 				position: static;
-				position: initial;
 				top: auto;
-				top: initial;
 				left: auto;
-				left: initial;
 				margin-top: 0;
-				margin-top: initial;
 				margin-left: 0;
-				margin-left: initial;
 				background-image: none;
 			}
 
 #ui-datepicker-div.ui-datepicker .ui-datepicker-prev-hover,
 		#ui-datepicker-div.ui-datepicker .ui-datepicker-next-hover {
 			top: auto;
-			top: initial;
 		}
 
 #ui-datepicker-div.ui-datepicker .ui-datepicker-prev {
 			--clip-path: polygon(40% 50%, 60% 30%, 60% 70%);
 
 			left: auto;
-
-			left: initial;
 			grid-area: cal-prev;
 		}
 
@@ -2653,16 +2642,12 @@ input[type="radio"]:checked::before {
 			--clip-path: polygon(30% 50%, 60% 20%, 60% 80%);
 
 			left: auto;
-
-			left: initial;
 		}
 
 #ui-datepicker-div.ui-datepicker .ui-datepicker-next {
 			--clip-path: polygon(60% 50%, 40% 30%, 40% 70%);
 
 			right: auto;
-
-			right: initial;
 			grid-area: cal-next;
 		}
 
@@ -2671,8 +2656,6 @@ input[type="radio"]:checked::before {
 			--clip-path: polygon(70% 50%, 40% 20%, 40% 80%);
 
 			right: auto;
-
-			right: initial;
 		}
 
 #ui-datepicker-div.ui-datepicker .ui-state-hover {
@@ -2772,10 +2755,8 @@ pre i,
 
 .footnoteref {
 	position: static;
-	position: initial;
 	top: -.5em;
 	vertical-align: baseline;
-	vertical-align: initial;
 }
 
 sub,
@@ -3271,7 +3252,6 @@ rt {
 
 	.page-options-bottom {
 		height: auto;
-		height: initial;
 	}
 
 		.page-options-bottom a {
@@ -3367,7 +3347,6 @@ rt {
 
 #content-wrap {
 	position: static;
-	position: initial;
 	grid-area: content-wrap;
 	grid-template-areas: "side-bar . content .";
 	grid-template-columns:
@@ -5268,9 +5247,7 @@ form#edit-page-form .wd-editor-toolbar-panel a, form#edit-post-form .wd-editor-t
 			border: none;
 			background-color: rgb(var(--editor-icon-bg));
 			background-image: none;
-			background-image: initial;
 			background-position: 0 0;
-			background-position: initial;
 		}
 
 form#edit-page-form .wd-editor-toolbar-panel a::before,
@@ -7707,7 +7684,6 @@ table.page-files thead tr,
 #action-area form[onsubmit*="setParent"] #parent-page-name-list .yui-ac-content {
 				border: 0.0625rem solid rgba(var(--swatch-border-color), 0.25);
 				border-top: 0;
-				border-top: initial;
 				background-color: rgb(var(--swatch-background));
 			}
 
@@ -10506,7 +10482,6 @@ div.wd-adunit {
 		-webkit-transition: left 0.5s var(--ease-in-out) 0.1s;
 		transition: left 0.5s var(--ease-in-out) 0.1s;
 		direction: ltr;
-		direction: initial;
 	}
 
 		#side-bar::after {
@@ -10521,7 +10496,6 @@ div.wd-adunit {
 		#side-bar .side-block {
 			margin-top: 0.25rem;
 			direction: ltr;
-			direction: initial;
 		}
 
 		#side-bar div.menu-item a:first-of-type {
@@ -11368,7 +11342,7 @@ div#container-wrap {
 		right: 0;
 		bottom: auto;
 		left: auto;
-		width: 10em;
+		width: 12em;
 		margin: 0.25em 0 0;
 		padding: 0;
 		overflow: hidden;
@@ -11542,8 +11516,6 @@ div#container-wrap {
 	z-index: 9999;
 	bottom: 0;
 	left: 1rem;
-	-webkit-filter: initial;
-	        filter: initial;
 }
 
 #header div#top-bar {
@@ -11919,7 +11891,6 @@ div#container-wrap {
 #header div[class*="top-bar"] > ul > li > ul > li > img {
 						/* Images in Dropdown Menu Support */
 						position: static;
-						position: initial;
 						padding: 0 0.25rem;
 						padding-left: 0;
 					}
@@ -11998,7 +11969,6 @@ div#container-wrap {
 .topbar_arrow,
 .c_topbar_arrow {
 	top: auto;
-	top: initial;
 }
 
 #top-bar ul li .home-button, #top-bar > .ct-theme-switch .home-button, #top-bar ul li:is(:hover, :active, :focus, :focus-within) .home-button, #top-bar > .ct-theme-switch:is(:hover, :active, :focus, :focus-within) .home-button {
@@ -12035,8 +12005,7 @@ div#container-wrap {
 			#top-bar ul li:is(:hover, :active, :focus, :focus-within) .lightbulb .lightbulb-mask,
 			#top-bar > .ct-theme-switch:is(:hover, :active, :focus, :focus-within) .lightbulb .lightbulb-mask {
 				width: 100%;
-				background-image: none;
-				background-image: initial; /* Overwriting inline styling */
+				background-image: none; /* Overwriting inline styling */
 				-webkit-mask: center center / 1em 1em no-repeat;
 				        mask: center center / 1em 1em no-repeat;
 			}
@@ -12047,7 +12016,6 @@ div#container-wrap {
 
 #top-bar ul li a.homebutton {
 				background-image: none;
-				background-image: initial;
 			}
 
 #top-bar ul li .lightbulb {
@@ -12229,9 +12197,6 @@ div#container-wrap {
 		#login-status:is(:hover, :active, :focus-within) {
 			color: rgb(var(--login-line-divider-color));
 			pointer-events: all;
-			-webkit-user-select: initial;
-			   -moz-user-select: initial;
-			        user-select: initial;
 		}
 
 			#login-status:is(:hover, :active, :focus-within) #account-options {
@@ -12601,8 +12566,7 @@ div#container-wrap {
 	}
 
 :is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav a {
-			border: medium none currentColor;
-			border: initial;
+			border: medium none currentcolor;
 			background-color: rgb(var(--tabs-bg));
 			color: rgb(var(--tabs-txt));
 		}
@@ -12687,8 +12651,7 @@ div#container-wrap {
 				}
 
 :is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav li a em {
-					border: medium none currentColor !important;
-					border: initial !important;
+					border: medium none currentcolor !important;
 				}
 
 :is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav li a em {
@@ -13269,7 +13232,6 @@ div.rate-box-with-credit-button div.page-rate-widget-box :is(.rateup, .ratedown,
 
 div.rate-box-with-credit-button div.page-rate-widget-box :is(.rateup, .ratedown) a, div.page-rate-widget-box :is(.rateup, .ratedown) a {
 			background: transparent none repeat 0 0 / auto auto padding-box border-box scroll;
-			background: initial;
 			background-color: transparent;
 		}
 
@@ -13407,7 +13369,6 @@ div.heritage-rating-module div.heritage-emblem img {
 
 #page-content div.rate-box-with-credit-button > .creditButton:is(:hover, :active) {
 			background: transparent none repeat 0 0 / auto auto padding-box border-box scroll;
-			background: initial;
 		}
 
 #page-content div.rate-box-with-credit-button > .creditButton > p {
@@ -14015,31 +13976,25 @@ div.heritage-rating-module div.heritage-emblem img {
 		margin: auto;
 		min-width: inherit;
 		top: 0;
-		-webkit-transform: none;
-		        transform: none;
-		-webkit-transform: initial;
-		        transform: initial;
+		translate: unset;
 		width: -webkit-fit-content;
 		width: -moz-fit-content;
 		width: fit-content;
 	}
 
 .creditRate.creditModule~[id*="u-credit"] div.modalbox {
-		max-width: 25rem !important;
+		max-width: 30rem!important;
 	}
 
 .creditRate.creditModule~[id*="u-credit"] div.modalbox {
-		aspect-ratio: 16 / 9;
-		min-height: inherit;
+		min-height: -webkit-fit-content;
+		min-height: -moz-fit-content;
+		min-height: fit-content;
 	}
 
 .creditRate.creditModule~[id*="u-credit"] div.modalbox .modalbox-title {
 			-webkit-border-radius: 0;
 			        border-radius: 0;
-		}
-
-.creditRate.creditModule~[id*="u-credit"] div.modalbox .credit {
-			margin: 0 1rem;
 		}
 
 .creditRate.creditModule~[id*="u-credit"] div.modalbox .credit.otherwise {
@@ -14049,21 +14004,42 @@ div.heritage-rating-module div.heritage-emblem img {
 				overflow-y: auto;
 			}
 
-.creditRate.creditModule~[id*="u-credit"] div.credit-back::before {
-		content: "クレジット";
+.creditRate.creditModule~[id*="u-credit"] div.credit-back {
+		margin: .25em auto;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
 	}
+
+.creditRate.creditModule~[id*="u-credit"] div.credit-back iframe {
+			opacity: 0;
+		}
+
+.creditRate.creditModule~[id*="u-credit"] div.credit-back::before {
+			content: "クレジット";
+			position: static;
+		}
 
 .creditRate.creditModule~[id*="u-credit"] div.creditBottomRate {
 		-webkit-box-shadow: none;
 		        box-shadow: none;
-		-webkit-box-shadow: initial;
-		        box-shadow: initial;
 	}
 
 .creditRate.creditModule~[id*="u-credit"] .credit-license a.cc {
 		color: rgb(var(--swatch-text-general));
 		font-size: 2em;
 		margin-right: 1rem;
+	}
+
+/* Award Modal For JP */
+
+div[class*="award"]~#u-credit-otherwise .modalbox {
+		background: radial-gradient(rgba(255, 219, 90, .95) 0, rgb(255, 255, 255) 100%) !important;
+	}
+
+div[class*="award"]~#u-credit-otherwise .modalbox {
+		-webkit-box-shadow: none;
+		box-shadow: none;
 	}
 
 /* Heritage Rating Module For JP */
@@ -14087,8 +14063,7 @@ div.heritage-rating-module div.heritage-emblem img {
 		}
 
 :is(.creditRate.creditModule, [id*="u-credit"] .Dendo) .heritage-rating-module .page-rate-widget-box {
-			border: medium none currentColor;
-			border: initial;
+			border: medium none currentcolor;
 		}
 
 :is(.creditRate.creditModule, [id*="u-credit"] .Dendo) .heritage-rating-module~.creditButton {
