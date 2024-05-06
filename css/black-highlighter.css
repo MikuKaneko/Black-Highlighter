@@ -702,7 +702,7 @@
   --body-font: Inter, "BIZ UDPGothic", "M PLUS 1p", sans-serif;
   --UI-font: PTRootUI, sans-serif;
   --header-font: Inter, "M PLUS 1p", sans-serif;
-  --title-font: var(--header-font);
+  --title-font: var(--body-font);
   --mono-font: Recursive, monospace;
 }
 
