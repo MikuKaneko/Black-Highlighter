@@ -1,0 +1,41 @@
+/* INT WIKIDOT STRUCTURE STYLING
+   ============================= */
+
+/* Styling specific to Int Branches' Wikidot Structure
+
+/* ===DIRECTORY===
+	6.  =JAPANESE BRANCH
+*/
+
+/* ===JAPANESE BRANCH=== */
+
+:where(:lang(ja)) {
+	:root& {
+		--text-tags: "タグ\0021b4";
+		--text-editor-desc: "変更の要旨";
+		--text-pagehistory-flags: "フラグ";
+		--text-pagehistory-actions: "アクション";
+		--text-pagehistory-by: "編集者";
+		--text-pagehistory-date: "日付";
+		--text-sitetools: "サイトツール";
+	}
+
+	div[id*="page-options-bottom"] {
+		&:not(.page-rate-widget-box, #search-top-box-form) {
+			> a {
+				&.btn {
+					flex-basis: auto;
+				}
+			}
+		}
+	}
+
+	#odialog-container {
+		.modal-body,
+		.content {
+			> h1 ~ table {
+				grid-auto-rows: 1fr;
+			}
+		}
+	}
+}

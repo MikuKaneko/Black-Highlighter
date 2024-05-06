@@ -225,14 +225,17 @@
 }
 
 :root {
+  --theme-base: "black-highlighter";
+  --theme-id: "black-highlighter";
+  --theme-name: "Black Highlighter Theme";
   --logo-image: url("../img/logo.svg");
-  --header-title: "SCP財団";
-  --header-subtitle: "確保、収容、保護";
-  --body-font: Inter, "BIZ UDPGothic", "M Plus 1p", sans-serif;
-  --UI-font: PTRootUI, sans-serif;
-  --header-font: Inter, "M Plus 1p", sans-serif;
+  --header-title: "SCP Foundation";
+  --header-subtitle: "SECURE, CONTAIN, PROTECT";
+  --body-font: Inter, Verdana, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --UI-font: PTRootUI, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantrell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --header-font: Inter, "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --title-font: var(--header-font);
-  --mono-font: Recursive, monospace;
+  --mono-font: Recursive, Consolas, Monaco, monospace;
   --min-font-size: .8125rem;
   --max-font-size: .9375rem;
   --base-font-size: max(var(--min-font-size), min(2vw, var(--max-font-size)));
@@ -670,17 +673,17 @@
 }
 
 :root {
-  --text-tags: "タグ↴";
-  --text-editor-desc: "変更の要約:";
+  --text-tags: "TAGS↴";
+  --text-editor-desc: "Short Description of Changes:";
   --text-pagehistory-rev: "rev.";
-  --text-pagehistory-flags: "フラグ";
-  --text-pagehistory-actions: "アクション";
+  --text-pagehistory-flags: "flags";
+  --text-pagehistory-actions: "actions";
   --text-pagehistory-by: "by";
-  --text-pagehistory-date: "日付";
-  --text-sitetools: "サイトツール";
-  --text-creditview-back: "戻る";
-  --text-tableofcontents: "目次";
-  --text-messages: "メッセージ";
+  --text-pagehistory-date: "date";
+  --text-sitetools: "Site Tools";
+  --text-creditview-back: "Back";
+  --text-tableofcontents: "Table of Contents";
+  --text-messages: "Messages";
   --gradient-sidemenu-header: linear-gradient(10deg, rgba(var(--swatch-primary-darker), .45) 0%, rgba(var(--swatch-primary-darker), .55) 100%);
   --rating-module-button-color: var(--swatch-menutxt-general-color);
   --border-styling: solid .0625rem rgb(var(--swatch-border-color));
@@ -691,6 +694,19 @@
   --box-border-right: .0625rem 0 0 0 rgb(var(--swatch-border-color));
   --box-border-all: 0 0 0 .0625rem rgb(var(--swatch-border-color));
   --sidebar-transition-timing: .5s var(--ease-in-out) .1s;
+}
+
+:root:where(:lang(ja)) {
+  --header-title: "SCP財団";
+  --header-subtitle: "確保、収容、保護";
+  --body-font: Inter, "BIZ UDPGothic", "M PLUS 1p", sans-serif;
+  --UI-font: PTRootUI, sans-serif;
+  --header-font: Inter, "M PLUS 1p", sans-serif;
+  --title-font: var(--header-font);
+  --mono-font: Recursive, monospace;
+}
+
+:root {
   --down-arrow-mask: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.2' baseProfile='tiny' id='Right_Arrow' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 10 6' overflow='visible' xml:space='preserve'%3E%3Cpath d='M0,0l5,6l5-6H0z'/%3E%3C/svg%3E%0A");
   --right-arrow-mask: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-16'%3F%3E%3Csvg version='1.2' baseProfile='tiny' id='Right_Arrow' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 6 10' overflow='visible' xml:space='preserve'%3E%3Cpath d='M0,10l6-5L0,0V10z'/%3E%3C/svg%3E%0A");
   --search-icon-mask: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' id='search_icon' x='0' y='0' baseProfile='tiny' overflow='visible' version='1.2' viewBox='0 0 200 200' xml:space='preserve'%3E%3Cpath d='M164.4 141.4h-10.6l11.8-11.8-6.5-12.9c1.2-2.9 2.2-5.9 3-9 8.2-30.6-3.4-61.9-26.9-80.2l-.8-14.5-49-13-7.9 12.1c-29.6 4.1-55.2 25.4-63.4 56-.8 3.1-1.4 6.2-1.9 9.3L0 85.3l13.1 48.8 14.5.8c9.9 12.7 23.9 22.4 40.6 26.9 16.8 4.5 33.7 3.1 48.6-3l12.9 6.5 11.6-11.6v10.6L177 200h8l15-15v-8l-35.6-35.6zm-76.5-6.2c-26.1 0-47.2-21.1-47.2-47.2s21.1-47.2 47.2-47.2 47.2 21.1 47.2 47.2c0 26-21.1 47.2-47.2 47.2z'/%3E%3C/svg%3E");
@@ -789,7 +805,7 @@
 
 @supports (font-variation-settings: inherit) {
   :is(*, :before, :after) {
-    font-variation-settings: "ital" var(--ital, 0), "slnt" var(--slnt, 0), "CASL" var(--CASL, 0), "CRSV" var(--CRSV, 0), "MONO" var(--MONO, 0), "FLAR" var(--FLAR, 0);
+    font-variation-settings: "ital" var(--ital, 0), "slnt" var(--slnt, 0), "CASL" var(--CASL, 0), "CRSV" var(--CRSV, 0), "MONO" var(--MONO, 0);
   }
 }
 
@@ -1615,7 +1631,6 @@ input[type="radio"] {
 input[type="radio"] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  outline: 0;
   padding: 0;
   overflow: hidden;
 }
@@ -1623,7 +1638,6 @@ input[type="radio"] {
 input[type="radio"] * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  outline: 0;
   padding: 0;
   overflow: hidden;
 }
@@ -1712,8 +1726,7 @@ input[type="radio"]:checked:before {
 }
 
 #edit-page-form.data-form, #new-post-form.data-form, #new-thread-form.data-form {
-  font-size: .8125rem;
-  font-size: max(.8125rem, min(2.5vw, var(--base-font-size)));
+  font-size: var(--base-font-size);
   background-color: rgba(0, 0, 0, 0);
   padding: 0;
 }
@@ -3855,8 +3868,8 @@ div[id*="page-options-bottom"]:not(:is(.page-rate-widget-box, #search-top-box-fo
   padding: var(--button-padding);
   padding-left: calc(var(--icon-size)  + .5em);
   box-shadow: -.125rem 0 .25rem 0 rgba(var(--swatch-tertiary-color), .25), inset 0 -.0625rem 0 0 rgba(var(--swatch-tertiary-color), .75), 0 0 0 0 rgb(var(--ui-button-hover-outline)), inset var(--icon-size) 0 0 0 rgb(var(--ui-icon-bg));
-  -webkit-flex-basis: auto;
-  flex-basis: auto;
+  -webkit-flex-basis: 5rem;
+  flex-basis: 5rem;
   height: 1.5em;
   line-height: 1.5;
 }
@@ -4409,8 +4422,8 @@ div[id*="page-options-bottom"] > a#delete-button {
 
 :is(form#edit-page-form, form#edit-post-form, form#new-post-form, form#new-thread-form):not(.data-form) {
   box-shadow: -.0625rem 0 0 0 rgba(var(--swatch-tertiary-color), .5), .0625rem 0 0 0 rgba(var(--swatch-tertiary-color), .5), 0 .0625rem 0 0 rgba(var(--swatch-tertiary-color), .5);
-  font-size: .8125rem;
-  font-size: max(.8125rem, min(2.5vw, var(--base-font-size)));
+  font-size: var(--max-font-size);
+  font-size: var(--base-font-size);
   background-color: rgba(0, 0, 0, 0);
   grid-template-columns: repeat(6, 1fr);
   grid-template-areas: "pageid . captcha-1 captcha-1 captcha-2 captcha-2"
@@ -4624,7 +4637,6 @@ div[id*="page-options-bottom"] > a#delete-button {
 
 :is(form#edit-page-form, form#edit-post-form, form#new-post-form, form#new-thread-form) #np-title {
   --wght: var(--ui-wght);
-  box-shadow: 0 -.0625em 0 0 rgba(var(--swatch-tertiary-color), .5);
   -webkit-transition: box-shadow .2s var(--ease-in-out), background-color .15s var(--ease-in-out), font-weight .2s var(--ease-in-out), font-variation-settings .2s var(--ease-in-out);
   transition: box-shadow .2s var(--ease-in-out), background-color .15s var(--ease-in-out), font-weight .2s var(--ease-in-out), font-variation-settings .2s var(--ease-in-out);
   outline: 0 solid rgb(var(--swatch-primary));
@@ -6982,7 +6994,6 @@ table.page-files tr[id*="file-row"] {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
-  padding-right: .125em;
 }
 
 #st-action-area > a:not([href="javascript:;"]) {
@@ -7371,7 +7382,6 @@ table.page-files tr[id*="file-row"] {
 
 #action-area form[onsubmit*="setParent"] #parent-page-name-list .yui-ac-content {
   border: .0625rem solid rgba(var(--swatch-border-color), .25);
-  border-top: unset;
   background-color: rgb(var(--swatch-background));
 }
 
@@ -8103,13 +8113,12 @@ div.odialog-shader-iframe {
   border-top: .3rem solid rgb(var(--modal-header-stripe));
   border-right: .3rem solid rgba(0, 0, 0, 0);
   border-bottom: .3rem solid rgb(var(--modal-header-stripe));
-  margin: -.9rem auto;
   border-left: .3rem solid rgba(0, 0, 0, 0);
   -webkit-border-radius: 50%;
   border-radius: 50%;
   width: 1.5rem;
   height: 1.5rem;
-  margin-top: .6rem;
+  margin: .6rem auto -.9rem;
   -webkit-animation: 1.2s linear infinite bhl-loading;
   animation: 1.2s linear infinite bhl-loading;
   display: block;
@@ -8270,7 +8279,7 @@ div.odialog-shader-iframe {
 #odialog-container .modal-body > h1 ~ table {
   grid-column: 1 / span 2;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 1fr;
+  grid-auto-rows: .5fr;
   -webkit-box-align: center;
   -webkit-align-items: center;
   align-items: center;
@@ -8390,7 +8399,7 @@ div.odialog-shader-iframe {
 #odialog-container .content > h1 ~ table {
   grid-column: 1 / span 2;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 1fr;
+  grid-auto-rows: .5fr;
   -webkit-box-align: center;
   -webkit-align-items: center;
   align-items: center;
@@ -9058,13 +9067,35 @@ div.wd-adunit {
   grid-area: action-area-btm-end / span 6;
 }
 
+:root:where(:lang(ja)) {
+  --text-tags: "タグ↴";
+  --text-editor-desc: "変更の要旨";
+  --text-pagehistory-flags: "フラグ";
+  --text-pagehistory-actions: "アクション";
+  --text-pagehistory-by: "編集者";
+  --text-pagehistory-date: "日付";
+  --text-sitetools: "サイトツール";
+}
+
+:where(:lang(ja)) div[id*="page-options-bottom"]:not(:is(.page-rate-widget-box, #search-top-box-form)) > a.btn {
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+}
+
+:where(:lang(ja)) #odialog-container .modal-body > h1 ~ table {
+  grid-auto-rows: 1fr;
+}
+
+:where(:lang(ja)) #odialog-container .content > h1 ~ table {
+  grid-auto-rows: 1fr;
+}
+
 #side-bar {
   z-index: 9;
   width: var(--sidebar-width-on-desktop);
   -webkit-transition: background-color .15s var(--ease-in-out), scrollbar-color .15s var(--ease-in-out), border-color .15s var(--ease-in-out);
   transition: background-color .15s var(--ease-in-out), scrollbar-color .15s var(--ease-in-out), border-color .15s var(--ease-in-out);
-  border: none;
-  border-color: rgba(var(--swatch-tertiary-color), .4);
+  border: none rgba(var(--swatch-tertiary-color), .4);
   background-color: rgb(var(--sidebar-bg-color));
   color: rgb(var(--sidebar-links-text));
   font-family: var(--UI-font, var(--header-font));
@@ -9174,107 +9205,6 @@ div.wd-adunit {
 #interwiki .side-block {
   grid-template-rows: repeat(auto-fit, minmax(1.3125rem, 1fr));
   display: grid;
-}
-
-#side-bar .side-block.media a {
-  -webkit-transition: background-color .15s var(--ease-in-out);
-  transition: background-color .15s var(--ease-in-out);
-  background-color: rgb(var(--social-color));
-  -webkit-mask: var(--social-logo-mask) center center / contain no-repeat;
-  mask: var(--social-logo-mask) center center / contain no-repeat;
-  position: relative;
-}
-
-#side-bar .side-block.media a:before {
-  --clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-  content: " ";
-  -webkit-transition: clip-path .2s var(--ease-in-out);
-  transition: clip-path .2s var(--ease-in-out);
-  background-color: rgb(var(--social-icon-hover-color));
-  pointer-events: none;
-  clip-path: var(--clip-path);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-
-#side-bar .side-block.media a[href*="tiktok"]:after {
-  --clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-  content: " ";
-  -webkit-transition: clip-path .2s var(--ease-in-out);
-  transition: clip-path .2s var(--ease-in-out);
-  background-color: rgb(var(--social-icon-hover-color));
-  pointer-events: none;
-  clip-path: var(--clip-path);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-
-#side-bar .side-block.media a:is(:hover, :active, :focus-within):before {
-  --clip-path: polygon(-15% 0, 115% 0, 100% 100%, 0 100%);
-}
-
-#side-bar .side-block.media a img {
-  opacity: 0;
-  width: 1.6875rem;
-  height: 1.6875rem;
-}
-
-#side-bar .side-block.media a[href*="facebook"] {
-  --social-logo-mask: var(--facebook-mask);
-  --social-color: var(--facebook-icon-color);
-}
-
-#side-bar .side-block.media a[href*="twitter"] {
-  --social-logo-mask: var(--twitter-mask);
-  --social-color: var(--twitter-icon-color);
-}
-
-#side-bar .side-block.media a[href*="reddit"] {
-  --social-logo-mask: var(--reddit-mask);
-  --social-color: var(--reddit-icon-color);
-}
-
-#side-bar .side-block.media a[href*="instagram"] {
-  --social-logo-mask: var(--instagram-mask);
-  --social-color: var(--instagram-icon-color);
-  background-image: var(--instagram-icon-gradient);
-  background-size: contain;
-}
-
-#side-bar .side-block.media a[href*="twitch"] {
-  --social-logo-mask: var(--twitch-mask);
-  --social-color: var(--twitch-icon-color);
-}
-
-#side-bar .side-block.media a[href*="tiktok"] {
-  --social-logo-mask: var(--tiktok-mask);
-  --social-color: var(--tiktok-icon-color);
-  background-image: var(--tiktok-icon-gradient);
-  background-size: contain;
-}
-
-#side-bar .side-block.media a[href*="tiktok"]:after {
-  --clip-path: polygon(-15% 0, 115% 0, 100% 100%, 0 100%);
-  background-color: rgb(var(--social-color));
-  -webkit-mask: var(--social-logo-mask) 0 0 / 90% no-repeat;
-  mask: var(--social-logo-mask) 0 0 / 90% no-repeat;
-  top: .125rem;
-  bottom: auto;
-  left: .125rem;
-  right: auto;
-}
-
-#side-bar .side-block.media a[href*="tiktok"]:is(:hover, :active, :focus-within):after {
-  --clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-}
-
-#side-bar .side-block.media a[href*="discord"] {
-  --social-logo-mask: var(--discord-mask);
-  --social-color: var(--discord-icon-color);
 }
 
 #side-bar .side-block[style*="background-color"] {
@@ -10364,158 +10294,8 @@ div.wd-adunit {
   }
 }
 
-#side-bar hr {
-  height: auto;
-  margin-bottom: 0;
-}
-
-#side-bar div.side-block:not(.sns) div.menu-item {
-  grid-template-columns: 50% 50%;
-  display: grid;
-}
-
-#side-bar div.side-block.sns {
-  background-color: rgb(var(--sidebar-media-bg-color)) !important;
-}
-
-#side-bar div.side-block.sns > div {
-  display: contents !important;
-}
-
-#side-bar div.side-block.sns > div.menu-item > div {
-  border-left: none;
-}
-
-#side-bar div.side-block.sns a {
-  -webkit-transition: background-color .15s var(--ease-in-out);
-  transition: background-color .15s var(--ease-in-out);
-  background-color: rgb(var(--social-color));
-  -webkit-mask: var(--social-logo-mask) center center / contain no-repeat;
-  mask: var(--social-logo-mask) center center / contain no-repeat;
-  border: none;
-  width: 1.6875rem;
-  height: 1.6875rem;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
-#side-bar div.side-block.sns a:before {
-  --clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-  content: " ";
-  -webkit-transition: clip-path .2s var(--ease-in-out);
-  transition: clip-path .2s var(--ease-in-out);
-  background-color: rgb(var(--social-icon-hover-color));
-  pointer-events: none;
-  clip-path: var(--clip-path);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  bottom: auto;
-  left: 0;
-  right: auto;
-}
-
-#side-bar div.side-block.sns a:is(:hover, :active, :focus, :focus-within):before {
-  --clip-path: polygon(-15% 0, 115% 0, 100% 100%, 0 100%);
-}
-
-#side-bar div.side-block.sns a img {
-  opacity: 0;
-  width: 1.6875rem;
-  height: 1.6875rem;
-}
-
-#side-bar div.side-block.sns a[href*="discord"] {
-  --social-logo-mask: var(--discord-mask);
-  --social-color: var(--discord-icon-color);
-}
-
-#side-bar div.side-block.sns a[href*="twitter"] {
-  --social-logo-mask: var(--twitter-mask);
-  --social-color: var(--twitter-icon-color);
-}
-
-#side-bar div.side-block[style*="fff0f0"] div.menu-item:last-of-type {
-  grid-template-columns: repeat(3, 33.3333%);
-}
-
-#side-bar div.side-block[style*="fff0f0"] div.menu-item:last-of-type a {
-  grid-row: 1;
-}
-
-#side-bar div.menu-item a:only-of-type {
-  grid-area: 1 / 1 / auto / span 2;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-}
-
-#side-bar div.menu-item a:only-of-type:is(:hover, :active, :focus, :focus-within) ~ span {
-  --wght: var(--ui-hvr-wght);
-  border-color: rgba(var(--sidebar-links-hover-text-color), .15);
-  color: rgb(var(--sidebar-links-hover-text-color));
-}
-
-#side-bar div.menu-item span {
-  z-index: 2;
-  -webkit-transition: border-color .15s var(--ease-in-out), background-color .15s var(--ease-in-out), color .15s var(--ease-in-out), font-weight .2s var(--ease-in-out), font-variation-settings .2s var(--ease-in-out);
-  transition: border-color .15s var(--ease-in-out), background-color .15s var(--ease-in-out), color .15s var(--ease-in-out), font-weight .2s var(--ease-in-out), font-variation-settings .2s var(--ease-in-out);
-  grid-area: 1 / 2;
-}
-
-#side-bar div.menu-item span[style*="line-through"] {
-  display: contents;
-}
-
-#side-bar div.menu-item span[style*="line-through"] a {
-  text-decoration: line-through;
-}
-
-#side-bar div.menu-item a[href*="sandbox2"] {
-  text-indent: 1em;
-}
-
-#side-bar div.menu-item a[href*="sandbox2"]:after {
-  content: "|";
-  -webkit-transition: color .15s var(--ease-in-out), font-weight .2s var(--ease-in-out), font-variation-settings .2s var(--ease-in-out);
-  transition: color .15s var(--ease-in-out), font-weight .2s var(--ease-in-out), font-variation-settings .2s var(--ease-in-out);
-  color: rgba(var(--sidebar-links-text), .25);
-  position: absolute;
-  left: 0;
-}
-
-#side-bar div.menu-item a[href*="sandbox2"]:is(:hover, :active, :focus, :focus-within):after {
-  color: rgba(var(--sidebar-links-hover-text), .25);
-}
-
-#side-bar div.menu-item span[style*="line-through"] a {
-  text-indent: 1em;
-}
-
-#side-bar div.menu-item span[style*="line-through"] a:after {
-  content: "|";
-  -webkit-transition: color .15s var(--ease-in-out), font-weight .2s var(--ease-in-out), font-variation-settings .2s var(--ease-in-out);
-  transition: color .15s var(--ease-in-out), font-weight .2s var(--ease-in-out), font-variation-settings .2s var(--ease-in-out);
-  color: rgba(var(--sidebar-links-text), .25);
-  position: absolute;
-  left: 0;
-}
-
-#side-bar div.menu-item span[style*="line-through"] a:is(:hover, :active, :focus, :focus-within):after {
-  color: rgba(var(--sidebar-links-hover-text), .25);
-}
-
-#side-bar div.menu-item .sub-text {
-  line-height: calc(var(--base-line-height) / 1.5);
-  pointer-events: none;
-}
-
-#side-bar div.scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
-  max-width: inherit;
-  width: 100%;
-  margin: 0;
+:where(:lang(ja)) #side-bar .side-block.media {
+  padding: 0 !important;
 }
 
 body {
@@ -10858,7 +10638,7 @@ div#container-wrap {
   background-color: rgb(var(--login-dropdown-bg-color));
   background-image: var(--login-dropdown-bg-image);
   pointer-events: none;
-  width: 12em;
+  width: 10em;
   margin: .25em 0 0;
   padding: 0;
   position: absolute;
@@ -11055,7 +10835,7 @@ div#container-wrap {
   --wght: var(--ui-wght);
   z-index: 50;
   height: var(--topbar-height-on-desktop);
-  margin: var(--header-height-on-desktop) 0 0 0;
+  margin: var(--header-height-on-desktop) 0 1.75rem 0;
   font-family: var(--UI-font, var(--header-font));
   font-size: calc(var(--base-font-size) * (13 / 15));
   font-weight: var(--wght);
@@ -11827,7 +11607,7 @@ div#container-wrap {
   }
 
   #header div[class*="top-bar"] > ul > li > ul > li:nth-of-type(2n) ul {
-    left: 0%;
+    left: 0;
   }
 
   #header div[class*="top-bar"] > ul > li > ul li > a {
@@ -11941,6 +11721,18 @@ div#container-wrap {
   }
 }
 
+:root:where(:lang(ja)) {
+  --text-messages: "メッセージ";
+}
+
+:where(:lang(ja)) #login-status #account-options {
+  width: 12em;
+}
+
+:where(:lang(ja)) #header div#top-bar {
+  margin: var(--header-height-on-desktop) 0 1.75rem 0;
+}
+
 #page-content .yui-navset {
   z-index: 1;
 }
@@ -11952,7 +11744,7 @@ div#container-wrap {
 :is(.yui-navset, .yui-navset-top, .yui-navset-bottom) .yui-nav {
   --clip-path: polygon(-.0625rem -.5rem, calc(100% + .0625rem) -.5rem, calc(100% + .0625rem) 100%, -.0625rem 100%);
   zoom: unset;
-  box-shadow: 0 .3125rem 0 0 var(--tab-bottom-border-color);
+  box-shadow: 0 .3125rem 0 0 var(--tabs-bottom-border-color);
   font-family: var(--UI-font, var(--header-font));
   clip-path: var(--clip-path);
   border: 0;
@@ -12637,8 +12429,7 @@ div.page-rate-widget-box, #page-content div.rate-box-with-credit-button {
 }
 
 :is(div.rate-box-with-credit-button div.page-rate-widget-box, div.page-rate-widget-box) :is(.rateup, .ratedown) a {
-  background: unset;
-  background-color: rgba(0, 0, 0, 0);
+  background: none;
 }
 
 :is(div.rate-box-with-credit-button div.page-rate-widget-box, div.page-rate-widget-box) :is(.rate-points, .rateup, .ratedown, .cancel) {
@@ -12701,7 +12492,7 @@ div.page-rate-widget-box, #page-content div.rate-box-with-credit-button {
 }
 
 :is(div.rate-box-with-credit-button div.page-rate-widget-box, div.page-rate-widget-box) .rate-points .number {
-  font-size: 1.15em;
+  font-size: calc(var(--base-font-size) * (17 / 15));
 }
 
 div.rate-box-with-credit-button .page-rate-widget-box {
@@ -13240,249 +13031,6 @@ div.heritage-rating-module div.heritage-emblem img {
 
 [id*="u-credit"] .page-rate-widget-box {
   margin: 0;
-}
-
-#page-content .creditRate.creditModule .rate-box-with-credit-button {
-  align-items: inherit;
-  flex-direction: inherit;
-  justify-content: inherit;
-  box-shadow: none;
-  height: inherit;
-  min-width: inherit;
-  overflow: inherit;
-  border: none;
-}
-
-#page-content .creditRate.creditModule .rate-box-with-credit-button > .page-rate-widget-box {
-  background-color: rgb(var(--rating-module-bg-color));
-  border: .0625rem solid rgba(var(--swatch-border-color), .15);
-  box-shadow: 0 .125rem 0 0 rgb(var(--rating-module-bottom-border-color));
-  border-bottom-width: 0;
-}
-
-:is(#page-content, #action-area) div.page-rate-widget-box .rate-points {
-  font-family: var(--UI-font);
-  font-size: .85em;
-  font-weight: var(--wght);
-  display: inline;
-}
-
-:is(#page-content, #action-area) div.page-rate-widget-box span {
-  box-sizing: inherit;
-  height: inherit;
-  display: inline;
-}
-
-:is(#page-content, #action-area) div.page-rate-widget-box .cancel {
-  padding: 0;
-}
-
-:is(#page-content, #action-area) div.page-rate-widget-box .cancel a {
-  color: rgba(0, 0, 0, 0);
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: var(--wght);
-  height: 100%;
-  padding: 0;
-}
-
-:is(#page-content, #action-area) div.page-rate-widget-box .cancel a:before {
-  content: " ";
-  font-size: inherit;
-}
-
-:is(#page-content, #action-area) div.page-rate-widget-box :is(.rateup, .ratedown) a {
-  box-sizing: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: var(--wght);
-  height: 100%;
-  padding: 0;
-  display: block;
-}
-
-:is(#page-content, #action-area) div.page-rate-widget-box :is(.rateup, .ratedown) a:before {
-  content: " ";
-  font-size: inherit;
-}
-
-#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton, .creditRate.creditModule .heritage-rating-module ~ .creditButton {
-  background-color: rgb(var(--rating-module-bg-color));
-  border: .0625rem solid rgba(var(--swatch-border-color), .15);
-  box-shadow: 0 .125rem 0 0 rgb(var(--rating-module-bottom-border-color));
-  font-size: inherit;
-  height: var(--rating-module-height);
-  line-height: inherit;
-  width: calc(var(--base-font-size) * (21 / 15));
-  border-bottom-width: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  margin-left: .5em;
-  display: block;
-}
-
-:is(#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton, .creditRate.creditModule .heritage-rating-module ~ .creditButton) a {
-  color: rgb(var(--rating-module-text-color));
-  font-size: inherit;
-  background-color: rgba(0, 0, 0, 0);
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-}
-
-:is(#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton, .creditRate.creditModule .heritage-rating-module ~ .creditButton) a:before {
-  --mask-image: var(--credit-button-mask);
-  content: " ";
-  z-index: 1;
-  width: calc(var(--base-font-size) * (21 / 15));
-  background-color: rgb(var(--rating-module-text-color));
-  pointer-events: none;
-  -webkit-mask: var(--mask-image) center center / calc(var(--rating-module-height)  - .375em) no-repeat;
-  mask: var(--mask-image) center center / calc(var(--rating-module-height)  - .375em) no-repeat;
-  height: 100%;
-  -webkit-transition: background-color .15s cubic-bezier(.4, 0, .2, 1);
-  transition: background-color .15s cubic-bezier(.4, 0, .2, 1);
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-:is(#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton, .creditRate.creditModule .heritage-rating-module ~ .creditButton) a:after {
-  --clip-path: polygon(0 100%, 100% 115%, 100% 100%, 0 115%);
-  content: " ";
-  z-index: 0;
-  pointer-events: none;
-  clip-path: var(--clip-path);
-  background-color: rgba(var(--rating-module-text-color), 1);
-  width: 100%;
-  height: 100%;
-  -webkit-transition: -webkit-clip-path .2s cubic-bezier(.4, 0, .2, 1), clip-path .2s cubic-bezier(.4, 0, .2, 1);
-  transition: -webkit-clip-path .2s cubic-bezier(.4, 0, .2, 1), clip-path .2s cubic-bezier(.4, 0, .2, 1);
-  position: absolute;
-  top: 0;
-}
-
-:is(#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton, .creditRate.creditModule .heritage-rating-module ~ .creditButton) a:is(:hover, :active):before {
-  background-color: rgb(var(--rating-module-text-hover-color));
-}
-
-:is(#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton, .creditRate.creditModule .heritage-rating-module ~ .creditButton) a:is(:hover, :active):after {
-  --clip-path: polygon(0 100%, 100% 115%, 100% 0, 0 -15%);
-}
-
-:is(#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton, .creditRate.creditModule .heritage-rating-module ~ .creditButton) a:focus-within:before {
-  background-color: rgb(var(--rating-module-text-hover-color));
-}
-
-:is(#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton, .creditRate.creditModule .heritage-rating-module ~ .creditButton) a:focus-within:after {
-  --clip-path: polygon(0 100%, 100% 115%, 100% 0, 0 -15%);
-}
-
-[id*="u-credit"] :is(.creditBottomRate, .modalbox > .Dendo, .modalbox-ratemodule) {
-  position: static;
-}
-
-.creditRate.creditModule ~ [id*="u-credit"] .modalcontainer {
-  min-width: inherit;
-  translate: unset;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: auto;
-  display: block;
-  top: 0;
-}
-
-.creditRate.creditModule ~ [id*="u-credit"] div.modalbox {
-  min-height: -moz-fit-content;
-  min-height: fit-content;
-  max-width: 30rem !important;
-}
-
-.creditRate.creditModule ~ [id*="u-credit"] div.modalbox .modalbox-title {
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
-
-.creditRate.creditModule ~ [id*="u-credit"] div.modalbox .credit.otherwise {
-  height: max-content;
-  overflow-y: auto;
-}
-
-.creditRate.creditModule ~ [id*="u-credit"] div.credit-back {
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: .25em auto;
-}
-
-.creditRate.creditModule ~ [id*="u-credit"] div.credit-back iframe {
-  opacity: 0;
-}
-
-.creditRate.creditModule ~ [id*="u-credit"] div.credit-back:before {
-  content: "クレジット";
-  position: static;
-}
-
-.creditRate.creditModule ~ [id*="u-credit"] div.creditBottomRate {
-  box-shadow: unset;
-}
-
-.creditRate.creditModule ~ [id*="u-credit"] .credit-license a.cc {
-  color: rgb(var(--swatch-text-general));
-  margin-right: 1rem;
-  font-size: 2em;
-}
-
-div[class*="award"] ~ #u-credit-otherwise .modalbox {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  background: -webkit-radial-gradient(rgba(255, 219, 90, .95) 0, #fff 100%) !important;
-  background: radial-gradient(rgba(255, 219, 90, .95) 0, #fff 100%) !important;
-}
-
-:is(.creditRate.creditModule, [id*="u-credit"] .Dendo) .heritage-rating-module {
-  box-shadow: 0 .125rem 0 0 rgb(var(--rating-module-bottom-border-color));
-  float: none;
-  vertical-align: inherit;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  padding: 0 .2rem;
-  display: inline-block;
-}
-
-:is(.creditRate.creditModule, [id*="u-credit"] .Dendo) .heritage-rating-module .heritage-emblem {
-  width: 1rem;
-  height: 1rem;
-  margin-right: .25rem;
-  position: static;
-}
-
-:is(.creditRate.creditModule, [id*="u-credit"] .Dendo) .heritage-rating-module .page-rate-widget-box {
-  border: unset;
-}
-
-:is(.creditRate.creditModule, [id*="u-credit"] .Dendo) .heritage-rating-module ~ .creditButton {
-  padding: inherit;
-}
-
-.creditRate.creditModule ~ [id*="u-credit"] .modalbox.heritage {
-  border: rgb(var(--swatch-primary-darker)) solid .5rem;
-  boder-radius: .5rem;
-}
-
-.creditRate.creditModule ~ [id*="u-credit"] .modalbox .modalbox-title {
-  background: linear-gradient(to bottom, rgba(var(--swatch-primary-darker), 1), rgba(var(--swatch-primary-darker), .7));
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-
-.creditRate.creditModule ~ [id*="u-credit"] .modalbox .modalbox-title.heritage h2:before {
-  display: none;
 }
 
 #page-content table.wiki-content-table {
@@ -14610,15 +14158,15 @@ div.block-right, div.block-left {
 }
 
 .content-panel .panel-footer {
-  color: rgb(var(--swatch--text-tertiary-color));
+  color: rgb(var(--swatch-text-tertiary-color));
 }
 
 .content-panel .panel-footer a {
-  color: rgb(var(--swatch--text-tertiary-color));
+  color: rgb(var(--swatch-text-tertiary-color));
 }
 
 .content-panel .content-toc {
-  --box-shadow: rgba(var(--swatch-menutxt-dark-color) . .15);
+  --box-shadow: rgba(var(--swatch-menutxt-dark-color) 0 .15);
   float: right;
   border: solid .0625rem rgb(var(--swatch-menubg-medium-dark-color));
   background-color: rgb(var(--swatch-tertiary-color));
@@ -14667,13 +14215,6 @@ div.block-right, div.block-left {
 
   :is(div.image-block, div.scp-image-block) img.image[style*="width:"] {
     width: 100% !important;
-  }
-
-  div.image-block.scp-clear-true, div.scp-image-block.scp-clear-true {
-    float: none;
-    clear: both;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   :is(blockquote, .blockquote, div.blockquote, [class*="blockquote"]) {
@@ -14983,49 +14524,291 @@ body.print-body #main-content .page-tags span {
   }
 }
 
-.colmod-block > ul > li > ul, li.folded > .colmod-link-top a + a, li.folded > .colmod-content, li.folded > .colmod-link-end a, li.unfolded > .colmod-link-top a:first-child {
-  display: none;
+:root:where(:lang(ja)) {
+  --text-creditview-back: "閉じる";
+  --text-tableofcontents: "目次";
 }
 
-.colmod-content {
-  -webkit-animation: .2s cubic-bezier(.364961, 0, .635039, 1) fade-in;
-  animation: .2s cubic-bezier(.364961, 0, .635039, 1) fade-in;
+:where(:lang(ja)) div.rate-box-with-credit-button div.page-rate-widget-box .rate-points .number {
+  font-size: 1.15em;
 }
 
-li.folded > .colmod-content {
-  -webkit-animation-name: none;
-  animation-name: none;
+:where(:lang(ja)) div.page-rate-widget-box .rate-points .number {
+  font-size: 1.15em;
 }
 
-[class|="colmod-link"] div.foldable-list-container {
+:where(:lang(ja)) #page-content .creditRate.creditModule .rate-box-with-credit-button {
+  align-items: inherit;
+  flex-direction: inherit;
+  justify-content: inherit;
+  box-shadow: none;
+  height: inherit;
+  min-width: inherit;
+  overflow: inherit;
+  border: none;
+}
+
+:where(:lang(ja)) #page-content .creditRate.creditModule .rate-box-with-credit-button > .page-rate-widget-box {
+  background-color: rgb(var(--rating-module-bg-color));
+  border: .0625rem solid rgba(var(--swatch-border-color), .15);
+  box-shadow: 0 .125rem 0 0 rgb(var(--rating-module-bottom-border-color));
+  border-bottom-width: 0;
+}
+
+:where(:lang(ja)) :is(#page-content, #action-area) div.page-rate-widget-box .rate-points {
+  font-family: var(--UI-font);
+  font-size: .85em;
+  font-weight: var(--wght);
   display: inline;
 }
 
-#page-content .wikisys--template-dialog {
-  border: .0625rem solid rgb(var(--swatch-menubg-medium-color));
-  background-color: rgb(var(--swatch-secondary-color));
-  clear: both;
-  -webkit-border-radius: 2em;
-  border-radius: 2em;
-  margin: 1em 2rem;
-  padding: 2em;
-  color: rgb(var(--swatch-primary-darker)) !important;
+:where(:lang(ja)) :is(#page-content, #action-area) div.page-rate-widget-box span {
+  box-sizing: inherit;
+  height: inherit;
+  display: inline;
 }
 
-#page-content .wikisys--template-dialog > .wikisys--template-dialog-header {
-  --wght: 800;
-  font-weight: var(--wght, revert);
-  box-shadow: -.375rem 0 rgba(var(--swatch-menubg-medium-color), .2);
-  margin: 0 0 0 .375rem;
-  padding: .3125rem 0 .3152rem .375rem;
-  font-size: 1.5em;
+:where(:lang(ja)) :is(#page-content, #action-area) div.page-rate-widget-box .cancel {
+  padding: 0;
 }
 
-#page-content .wikisys--template-dialog > .wikisys--template-dialog-content {
-  margin: 1em 0;
+:where(:lang(ja)) :is(#page-content, #action-area) div.page-rate-widget-box .cancel a {
+  color: rgba(0, 0, 0, 0);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: var(--wght);
+  height: 100%;
+  padding: 0;
 }
 
-#page-content .wikisys--template-dialog > .wikisys--template-dialog-footer {
-  margin: 1em 0 0;
-  font-size: .9em;
+:where(:lang(ja)) :is(#page-content, #action-area) div.page-rate-widget-box .cancel a:before {
+  content: " ";
+  font-size: inherit;
+}
+
+:where(:lang(ja)) :is(#page-content, #action-area) div.page-rate-widget-box :is(.rateup, .ratedown) a {
+  box-sizing: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: var(--wght);
+  height: 100%;
+  padding: 0;
+  display: block;
+}
+
+:where(:lang(ja)) :is(#page-content, #action-area) div.page-rate-widget-box :is(.rateup, .ratedown) a:before {
+  content: " ";
+  font-size: inherit;
+}
+
+:where(:lang(ja)) #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton {
+  background-color: rgb(var(--rating-module-bg-color));
+  border: .0625rem solid rgba(var(--swatch-border-color), .15);
+  box-shadow: 0 .125rem 0 0 rgb(var(--rating-module-bottom-border-color));
+  font-size: inherit;
+  height: var(--rating-module-height);
+  line-height: inherit;
+  width: calc(var(--base-font-size) * (21 / 15));
+  border-bottom-width: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  margin-left: .5em;
+  display: block;
+}
+
+:where(:lang(ja)) #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a {
+  color: rgb(var(--rating-module-text-color));
+  font-size: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+:where(:lang(ja)) #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a:before {
+  --mask-image: var(--credit-button-mask);
+  content: " ";
+  z-index: 1;
+  width: calc(var(--base-font-size) * (21 / 15));
+  background-color: rgb(var(--rating-module-text-color));
+  pointer-events: none;
+  -webkit-mask: var(--mask-image) center center / calc(var(--rating-module-height)  - .375em) no-repeat;
+  mask: var(--mask-image) center center / calc(var(--rating-module-height)  - .375em) no-repeat;
+  height: 100%;
+  -webkit-transition: background-color .15s cubic-bezier(.4, 0, .2, 1);
+  transition: background-color .15s cubic-bezier(.4, 0, .2, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+:where(:lang(ja)) #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a:after {
+  --clip-path: polygon(0 100%, 100% 115%, 100% 100%, 0 115%);
+  content: " ";
+  z-index: 0;
+  pointer-events: none;
+  clip-path: var(--clip-path);
+  background-color: rgba(var(--rating-module-text-color), 1);
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-clip-path .2s cubic-bezier(.4, 0, .2, 1), clip-path .2s cubic-bezier(.4, 0, .2, 1);
+  transition: -webkit-clip-path .2s cubic-bezier(.4, 0, .2, 1), clip-path .2s cubic-bezier(.4, 0, .2, 1);
+  position: absolute;
+  top: 0;
+}
+
+:where(:lang(ja)) #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a:is(:hover, :active):before {
+  background-color: rgb(var(--rating-module-text-hover-color));
+}
+
+:where(:lang(ja)) #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a:is(:hover, :active):after {
+  --clip-path: polygon(0 100%, 100% 115%, 100% 0, 0 -15%);
+}
+
+:where(:lang(ja)) #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a:focus-within:before {
+  background-color: rgb(var(--rating-module-text-hover-color));
+}
+
+:where(:lang(ja)) #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton a:focus-within:after {
+  --clip-path: polygon(0 100%, 100% 115%, 100% 0, 0 -15%);
+}
+
+:where(:lang(ja)) .creditRate.creditModule .heritage-rating-module ~ .creditButton {
+  background-color: rgb(var(--rating-module-bg-color));
+  border: .0625rem solid rgba(var(--swatch-border-color), .15);
+  box-shadow: 0 .125rem 0 0 rgb(var(--rating-module-bottom-border-color));
+  font-size: inherit;
+  height: var(--rating-module-height);
+  line-height: inherit;
+  width: calc(var(--base-font-size) * (21 / 15));
+  border-bottom-width: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  margin-left: .5em;
+  display: block;
+}
+
+:where(:lang(ja)) .creditRate.creditModule .heritage-rating-module ~ .creditButton a {
+  color: rgb(var(--rating-module-text-color));
+  font-size: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+:where(:lang(ja)) .creditRate.creditModule .heritage-rating-module ~ .creditButton a:before {
+  --mask-image: var(--credit-button-mask);
+  content: " ";
+  z-index: 1;
+  width: calc(var(--base-font-size) * (21 / 15));
+  background-color: rgb(var(--rating-module-text-color));
+  pointer-events: none;
+  -webkit-mask: var(--mask-image) center center / calc(var(--rating-module-height)  - .375em) no-repeat;
+  mask: var(--mask-image) center center / calc(var(--rating-module-height)  - .375em) no-repeat;
+  height: 100%;
+  -webkit-transition: background-color .15s cubic-bezier(.4, 0, .2, 1);
+  transition: background-color .15s cubic-bezier(.4, 0, .2, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+:where(:lang(ja)) .creditRate.creditModule .heritage-rating-module ~ .creditButton a:after {
+  --clip-path: polygon(0 100%, 100% 115%, 100% 100%, 0 115%);
+  content: " ";
+  z-index: 0;
+  pointer-events: none;
+  clip-path: var(--clip-path);
+  background-color: rgba(var(--rating-module-text-color), 1);
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-clip-path .2s cubic-bezier(.4, 0, .2, 1), clip-path .2s cubic-bezier(.4, 0, .2, 1);
+  transition: -webkit-clip-path .2s cubic-bezier(.4, 0, .2, 1), clip-path .2s cubic-bezier(.4, 0, .2, 1);
+  position: absolute;
+  top: 0;
+}
+
+:where(:lang(ja)) .creditRate.creditModule .heritage-rating-module ~ .creditButton a:is(:hover, :active):before {
+  background-color: rgb(var(--rating-module-text-hover-color));
+}
+
+:where(:lang(ja)) .creditRate.creditModule .heritage-rating-module ~ .creditButton a:is(:hover, :active):after {
+  --clip-path: polygon(0 100%, 100% 115%, 100% 0, 0 -15%);
+}
+
+:where(:lang(ja)) .creditRate.creditModule .heritage-rating-module ~ .creditButton a:focus-within:before {
+  background-color: rgb(var(--rating-module-text-hover-color));
+}
+
+:where(:lang(ja)) .creditRate.creditModule .heritage-rating-module ~ .creditButton a:focus-within:after {
+  --clip-path: polygon(0 100%, 100% 115%, 100% 0, 0 -15%);
+}
+
+:where(:lang(ja)) [id*="u-credit"] :is(.creditBottomRate, .modalbox > .Dendo, .modalbox-ratemodule) {
+  position: static;
+}
+
+:where(:lang(ja)) .creditRate.creditModule ~ [id*="u-credit"] .modalcontainer {
+  min-width: inherit;
+  translate: unset;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+  display: block;
+  top: 0;
+}
+
+:where(:lang(ja)) .creditRate.creditModule ~ [id*="u-credit"] div.modalbox {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  max-width: 30rem !important;
+}
+
+:where(:lang(ja)) .creditRate.creditModule ~ [id*="u-credit"] div.modalbox .modalbox-title {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+:where(:lang(ja)) .creditRate.creditModule ~ [id*="u-credit"] div.modalbox .credit.otherwise {
+  height: max-content;
+  overflow-y: auto;
+}
+
+:where(:lang(ja)) .creditRate.creditModule ~ [id*="u-credit"] div.credit-back {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: .25em auto;
+}
+
+:where(:lang(ja)) .creditRate.creditModule ~ [id*="u-credit"] div.credit-back iframe {
+  opacity: 0;
+}
+
+:where(:lang(ja)) .creditRate.creditModule ~ [id*="u-credit"] div.credit-back:before {
+  content: "クレジット";
+  position: static;
+}
+
+:where(:lang(ja)) .creditRate.creditModule ~ [id*="u-credit"] div.creditBottomRate {
+  box-shadow: unset;
+}
+
+:where(:lang(ja)) .creditRate.creditModule ~ [id*="u-credit"] .credit-license a.cc {
+  color: rgb(var(--swatch-text-general));
+  margin-right: 1rem;
+  font-size: 2em;
+}
+
+:where(:lang(ja)) div[class*="award"] ~ #u-credit-otherwise .modalbox {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: -webkit-radial-gradient(rgba(255, 219, 90, .95) 0, #fff 100%) !important;
+  background: radial-gradient(rgba(255, 219, 90, .95) 0, #fff 100%) !important;
 }

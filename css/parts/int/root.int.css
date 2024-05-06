@@ -1,0 +1,25 @@
+/* INT BRANCHES ROOT VARS
+   ============================= */
+
+/* Root Vars specific to various languages targeted to int-branches
+
+/* ===DIRECTORY===
+	1.  =JAPANESE BRANCH
+*/
+
+/* ===JAPANESE BRANCH=== */
+
+:where(:lang(ja)) {
+	:root& {
+		/* Header */
+		--header-title: "SCP財団";
+		--header-subtitle: "確保、収容、保護";
+
+		/* Fonts */
+		--body-font: Inter, "BIZ UDPGothic", "M PLUS 1p", sans-serif;
+		--UI-font: PTRootUI , sans-serif;
+		--header-font: Inter, "M PLUS 1p", sans-serif;
+		--title-font: var(--header-font);
+		--mono-font: Recursive, monospace;
+	}
+}

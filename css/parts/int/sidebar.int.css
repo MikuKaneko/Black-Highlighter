@@ -1,0 +1,18 @@
+/* INT SIDEBAR STYLING
+   ============================= */
+
+/* Styling specific to Int Branches' Sidebars
+
+/* ===DIRECTORY===
+	1.  =JAPANESE BRANCH
+*/
+
+/* ===JAPANESE BRANCH=== */
+
+:where(:lang(ja)) {
+	#side-bar {
+		& .side-block.media {
+			padding: 0 !important;
+		}
+	}
+}

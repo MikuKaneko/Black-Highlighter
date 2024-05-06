@@ -32,7 +32,6 @@
 	===============================
 	======= SPECIFIC COLORS =======
 	===============================
-
 	13. =BACKGROUND GRADIENT
 		13.1 =GENERAL BACKGROUND
 		13.2 =HEADER GRADIENT
@@ -83,7 +82,6 @@
 	===============================
 	========= DEPRECIATED =========
 	===============================
-
 	24. =LEGACY VARS
   =============== */
 
@@ -94,17 +92,26 @@
 @custom-media --viewport-mobile only screen and (width <= 30rem);
 
 :root {
+	/* ===S-CSS-P INTEGRATION=== */
+	/* If you're making a new CSS theme, please include the following three variables at minimum. */
+	--theme-base: "black-highlighter";
+	/* must be either "black-highlighter" or "sigma9" */
+	--theme-id: "black-highlighter";
+	/* set this to the URL of your theme's page - eg for "component:ar-theme", set it to "ar-theme" */
+	--theme-name: "Black Highlighter Theme";
+	/* set this to your theme's full name */
+
 	/* ===HEADER ELEMENTS=== */
 	--logo-image: url("../../img/logo.svg");
-	--header-title: "SCP財団";
-	--header-subtitle: "確保、収容、保護";
+	--header-title: "SCP Foundation";
+	--header-subtitle: "SECURE, CONTAIN, PROTECT";
 
 	/* ===TYPEFACES=== */
-	--body-font: Inter, "BIZ UDPGothic", "M Plus 1p", sans-serif;
-	--UI-font: PTRootUI, sans-serif;
-	--header-font: Inter, "M Plus 1p", sans-serif;
+	--body-font: Inter, Verdana, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--UI-font: PTRootUI, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantrell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--header-font: Inter, "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	--title-font: var(--header-font);
-	--mono-font: Recursive, monospace;
+	--mono-font: Recursive, Consolas, Monaco, monospace;
 
 	/* ===BASE FONT SIZE & LINE HEIGHT=== */
 	--min-font-size: 0.8125rem; /* 13px */
@@ -262,8 +269,23 @@
 	/* Diagonal Strikes placed on top of header image */
 	--diagonal-stripes: repeating-linear-gradient(45deg, hsl(0deg 0% 100% / 0), hsl(0deg 0% 100% / 0) 0.25vh, rgb(88 88 88 / 0.1) 0.35vh, rgb(88 88 88 / 0.2) 0.5vh);
 	/* Create top-menu bar below the header */
-	--gradient-topmenu: linear-gradient( to bottom, rgb(255 255 255 / 0) 0%, rgb(255 255 255 / 0) var(--header-height-on-desktop), rgb(var(--swatch-topmenu-border-color)) var(--header-height-on-desktop), rgb(var(--swatch-topmenu-bg-color)) calc(var(--header-height-on-desktop) + 0.125rem), rgb(var(--swatch-topmenu-bg-color)) calc(100% - 0.125rem), rgb(var(--swatch-topmenu-border-color)) 100% );
-	--gradient-topmenu-mobile: linear-gradient( to bottom, rgb(var(--swatch-topmenu-border-color)) 0, rgb(var(--swatch-topmenu-bg-color)) 0.125rem, rgb(var(--swatch-topmenu-bg-color)) calc(var(--topbar-height-on-mobile) - 0.125rem), rgb(var(--swatch-topmenu-bg-color)) calc(var(--topbar-height-on-mobile) - 0.125rem), rgb(var(--swatch-topmenu-border-color)) var(--topbar-height-on-mobile) );
+	--gradient-topmenu: linear-gradient(
+		to bottom,
+		rgb(255 255 255 / 0) 0%,
+		rgb(255 255 255 / 0) var(--header-height-on-desktop),
+		rgb(var(--swatch-topmenu-border-color)) var(--header-height-on-desktop),
+		rgb(var(--swatch-topmenu-bg-color)) calc(var(--header-height-on-desktop) + 0.125rem),
+		rgb(var(--swatch-topmenu-bg-color)) calc(100% - 0.125rem),
+		rgb(var(--swatch-topmenu-border-color)) 100%
+	);
+	--gradient-topmenu-mobile: linear-gradient(
+		to bottom,
+		rgb(var(--swatch-topmenu-border-color)) 0,
+		rgb(var(--swatch-topmenu-bg-color)) 0.125rem,
+		rgb(var(--swatch-topmenu-bg-color)) calc(var(--topbar-height-on-mobile) - 0.125rem),
+		rgb(var(--swatch-topmenu-bg-color)) calc(var(--topbar-height-on-mobile) - 0.125rem),
+		rgb(var(--swatch-topmenu-border-color)) var(--topbar-height-on-mobile)
+	);
 	/* Subtle gradient that begins just below the top-bar and header */
 	--background-gradient-distance: 40rem;
 	--gradient-background: linear-gradient(to bottom, rgb(var(--background-gradient-color)) 0, rgba(var(--background-gradient-color), 0) var(--background-gradient-distance));
@@ -620,8 +642,8 @@
 	text-decoration: none;
 	will-change: border-color, box-shadow, color, background-color, font-weight, font-variation-settings;
 
-	@supports (font-size:0.75cqi) {
-		font-size: calc(max(var(--min-font-size),min(0.75cqi,var(--max-font-size))) * 1.8);
+	@supports (font-size: 0.75cqi) {
+		font-size: calc(max(var(--min-font-size), min(0.75cqi, var(--max-font-size))) * 1.8);
 	}
 
 	&:is(:hover, :active, :focus, :focus-within) {
@@ -630,7 +652,10 @@
 		border-color: transparent;
 		outline: 0 solid rgb(var(--swatch-primary));
 		background-color: rgb(var(--ui-button-hover-bg));
-		box-shadow: 0 0 0 0 rgba(var(--swatch-tertiary-color), 0), inset 0 0 0 0 rgba(var(--swatch-tertiary-color), 0), 0 0 0 0.125rem rgb(var(--ui-button-hover-outline));
+		box-shadow:
+			0 0 0 0 rgba(var(--swatch-tertiary-color), 0),
+			inset 0 0 0 0 rgba(var(--swatch-tertiary-color), 0),
+			0 0 0 0.125rem rgb(var(--ui-button-hover-outline));
 		color: rgb(var(--ui-button-hover-txt));
 		font-weight: var(--wght);
 		text-decoration: none;
@@ -716,7 +741,6 @@
 	}
 }
 
-
 @supports not (translate: 1rem 1rem) {
 	@keyframes bhl-slide-in {
 		from {
@@ -741,11 +765,15 @@
 
 @keyframes bhl-lift-in {
 	from {
-		box-shadow: 0 0 0 0 rgba(var(--swatch-alternate-color), 0.25), inset 0 0 0 0.0625rem rgb(var(--swatch-primary-darkest));
+		box-shadow:
+			0 0 0 0 rgba(var(--swatch-alternate-color), 0.25),
+			inset 0 0 0 0.0625rem rgb(var(--swatch-primary-darkest));
 	}
 
 	to {
-		box-shadow: 0.25rem 0.125rem 0.5rem 0 rgba(var(--swatch-alternate-color), 0.25), inset 0 0 0 0.0625rem rgb(var(--swatch-primary-darkest));
+		box-shadow:
+			0.25rem 0.125rem 0.5rem 0 rgba(var(--swatch-alternate-color), 0.25),
+			inset 0 0 0 0.0625rem rgb(var(--swatch-primary-darkest));
 	}
 }
 
@@ -757,21 +785,21 @@
 
 :root {
 	/* Found in Wikidot Structure */
-	--text-tags: "タグ\0021b4";
-	--text-editor-desc: "変更の要約:";
+	--text-tags: "TAGS\0021b4";
+	--text-editor-desc: "Short Description of Changes:";
 	--text-pagehistory-rev: "rev.";
-	--text-pagehistory-flags: "フラグ";
-	--text-pagehistory-actions: "アクション";
+	--text-pagehistory-flags: "flags";
+	--text-pagehistory-actions: "actions";
 	--text-pagehistory-by: "by";
-	--text-pagehistory-date: "日付";
-	--text-sitetools: "サイトツール";
+	--text-pagehistory-date: "date";
+	--text-sitetools: "Site Tools";
 
 	/* Found in Elements */
-	--text-creditview-back: "戻る";
-	--text-tableofcontents: "目次";
+	--text-creditview-back: "Back";
+	--text-tableofcontents: "Table of Contents";
 
 	/* Found in Header */
-	--text-messages: "メッセージ";
+	--text-messages: "Messages";
 }
 
 /*  ===============================

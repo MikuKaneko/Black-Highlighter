@@ -200,10 +200,6 @@ textarea {
   font-weight: bold;
 }
 
-body {
-  text-size-adjust: inherit;
-}
-
 #content-wrap {
   position: inherit;
   max-width: inherit;
@@ -306,6 +302,7 @@ body {
   background-color: inherit;
   color: inherit;
   font-size: inherit;
+  font-weight: inherit;
 }
 
 #interwiki body {
@@ -418,6 +415,21 @@ sup {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   text-shadow: inherit;
+}
+
+#header h1 a:before {
+  content: inherit;
+  font-size: inherit;
+}
+
+#header h1 a:after {
+  content: inherit;
+  vertical-align: inherit;
+}
+
+#header h1 a span {
+  font-size: inherit;
+  letter-spacing: inherit;
 }
 
 #header h2 span {
@@ -573,6 +585,7 @@ sup {
 }
 
 #side-bar .menu-item img, #interwiki .menu-item img {
+  display: inherit;
   position: inherit;
   bottom: inherit;
   width: inherit;
@@ -624,6 +637,10 @@ sup {
 #side-bar ul {
   padding: inherit;
   list-style-type: inherit;
+}
+
+.close-menu {
+  display: inherit;
 }
 
 @media (max-width: 47.9375rem) {
@@ -861,6 +878,7 @@ div.page-rate-widget-box .rate-points {
   -webkit-border-radius: inherit;
   border-radius: inherit;
   background-color: inherit;
+  line-height: inherit;
 }
 
 .page-rate-widget-box .rateup, .page-rate-widget-box .ratedown {
@@ -905,6 +923,11 @@ div.page-rate-widget-box .rate-points {
   color: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
+}
+
+#main-content .page-tags {
+  margin: inherit;
+  padding: inherit;
 }
 
 #main-content .page-tags span {
@@ -1157,12 +1180,22 @@ div.curved {
   text-emphasis-style: inherit;
 }
 
+::-webkit-scrollbar {
+  width: inherit;
+  height: inherit;
+  border: inherit;
+}
+
 ::-webkit-scrollbar-track {
   background: inherit;
 }
 
 ::-webkit-scrollbar-thumb {
   background: inherit;
+}
+
+.page-source {
+  word-break: inherit;
 }
 
 img, embed, video, object, iframe, table {
@@ -1958,6 +1991,10 @@ table.page-history td.optionstd a {
   white-space: unset;
 }
 
+.inline-diff ins:first-of-type:before, .inline-diff del:first-of-type:before, .inline-diff br + ins:before, .inline-diff br + del:before {
+  content: inherit;
+}
+
 .Differences {
   width: inherit;
   empty-cells: inherit;
@@ -1989,20 +2026,7 @@ table.page-history td.optionstd a {
   font-size: inherit;
 }
 
-#side-bar {
-  display: inherit;
-  position: inherit;
-  top: inherit;
-  left: inherit;
-  float: inherit;
-  clear: inherit;
-  margin: inherit;
-  padding: inherit;
-  border: inherit;
-  width: inherit;
-}
-
-.DifferencesSideBySide .ChangeInsert td.Right, .DifferencesSideBySide .ChangeDelete td.Left, .DifferencesSideBySide .ChangeDelete td.Right, .DifferencesSideBySide .ChangeReplace .Left, .DifferencesSideBySide .ChangeReplace .Right {
+.DifferencesSideBySide .ChangeInsert td.Left, .DifferencesSideBySide .ChangeInsert td.Right, .DifferencesSideBySide .ChangeDelete td.Left, .DifferencesSideBySide .ChangeDelete td.Right, .DifferencesSideBySide .ChangeReplace .Left, .DifferencesSideBySide .ChangeReplace .Right {
   background: inherit;
 }
 
@@ -3049,16 +3073,6 @@ table#odialog-box-container td div {
 
 #lightbox-container-image {
   padding: inherit;
-  border: inherit;
-  -webkit-border-radius: inherit;
-  -webkit-border-radius: inherit;
-  border-radius: inherit;
-  background-color: inherit;
-  float: inherit;
-  flex-direction: inherit;
-  vertical-align: inherit;
-  box-shadow: inherit;
-  margin: inherit;
 }
 
 #lightbox-loading {
@@ -3080,19 +3094,8 @@ table#odialog-box-container td div {
   height: inherit;
 }
 
-.rateBox {
-  display: inherit;
-}
-
-.rateBox p {
-  display: inherit;
-  margin: inherit;
-  padding: inherit;
-}
-
-#main-content .page-tags {
-  margin: inherit;
-  padding: inherit;
+#lightbox-container-image-box > #lightbox-nav {
+  left: inherit;
 }
 
 #lightbox-nav a {
@@ -3114,10 +3117,6 @@ table#odialog-box-container td div {
 #lightbox-nav-btnNext {
   right: inherit;
   float: inherit;
-}
-
-#lightbox-container-image-box > #lightbox-nav {
-  left: inherit;
 }
 
 #lightbox-container-image-data-box {
@@ -3322,19 +3321,6 @@ table#odialog-box-container td div {
 #footer-bar h3 {
   margin: inherit;
   padding: inherit;
-}
-
-@media (max-width: 768px) {
-  .scp-clear-true.scp-image-block {
-    font-size: inherit;
-    float: inherit;
-    clear: inherit;
-    margin-left: inherit;
-    font-weight: inherit;
-  }
-}
-
-.footer-wikiwalk-nav {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -3606,54 +3592,7 @@ table.guest-commenting td label.hint {
   border-left-color: inherit;
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .emph {
-    padding: inherit;
-    background-clip: inherit;
-    background-color: inherit;
-    background-image: inherit;
-    background-repeat: inherit;
-    -webkit-background-size: inherit inherit;
-    background-size: inherit;
-    font-family: inherit;
-    font-style: inherit;
-    font-weight: inherit;
-  }
-}
-
-@-ms-viewport {
-  width: inherit;
-  zoom: inherit;
-}
-
-@-o-viewport {
-  width: inherit; zoom: inherit;
-}
-
-@viewport {
-  width: inherit;
-  zoom: inherit;
-}
-
-::-webkit-scrollbar {
-  width: inherit;
-  height: inherit;
-  border: inherit;
-}
-
-::-webkit-scrollbar-track {
-  background: inherit;
-}
-
-::-webkit-scrollbar-thumb {
-  background: inherit;
-}
-
-.page-source {
-  word-break: inherit;
-}
-
-img, embed, video, object, iframe, table, #page-content div, #page-content div table, .gallery-image-size-small, .gallery-image-size-medium, .gallery-image-size-thumbnail, .gallery-image-size-square {
+.gallery-image-size-small, .gallery-image-size-medium, .gallery-image-size-thumbnail, .gallery-image-size-square {
   max-width: inherit;
   max-height: inherit;
 }
@@ -3676,549 +3615,10 @@ img, embed, video, object, iframe, table, #page-content div, #page-content div t
   text-decoration: inherit;
 }
 
-@media (max-width: 767px) {
-  .owindow {
-    min-width: inherit;
-    max-width: inherit;
-  }
-
-  .modal-body .table, .modal-body .table ~ div, .owindow .button-bar {
-    float: inherit;
-  }
-
-  .owindow div a.btn-primary {
-    width: inherit;
-    float: inherit;
-  }
-
-  .mobile-top-bar ul li:last-of-type ul {
-    right: inherit;
-  }
-
-  span, a {
-    word-break: inherit;
-  }
-}
-
-@media (max-width: 479px) {
-  #search-top-box-input {
-    display: inherit;
-  }
-
-  #page-content {
-    font-size: inherit;
-  }
-
-  #main-content {
-    margin: inherit;
-  }
-
-  #recent-posts-category {
-    width: inherit;
-  }
-
-  #header, .mobile-top-bar {
-    max-width: inherit;
-  }
-
-  #side-bar {
-    position: inherit;
-    width: inherit;
-  }
-
-  .top-bar, .mobile-top-bar {
-    display: inherit;
-  }
-
-  .mobile-top-bar, .page-options-bottom a {
-    padding: inherit;
-  }
-
-  #header h1 a {
-    font-size: inherit;
-  }
-
-  blockquote, .blockquote, div.blockquote {
-    margin: inherit;
-  }
-
-  .license-area {
-    font-size: inherit;
-  }
-
-  #header {
-    background-position: inherit;
-    -webkit-background-size: inherit inherit;
-    background-size: inherit;
-  }
-
-  #header h1, #header h2 {
-    margin-left: inherit;
-  }
-
-  table.form td, table.form th {
-    padding: inherit;
-    float: inherit;
-    vertical-align: inherit;
-  }
-
-  td.name {
-    width: inherit;
-  }
-
-  table.form td, table.form th {
-    padding: inherit;
-  }
-
-  #edit-page-title {
-    max-width: inherit;
-  }
-
-  .content-panel.left-column, .content-panel.right-column {
-    width: inherit;
-    float: inherit;
-  }
-
-  #page-content div, #page-content div table {
-    clear: inherit;
-  }
-
-  #page-content div.title {
-    word-break: inherit;
-  }
-
-  .heritage-rating-module {
-    padding: inherit;
-  }
-
-  .heritage-rating-module .heritage-emblem {
-    top: inherit;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 580px) {
-  #search-top-box-input {
-    width: inherit;
-  }
-
-  #main-content {
-    margin: inherit;
-  }
-
-  #header, .mobile-top-bar {
-    max-width: inherit;
-  }
-
-  #side-bar {
-    position: inherit;
-    width: inherit;
-  }
-
-  .top-bar, .mobile-top-bar {
-    display: inherit;
-  }
-
-  .page-options-bottom a {
-    padding: inherit;
-  }
-
-  #header h1 a {
-    font-size: inherit;
-  }
-
-  blockquote, .blockquote, div.blockquote {
-    margin: inherit;
-  }
-
-  .license-area {
-    font-size: inherit;
-  }
-
-  #header {
-    background-position: inherit;
-    -webkit-background-size: inherit inherit;
-    background-size: inherit;
-  }
-
-  #header h1, #header h2 {
-    margin-left: inherit;
-  }
-
-  #page-content div.title {
-    word-break: inherit;
-  }
-
-  td.name, td.title {
-    width: inherit;
-  }
-
-  .content-panel.left-column, .content-panel.right-column {
-    width: inherit;
-    float: inherit;
-  }
-
-  #page-content div, #page-content div table {
-    clear: inherit;
-  }
-}
-
-@media (min-width: 581px) and (max-width: 767px) {
-  #search-top-box-input, #side-bar {
-    width: inherit;
-  }
-
-  #side-bar {
-    position: inherit;
-  }
-
-  #main-content {
-    margin: inherit;
-  }
-
-  #header, .mobile-top-bar {
-    max-width: inherit;
-  }
-
-  .top-bar, .mobile-top-bar {
-    display: inherit;
-  }
-
-  .page-options-bottom a {
-    padding: inherit;
-  }
-
-  #header h1 a, .license-area {
-    font-size: inherit;
-  }
-
-  #header {
-    background-position: inherit;
-    -webkit-background-size: inherit inherit;
-    background-size: inherit;
-  }
-
-  #header h1, #header h2 {
-    margin-left: inherit;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 979px) {
-  #main-content {
-    margin: inherit;
-  }
-
-  #header, #top-bar #side-bar {
-    max-width: inherit;
-  }
-
-  .top-bar li {
-    margin: inherit;
-  }
-
-  #top-bar ul li.sfhover ul li a, #top-bar ul li:hover ul li a {
-    width: inherit;
-  }
-
-  .page-options-bottom a {
-    padding: inherit;
-  }
-
-  #header h1 a, .license-area {
-    font-size: inherit;
-  }
-
-  #header {
-    background-position: inherit;
-    -webkit-background-size: inherit inherit;
-    background-size: inherit;
-  }
-
-  #header h1, #header h2 {
-    margin-left: inherit;
-  }
-
-  .content-panel.left-column, .content-panel.right-column {
-    width: inherit;
-    float: inherit;
-  }
-
-  #page-content div, #page-content div table {
-    clear: inherit;
-  }
-}
-
-.close-menu {
-  display: inherit;
-}
-
-@media (max-width: 767px) {
-  .page-history tbody tr td:last-child {
-    width: inherit;
-  }
-
-  .owindow {
-    min-width: inherit;
-    max-width: inherit;
-  }
-
-  .modal-body .table, .modal-body .table ~ div, .owindow .button-bar {
-    float: inherit;
-  }
-
-  .owindow div .btn-primary {
-    width: inherit;
-    float: inherit;
-  }
-
-  .owindow div .btn-primary ~ div {
-    width: inherit;
-  }
-
-  .yui-navset {
-    z-index: inherit;
-  }
-
-  #navi-bar, #navi-bar-shadow {
-    display: inherit;
-  }
-
-  #top-bar .open-menu a {
-    position: inherit;
-    z-index: inherit;
-    top: inherit;
-    left: inherit;
-    width: inherit;
-    height: inherit;
-    border: inherit;
-    -webkit-border-radius: inherit;
-    -webkit-border-radius: inherit;
-    border-radius: inherit;
-    background-color: inherit;
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-    text-align: inherit;
-  }
-
-  #top-bar .open-menu a:hover {
-    -webkit-box-shadow: inherit;
-    box-shadow: inherit;
-    -webkit-text-decoration: inherit;
-    text-decoration: inherit;
-  }
-
-  #main-content {
-    max-width: inherit;
-    margin: inherit;
-  }
-
-  #main-content, #side-bar {
-    padding: inherit;
-    -o-transition: inherit;
-    -webkit-transition: inherit;
-    transition: inherit;
-  }
-
-  #side-bar {
-    display: inherit;
-    z-index: inherit;
-    left: inherit;
-    overflow-y: inherit;
-  }
-
-  #side-bar, #side-bar:after {
-    position: inherit;
-    top: inherit;
-    width: inherit;
-    height: inherit;
-    background-color: inherit;
-  }
-
-  #side-bar:after {
-    content: inherit;
-  }
-
-  #side-bar:target {
-    display: inherit;
-    z-index: inherit;
-    left: inherit;
-    width: inherit;
-    margin: inherit;
-    border: inherit;
-  }
-
-  #side-bar:target + #main-content {
-    left: inherit;
-  }
-
-  #side-bar:target .close-menu {
-    display: inherit;
-    position: inherit;
-    z-index: inherit;
-    top: inherit;
-    left: inherit;
-    width: inherit;
-    height: inherit;
-    background: inherit;
-  }
-}
-
-@media (max-width: 479px) {
-  #search-top-box-input {
-    width: inherit;
-  }
-}
-
 .unflag-user-abusive {
   margin: inherit;
   padding: inherit;
   border: inherit;
   color: inherit;
   font-size: inherit;
-}
-
-.post .content a {
-  word-wrap: inherit;
-}
-
-.colmod-block > ul, .colmod-block > ul > li {
-  display: inherit;
-  line-height: inherit;
-  list-style: inherit;
-  margin: inherit;
-  padding: inherit;
-}
-
-.colmod-block > ul > li > ul, li.folded > .colmod-link-top a + a, li.folded > .colmod-content, li.folded > .colmod-link-end a, li.unfolded > .colmod-link-top a:first-child {
-  display: inherit;
-}
-
-.colmod-content {
-  -webkit-animation: inherit;
-  animation: inherit;
-  -webkit-animation: inherit;
-  animation: inherit;
-  -webkit-animation-timing-function: inherit;
-  animation-timing-function: inherit;
-  -webkit-animation-timing-function: inherit;
-  animation-timing-function: inherit;
-}
-
-li.folded > .colmod-content {
-  -webkit-animation-name: inherit;
-  animation-name: inherit;
-  -webkit-animation-name: inherit;
-  animation-name: inherit;
-}
-
-@-webkit-keyframes colmod-fade-in {
-  from {
-    opacity: inherit;
-  }
-
-  to {
-    opacity: inherit;
-  }
-}
-
-@keyframes colmod-fade-in {
-  from {
-    opacity: inherit;
-  }
-
-  to {
-    opacity: inherit;
-  }
-}
-
-[class|="colmod-link"] div.foldable-list-container {
-  display: inherit;
-}
-
-.colmod-collapsiblealt > [class|="colmod-link"], .colmod-collapsiblealt > [class|="colmod-link"], .collapsiblealt > .colmod-block > ul > li > [class|="colmod-link"] {
-  margin: inherit;
-  text-align: inherit;
-}
-
-.colmod-collapsiblealt > [class|="colmod-link"] a, .collapsiblealt > .colmod-block > ul > li > [class|="colmod-link"] a {
-  padding: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  background-color: inherit;
-  border: inherit;
-  color: inherit;
-}
-
-.colmod-collapsiblealt > [class|="colmod-link"] a:hover, .colmod-collapsiblealt > [class|="colmod-link"] a:active, .collapsiblealt > .colmod-block > ul > li > [class|="colmod-link"] a:hover, .collapsiblealt > .colmod-block > ul > li > [class|="colmod-link"] a:active {
-  background: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.hovertip {
-  cursor: inherit;
-}
-
-#page-content .wikisys--template-dialog {
-  width: inherit;
-  max-width: inherit;
-  margin: inherit;
-  padding: inherit;
-  background: inherit;
-  -webkit-border-radius: inherit;
-  border-radius: inherit;
-  color: inherit;
-  border: inherit;
-}
-
-#page-content .wikisys--template-dialog > .wikisys--template-dialog-header {
-  position: inherit;
-  line-height: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  padding: inherit;
-}
-
-#page-content .wikisys--template-dialog > .wikisys--template-dialog-header:before {
-  content: inherit;
-  position: inherit;
-  top: inherit;
-  left: inherit;
-  width: inherit;
-  height: inherit;
-  opacity: inherit;
-  -webkit-border-radius: inherit;
-  border-radius: inherit;
-  background: inherit;
-}
-
-#page-content .wikisys--template-dialog > .wikisys--template-dialog-content {
-  line-height: inherit;
-  margin: inherit;
-}
-
-#page-content .wikisys--template-dialog > .wikisys--template-dialog-footer {
-  font-size: inherit;
-  margin-top: inherit;
-}
-
-#page-content .wikisys--template-dialog > .wikisys--template-dialog-infoarea {
-  margin-top: inherit;
-}
-
-.inline-diff ins:first-of-type:before, .inline-diff del:first-of-type:before, .inline-diff br + ins:before, .inline-diff br + del:before {
-  display: inherit;
-  font: inherit;
-  text-rendering: inherit;
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-  content: inherit;
-  position: inherit;
-  left: inherit;
-}
-
-.inline-diff ins:before, .inline-diff del:before, .inline-diff ins + del:before, .inline-diff del + ins:before {
-  color: inherit;
 }

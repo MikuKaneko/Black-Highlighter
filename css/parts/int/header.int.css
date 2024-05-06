@@ -1,0 +1,26 @@
+/* INT SIDEBAR STYLING
+   ============================= */
+
+/* Styling specific to Int Branches' Headers
+
+/* ===DIRECTORY===
+	1.  =JAPANESE BRANCH
+*/
+
+/* ===JAPANESE BRANCH=== */
+
+:where(:lang(ja)) {
+	:root& {
+		--text-messages: "メッセージ";
+	}
+
+	#login-status {
+		#account-options {
+			width: 12em;
+		}
+	}
+
+	#header div#top-bar {
+		margin: var(--header-height-on-desktop) 0 1.75rem 0;
+	}
+}
